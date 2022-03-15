@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>123by id</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body class="bg-dark">
+    <h1 class="text-center text-uppercase text-primary">NUMBER PRINTING PLUGIN USING JAVASCRIPT</h1>
+<h1 class="text-center text-uppercase text-danger" id="no"></h1>
+
+<h1 class="text-center text-uppercase text-warning" id="no1"></h1>
+
+<h1 class="text-center text-uppercase text-success" id="no2"></h1>
+
+<h1 class="text-center text-uppercase text-info" id="no3"></h1>
+
+
+ 
+      <script>
+       var go= setInterval(hello,20);
+        var i=j=k=l=0;
+
+        function hello() {
+          document.getElementById("no").innerHTML=i;
+            document.getElementById("no1").innerHTML=j;
+              document.getElementById("no2").innerHTML=k;
+                document.getElementById("no3").innerHTML=l;
+
+          document.getElementById("no").style.marginTop="10px";
+            i++;
+            j++;
+            k++;
+            l++;
+
+         if(i==51 ){
+              clearInterval(go,100);
+         }
+        }
+        
+      </script>
+
+</body>
+</html>

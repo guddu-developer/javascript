@@ -1,0 +1,2408 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ZOOMY-educations</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://html.creativegigs.net/zoomy/assets/img/favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+</head>
+
+<body>
+    
+   <!-- ------------------------    modalll   ------------------- -->
+
+
+<div class="container">
+    <div class="modal" id="gold" >
+       <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content ">
+ 
+                <div class="modal-header">
+                    <h4 class="modal-title text-warning">REGISTER FOR CLASSES</h4>
+                    <button type="button" class="close" id="hat1"  >&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    <form action="/action_page.php" class="needs-validation" novalidate>
+                        <div class="form-group">
+                            <label for="uname"  >Username:</label>
+                            <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd" >Password:</label>
+                            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                        <div class="form-group form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" name="remember" required> I agree terms & conditions
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Check this checkbox to continue.</div>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                    </form>
+                </div>
+ 
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" id="hat">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+  
+  setInterval(modal,5000);
+//    document.body.addEventListener("mouseover",modal);
+    function modal(){
+        // alert("guddu");
+        //  setInterval(modal, 5000);
+        document.getElementById("gold").style.display="block";
+        document.getElementById("gold").style.backgroundColor="rgba(0,0,0,0.7)";
+         
+        //  setTimeout(modal, 2000);
+    }
+    
+     document.getElementById("hat").addEventListener("click",hat);
+     document.getElementById("hat1").addEventListener("click",hat);
+    function hat(){
+        document.getElementById("gold").style.display="none";
+    }
+
+    // document.addEventListener("load", modal);
+    // function modal() {
+    //     // alert("guddu");
+    //     document.getElementById("gold").style.display = "block";
+    //     setInterval(modal, 2000);
+    // }
+    // document.getElementById("hat").addEventListener("click", hat);
+    // document.getElementById("hat1").addEventListener("click", hat);
+    // function hat() {
+    //     document.getElementById("gold").style.display = "none";
+    // }
+</script>
+
+ <!-- ====================validation code===================2 -->
+ 
+<script>
+    // Disable form submissions if there are invalid fields
+    (function () {
+        'use strict';
+        window.addEventListener('load', function () {
+            // Get the forms we want to add validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
+</script>
+
+<header class="top sticky-top py-3 w-100">
+
+        <section class="container-fluid menu">
+
+
+
+            <div class="row  navbar navbar-expand-lg bg-white navbar-light">
+                <div class="col-lg-2 col-sm-3 marop py-3 col col-md-4">.
+                    <a href="https://html.creativegigs.net/zoomy/index.html" target="_blank"><img
+                            class="img-fluid marop navbar-brand"
+                            src="	https://html.creativegigs.net/zoomy/assets/img/logo/header_logo_one.svg" /></a>
+
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#hello">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="col-lg-9 py-2 col col-md-8 collapse navbar-collapse justify-content-center" id="hello">
+                    <ul class="navbar-nav men">
+                        <li class="nav-item position-relative cold">
+                            <a class="nav-link text-dark abt mx-2 " href="#">All Categories </a>
+
+                            <div class="catego position-absolute">
+                                <div class="upper clearfix">
+                                    <div class="bus float-left"> <a><img class=" "
+                                                src="https://html.creativegigs.net/zoomy/assets/img/icon/icon7.svg">BUSINESS</a>
+                                    </div>
+                                    <div class="tec float-left"><a><img class=" "
+                                                src="https://html.creativegigs.net/zoomy/assets/img/icon/icon8.svg">TECHNOLOGY</a>
+                                    </div>
+                                    <div class="dev float-left"><a><img class=" "
+                                                src="https://html.creativegigs.net/zoomy/assets/img/icon/icon9.svg">DEVELOPMENT</a>
+                                    </div>
+                                    <div class="pho float-left"><a><img class=" "
+                                                src="https://html.creativegigs.net/zoomy/assets/img/icon/icon10.svg">PHOTOGRAPHY</a>
+                                    </div>
+
+                                </div>
+                                <div class="niche clearfix">
+                                    <div class="dig float-left"><a><img class=" "
+                                                src="https://html.creativegigs.net/zoomy/assets/img/icon/icon11.svg">DIGITAL
+                                            MARKETING</a></div>
+                                    <div class="prog float-left"><a><img class=" "
+                                                src="https://html.creativegigs.net/zoomy/assets/img/icon/icon12.svg">PROGRAMMER</a>
+                                    </div>
+                                    <div class="vid float-left"><a><img class=" "
+                                                src="https://html.creativegigs.net/zoomy/assets/img/icon/icon14.svg">VIDEOGRAPHY</a>
+                                    </div>
+                                    <div class="ill float-left"><a><img class=" "
+                                                src="https://html.creativegigs.net/zoomy/assets/img/icon/icon13.svg">ILLUSTRATION</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item homerr position-relative">
+                            <a class="nav-link text-primary mx-2   " href="home.html">Home</a>
+                            <!-- <ul class="dro position-absolute">
+										<li class=" "><a class="dropdown-item "  href="">Home Style 1</a></li>
+										<li class=" "><a class="dropdown-item" href=" ">Home Style 2</a></li>
+										<li class=" "><a class="dropdown-item" href=" ">Home Style 3</a></li>
+									</ul>-->
+                        </li>
+                        <li class="nav-item position-relative kora">
+                            <a class="nav-link text-dark abt mx-2 " href="file/aboutpage.html "
+                                target="_blank">Course</a>
+                            <ul class="mla bg-white position-absolute">
+                                <!-- <li><a class="dropdown-item" href="file/aboutpage.html " target="_blank">About Us</a></li> -->
+                                <li><a class="dropdown-item" href="file/course-one.html" target="_blank">Course One</a>
+                                </li>
+                                <li><a class="dropdown-item" href="file/course-two.html" target="_blank">Course Two</a>
+                                </li>
+                                <li><a class="dropdown-item" href="file/coursedetails.html" target="_blank">Courses
+                                        Details</a></li>
+                                <!-- <li><a class="dropdown-item" href=" ">Price</a></li>
+                                         <li><a class="dropdown-item" href=" ">Instructor</a></li>
+                                         <li><a class="dropdown-item" href=" ">Instructor Profile</a></li>
+                                         <li><a class="dropdown-item" href=" ">FAQ</a></li>-->
+                            </ul>
+                        </li>
+                        <li class="nav-item gred">
+                            <a class="nav-link text-dark abt mx-2 " href="file/blog.html" target="_blank">Blog</a>
+                            <ul class="hol">
+                                <li class=" "><a class="dropdown-item " href="file/blog.html" target="_blank">Blogs</a>
+                                </li>
+                                <li class=" "><a class="dropdown-item" href="file/blog detail.html" target="_blank">Blog
+                                        Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark mx-2 " href="file/contactpage.html" target="_blank">Contact</a>
+                        </li>
+                        <li><a class="nav-link text-dark mx-2 " href="file/aboutpage.html " target="_blank">About Us</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="col-lg-1 d-none d-lg-block">
+                    <a href="home.html" class="text-center mx-auto">
+                        <div class="rounded-circle log mx-auto">
+                            <i class="far fa-user text-primary "></i>
+
+                        </div>
+                    </a>
+                </div>
+
+
+        </section>
+
+    </header>
+
+    <!-- =-----------------------------------header end ------------------------------------------- -->
+
+
+
+
+    <main>
+        <section class="container-fluid heg" >
+            <div class="row position-relative">
+                <div class="col-lg-5 p-0 col-md-12 h736  ">
+                    <div class="col-lg-12 position-relative">
+                        <img class="rot position-absolute mx-4 d-none d-md-block"
+                            src="https://html.creativegigs.net/zoomy/assets/img/slider/earth-bg.svg">
+                        <img class="rot1 position-absolute"
+                            src="https://html.creativegigs.net/zoomy/assets/img/slider/01.png">
+                        <img class="rot2 position-absolute d-none d-md-block"
+                            src="https://html.creativegigs.net/zoomy/assets/img/slider/03.png">
+                        <img class="rot3 position-absolute d-lg-block d-none"
+                            src="https://html.creativegigs.net/zoomy/assets/img/shape/dot-box-1.svg">
+                        <img class="rot4 position-absolute d-none d-md-block"
+                            src="https://html.creativegigs.net/zoomy/assets/img/shape/dot-box-2.svg">
+                        <img class="rot5 position-absolute d-none d-md-block"
+                            src="https://html.creativegigs.net/zoomy/assets/img/slider/02.png">
+                    </div>
+                </div>
+
+
+                <div class="col-lg-7 col-md-12">
+                    <div class="col-lg-12 p-4 ee">
+                        <img class="position-absolute cd d-none d-lg-block"
+                            src="https://html.creativegigs.net/zoomy/assets/img/shape/zigzg-1.svg">
+                        <img class="position-absolute cdd "
+                            src="https://html.creativegigs.net/zoomy/assets/img/icon/02.svg">
+                        <img class="position-absolute ppdd d-none d-md-block d-lg-none "
+                            src="https://html.creativegigs.net/zoomy/assets/img/icon/04.svg">
+                        <img class="position-absolute ppdd1 d-none d-md-block d-lg-none "
+                            src="https://html.creativegigs.net/zoomy/assets/img/icon/06.svg">
+                        <img class="position-absolute cddp d-none d-md-block "
+                            src="https://html.creativegigs.net/zoomy/assets/img/icon/03.svg">
+                        <img class="position-absolute gud d-none d-md-block "
+                            src="https://html.creativegigs.net/zoomy/assets/img/shape/line-border.svg">
+                        <img class="position-absolute gudd d-lg-block d-none "
+                            src="https://html.creativegigs.net/zoomy/assets/img/icon/dot-plan-1.svg">
+                        <h2>Learn Everyday & Any New Skills Online with Top Instructors.</h2>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered alteration in some form.</p>
+                        <div class="keri">
+                            <div class="input-group">
+                                <div class="input-group-prepend rees">
+                                    <span> <i class="fas fa-search ser"></i></span>
+                                    <input type="text" class="border-0" placeholder="Find Course">
+
+                                </div>
+
+                                <div class="dropdown hre">
+                                    <button type="button" class="btn  but" data-toggle="dropdown">
+                                        <i class="fas fa-chevron-down"></i> Categories
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">guddu</a>
+                                        <a class="dropdown-item" href="#">rajeev</a>
+                                        <a class="dropdown-item" href="#">web design</a>
+                                        <a class="dropdown-item" href="#">graphic design</a>
+                                        <a class="dropdown-item" href="#">web development</a>
+                                    </div>
+                                </div>
+
+                                <button class="buttt phman" type="submit">Search now</button>
+                            </div>
+                        </div>
+
+                        <h5 class="text-center"><span style="color: #FF723A;">#1</span>Worldwide Online Learning &
+                            Skills Development Platform</h5>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+
+        <!-- =----------------------------absolute and images are end -------------------------------- -->
+
+
+
+
+        <section class="box">
+            <div class="container">
+                <div class="row  ">
+                    <div class="col-lg-3 p-0 hh col-md-12 col-sm-12">
+                        <h2>Great <br class=""> Deals for you</h2>
+                        <p>There are many variations of passa of Lorem Ipsum available, but the majority have suffered.
+                        </p>
+
+                    </div>
+
+
+                    <div class="col-lg-9  col-sm-12">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-xs-4 col-sm-6 mt-3">
+                                <div class="note col-md-12 col-lg-12 col-sm-6">
+                                    <div class="circle rounded-circle">
+                                        <img class=""
+                                            src="https://html.creativegigs.net/zoomy/assets/img/icon/notepad.svg">
+                                    </div>
+                                    <h2>Free Trial Lesson</h2>
+                                    <p>There are many variations of pas of Lorm Ipsum available.</p>
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="col-lg-4 col-md-6 col-xs-4 mt-3 col-sm-6 ">
+                                <div class="puz col-md-12 col-lg-12 col-sm-6 ">
+                                    <div class="circle1 rounded-circle">
+                                        <img class=""
+                                            src="https://html.creativegigs.net/zoomy/assets/img/icon/puzzle.svg">
+                                    </div>
+                                    <h2>Learn New Skills</h2>
+                                    <p>There are many variations of pas of Lorm Ipsum available.</p>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-lg-4 col-xs-4 mt-3 mb-4 d-none d-lg-block">
+                                <div class="man col-md-12 col-lg-12 ">
+                                    <div class="circle2 rounded-circle">
+                                        <img class=""
+                                            src="https://html.creativegigs.net/zoomy/assets/img/icon/manager.svg">
+                                    </div>
+                                    <h2>Expert Trainers</h2>
+                                    <p>There are many variations of pas of Lorm Ipsum available.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+
+        </section>
+
+
+
+        <!-- =-----------------------------------great deals for you end------------------------------- -->
+        <section class="bigbox">
+
+            <div class="container kkpc ">
+                <h4 class="text-center col-xs-12">Teachers & Students</h4>
+                <h5 class="text-center col-xs-12">What you Looking For?</h5>
+
+            </div>
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-lg-6 col-md-6 col-xs-12 mt-5">
+                        <div class="col-lg-12 dop">
+                            <div></div>
+                            <p class="text-center"><img
+                                    src="https://html.creativegigs.net/zoomy/assets/img/icon/phone-operator.svg"></p>
+                            <h5 class="text-center">Do you want to teach here?</h5>
+                            <p class="text-center">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed di
+                                nonumy eirmod
+                                tempor invidunt ut labore et dolore magn
+                                aliq erat.</p>
+
+                            <p class="text-center"><button type="button" class="edit">Register Now</button></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xs-12 mt-5">
+                        <div class="col-lg-12 hop px-3">
+                            <div></div>
+                            <p class="text-center"><img
+                                    src="https://html.creativegigs.net/zoomy/assets/img/icon/graduate.svg">
+                            </p>
+                            <h5 class="text-center">Do you want to learn here?</h5>
+                            <p class="text-center">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed di
+                                nonumy eirmod
+                                tempor invidunt ut labore et dolore
+                                magn
+                                aliq erat.</p>
+                            <p class="text-center"><button type="button" class="edit1">Register Now</button></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container kkpc">
+                <h4 class="text-center">Browse Categories</h4>
+                <h3 class="text-center">Explore our Online Subjects</h3>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="col-lg-12  col-md-12 pt-5 pb-3 white col-md-12 mt-5">
+                            <p class="text-center"><img
+                                    src="https://html.creativegigs.net/zoomy/assets/img/category-icon/atom.svg"></p>
+                            <p class="text-center pp font-weight-bold">Science</p>
+                            <p class="text-center">126+ Courses Available</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="col-lg-12  col-md-12 pt-5 pb-3 white col-md-12 mt-5">
+                            <p class="text-center"><img
+                                    src="https://html.creativegigs.net/zoomy/assets/img/category-icon/web-development.svg">
+                            </p>
+                            <p class="text-center pp font-weight-bold">Development</p>
+                            <p class="text-center">325+ Courses Available</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="col-lg-12  col-md-12 pt-5 pb-3 white col-md-12 mt-5">
+                            <p class="text-center"><img
+                                    src="https://html.creativegigs.net/zoomy/assets/img/category-icon/atom.svg"></p>
+                            <p class="text-center pp font-weight-bold">Science</p>
+                            <p class="text-center">91+ Courses Available</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="col-lg-12  col-md-12 pt-5 pb-3 white col-md-12 mt-5">
+                            <p class="text-center"><img
+                                    src="	https://html.creativegigs.net/zoomy/assets/img/category-icon/career-path.svg">
+                            </p>
+                            <p class="text-center pp font-weight-bold">Career</p>
+                            <p class="text-center">156+ Courses Available</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="col-lg-12  col-md-12 pt-5 pb-3 white col-md-12 mt-5 ">
+                            <p class="text-center"><img
+                                    src="	https://html.creativegigs.net/zoomy/assets/img/category-icon/graphic-tool.svg">
+                            </p>
+                            <p class="text-center pp font-weight-bold">Arts & Design</p>
+                            <p class="text-center">136+ Courses Available</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-center"><button type="menu" class="all">All Categories</button></p>
+
+            </div>
+        </section>
+
+
+
+
+
+
+        <!-- =-----------------------------------Explore our Online Subjects end------------------------------------------- -->
+
+        <section>
+            <div class="container">
+                <div class="row kkpc">
+                    <div class="col-lg-12">
+                        <h4 class="text-center">Featured Courses</h4>
+                        <h3 class="text-center">Explore our Popular Courses</h3>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="col-lg-12 nav nav-pills justify-content-center " role="tablist">
+                            <button class="btn c1 m-3 active" style="margin-left: 40px !important;" data-toggle="pill"
+                                href="#a" role="button">ALL</button>
+                            <button class="btn c2  m-3" data-toggle="pill" href="#b" role="button">CAREER</button>
+                            <button class="btn c3  m-3" data-toggle="pill" href="#c" role="button">DEVELOPMENT</button>
+                            <button class="btn c4  m-3" data-toggle="pill" href="#d" role="button">BUSINESS</button>
+                            <button class="btn c5  m-3" data-toggle="pill" href="#e" role="button">SCEINCE</button>
+                            <button class="btn c6 m-3" data-toggle="pill" href="#f" role="button">DESIGN</button>
+                        </div>
+                        <div class="tab-content container ">
+
+
+                            <!-- =---------------------------------------2nd start------------------------------- -->
+
+                            <div class="tab-pane mt-4 fade show "
+                                style="background-color: none !important; color: black !important;" id="b">
+                                <div class="row bg-white my-5">
+                                    <div class="col-lg-4 col-md-6 mt-3">
+                                        <div class="col-lg-12 p-3 "
+                                            style=" background: #ffffff; box-shadow: 5px 10px 60px rgb(27 33 47 / 5%); border-radius: 10px;">
+                                            <div class="card border-0 position-relative">
+                                                <div class="position-absolute bg-primary hhp"><span
+                                                        class="text-white text-center my-2 mx-2">4.8(256)</span></div>
+                                                <div class="heart position-absolute bg-white py-1 px-2"><i
+                                                        class="fas fa-heart"></i></div>
+                                                <div style="overflow: hidden; border-radius: 10px;"><img
+                                                        class="card-img-top" height="250"
+                                                        src="	https://html.creativegigs.net/zoomy/assets/img/course/02.png"
+                                                        alt="Card image"></div>
+                                                <div class="col-lg-12 clearfix">
+                                                    <button class="badge badge-pill www mt-4">Science</button>
+                                                    <button class="badge badge-pill wwt mt-4">Lab</button>
+                                                    <div class="float-right rounded-circle aaac mt-4"><img
+                                                            src="https://html.creativegigs.net/zoomy/assets/img/course/in2.png">
+                                                    </div>
+                                                </div>
+                                                <div class="card-body p-3">
+                                                    <h4 class="card-title orange">Your Career to build for the pro level
+                                                    </h4>
+                                                    <p class="card-text ">
+                                                        <span class="text-dark font-weight-bold mr-1">
+                                                            <img class="icon gray mr-1"
+                                                                src="https://html.creativegigs.net/zoomy/assets/img/icon/time.svg">
+                                                            12 class</span>
+                                                        <span class="text-dark font-weight-bold mr-1">
+                                                            <img class="icon gray mr-1"
+                                                                src="	https://html.creativegigs.net/zoomy/assets/img/icon/bar-chart.svg">
+                                                            Higher</span>
+                                                        <span class="text-dark font-weight-bold">
+                                                            <img class="icon gray mr-1"
+                                                                src=" 	https://html.creativegigs.net/zoomy/assets/img/icon/user.svg">
+                                                            6395+</span><span class="orn ml-2">$260</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-4  col-md-6 mt-3">
+                                        <div class="col-lg-12 p-3 "
+                                            style=" background: #ffffff; box-shadow: 5px 10px 60px rgb(27 33 47 / 5%); border-radius: 10px;">
+                                            <div class="card border-0 position-relative">
+                                                <div class="position-absolute bg-primary hhp"><span
+                                                        class="text-white text-center my-2 mx-2">4.8(256)</span></div>
+                                                <div class="heart position-absolute bg-white py-1 px-2"><i
+                                                        class="fas fa-heart"></i></div>
+                                                <div style="overflow: hidden; border-radius: 10px;"><img
+                                                        class="card-img-top" height="250"
+                                                        src="	https://html.creativegigs.net/zoomy/assets/img/course/03.png"
+                                                        alt="Card image"></div>
+                                                <div class="col-lg-12 clearfix">
+                                                    <button class="badge badge-pill www mt-4">Science</button>
+                                                    <button class="badge badge-pill wwt mt-4">Lab</button>
+                                                    <div class="float-right rounded-circle aaac mt-4"><img
+                                                            src="https://html.creativegigs.net/zoomy/assets/img/course/in2.png">
+                                                    </div>
+                                                </div>
+                                                <div class="card-body p-3">
+                                                    <h4 class="card-title orange">Your Career to build for the pro level
+                                                    </h4>
+                                                    <p class="card-text ">
+                                                        <span class="text-dark font-weight-bold mr-1">
+                                                            <img class="icon gray mr-1"
+                                                                src="https://html.creativegigs.net/zoomy/assets/img/icon/time.svg">
+                                                            12 class</span>
+                                                        <span class="text-dark font-weight-bold mr-1">
+                                                            <img class="icon gray mr-1"
+                                                                src="	https://html.creativegigs.net/zoomy/assets/img/icon/bar-chart.svg">
+                                                            Higher</span>
+                                                        <span class="text-dark font-weight-bold">
+                                                            <img class="icon gray mr-1"
+                                                                src=" 	https://html.creativegigs.net/zoomy/assets/img/icon/user.svg">
+                                                            6395+</span><span class="orn ml-2">$260</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-4  col-md-6 mt-3">
+                                        <div class="col-lg-12 p-3 "
+                                            style=" background: #ffffff; box-shadow: 5px 10px 60px rgb(27 33 47 / 5%); border-radius: 10px;">
+                                            <div class="card border-0 position-relative">
+                                                <div class="position-absolute bg-primary hhp"><span
+                                                        class="text-white text-center my-2 mx-2">4.8(256)</span></div>
+                                                <div class="heart position-absolute bg-white py-1 px-2"><i
+                                                        class="fas fa-heart"></i></div>
+                                                <div style="overflow: hidden; border-radius: 10px;"> <img height="250"
+                                                        class="card-img-top"
+                                                        src="https://html.creativegigs.net/zoomy/assets/img/course/06.png"
+                                                        alt="Card image"></div>
+                                                <div class="col-lg-12 clearfix">
+                                                    <button class="badge badge-pill www mt-4">Science</button>
+                                                    <button class="badge badge-pill wwt mt-4">Lab</button>
+                                                    <div class="float-right rounded-circle aaac mt-4"><img
+                                                            src="https://html.creativegigs.net/zoomy/assets/img/course/in2.png">
+                                                    </div>
+                                                </div>
+                                                <div class="card-body p-3">
+                                                    <h4 class="card-title orange">Your Career to build for the pro level
+                                                    </h4>
+                                                    <p class="card-text ">
+                                                        <span class="text-dark font-weight-bold mr-1">
+                                                            <img class="icon gray mr-1"
+                                                                src="https://html.creativegigs.net/zoomy/assets/img/icon/time.svg">
+                                                            12 class</span>
+                                                        <span class="text-dark font-weight-bold mr-1">
+                                                            <img class="icon gray mr-1"
+                                                                src="	https://html.creativegigs.net/zoomy/assets/img/icon/bar-chart.svg">
+                                                            Higher</span>
+                                                        <span class="text-dark font-weight-bold">
+                                                            <img class="icon gray mr-1"
+                                                                src=" 	https://html.creativegigs.net/zoomy/assets/img/icon/user.svg">
+                                                            6395+</span><span class="orn ml-2">$260</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+
+
+
+
+                                        <!-- tab row end  -->
+                                    </div>
+                                    <!-- tab pane end  -->
+                                </div>
+                                <!-- tab container end  -->
+                            </div>
+
+
+
+
+
+
+
+
+
+
+                            <!-- =--------------------------------------- 1st start------------------------------- -->
+
+
+
+
+
+
+
+
+                            <div class="tab-pane mt-4 active fade show"
+                                style="background-color: none !important; color: black !important;" id="a">
+                                <div class="row my-5 bg-white">
+                                    <div class="col-lg-4 col-md-6  mt-3 ">
+                                        <div class="col-lg-12 p-3 "
+                                            style=" background: #ffffff; box-shadow: 5px 10px 60px rgb(27 33 47 / 5%); border-radius: 10px;">
+                                            <div class="card border-0 position-relative">
+                                                <div class="position-absolute bg-primary hhp"><span
+                                                        class="text-white text-center my-2 mx-2">4.8(256)</span></div>
+                                                <div class="heart position-absolute bg-white py-1 px-2"><i
+                                                        class="fas fa-heart"></i></div>
+
+                                                <div style="overflow: hidden; border-radius: 10px;"><img height="250"
+                                                        class="card-img-top"
+                                                        src="https://html.creativegigs.net/zoomy/assets/img/course/01.png"
+                                                        alt="Card image"></div>
+                                                <div class="col-lg-12 clearfix">
+                                                    <button class="badge badge-pill www mt-4">Science</button>
+                                                    <button class="badge badge-pill wwt mt-4">Lab</button>
+                                                    <div class="float-right rounded-circle aaac mt-4"><img
+                                                            src="https://html.creativegigs.net/zoomy/assets/img/course/in2.png">
+                                                    </div>
+                                                </div>
+                                                <div class="card-body p-3">
+                                                    <h4 class="card-title orange">Your Career to build for the pro level
+                                                    </h4>
+                                                    <p class="card-text ">
+                                                        <span class="text-dark font-weight-bold mr-1">
+                                                            <img class="icon gray mr-1"
+                                                                src="https://html.creativegigs.net/zoomy/assets/img/icon/time.svg">
+                                                            12 class</span>
+                                                        <span class="text-dark font-weight-bold mr-1">
+                                                            <img class="icon gray mr-1"
+                                                                src="	https://html.creativegigs.net/zoomy/assets/img/icon/bar-chart.svg">
+                                                            Higher</span>
+                                                        <span class="text-dark font-weight-bold">
+                                                            <img class="icon gray mr-1"
+                                                                src=" 	https://html.creativegigs.net/zoomy/assets/img/icon/user.svg">
+                                                            6395+</span><span class="orn ml-2">$260</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-4  col-md-6 ">
+                                        <div class="col-lg-12 p-3 "
+                                            style=" background: #ffffff; box-shadow: 5px 10px 60px rgb(27 33 47 / 5%); border-radius: 10px;">
+                                            <div class="card border-0 position-relative">
+                                                <div class="position-absolute bg-primary hhp"><span
+                                                        class="text-white text-center my-2 mx-2">4.8(256)</span></div>
+                                                <div class="heart position-absolute bg-white py-1 px-2"><i
+                                                        class="fas fa-heart"></i></div>
+                                                <div style="overflow: hidden; border-radius: 10px;"><img height="250"
+                                                        class="card-img-top"
+                                                        src="	https://html.creativegigs.net/zoomy/assets/img/course/02.png"
+                                                        alt="Card image"></div>
+                                                <div class="col-lg-12 clearfix">
+                                                    <button class="badge badge-pill www mt-4">Science</button>
+                                                    <button class="badge badge-pill wwt mt-4">Lab</button>
+                                                    <div class="float-right rounded-circle aaac mt-4"><img
+                                                            src="https://html.creativegigs.net/zoomy/assets/img/course/in2.png">
+                                                    </div>
+                                                </div>
+                                                <div class="card-body p-3">
+                                                    <h4 class="card-title orange">Your Career to build for the pro level
+                                                    </h4>
+                                                    <p class="card-text ">
+                                                        <span class="text-dark font-weight-bold mr-1">
+                                                            <img class="icon gray mr-1"
+                                                                src="https://html.creativegigs.net/zoomy/assets/img/icon/time.svg">
+                                                            12 class</span>
+                                                        <span class="text-dark font-weight-bold mr-1">
+                                                            <img class="icon gray mr-1"
+                                                                src="	https://html.creativegigs.net/zoomy/assets/img/icon/bar-chart.svg">
+                                                            Higher</span>
+                                                        <span class="text-dark font-weight-bold">
+                                                            <img class="icon gray mr-1"
+                                                                src=" 	https://html.creativegigs.net/zoomy/assets/img/icon/user.svg">
+                                                            6395+</span><span class="orn ml-2">$260</span>
+                                                    </p>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-4  col-md-6 mt-3">
+                                        <div class="col-lg-12 p-3 "
+                                            style=" background: #ffffff; box-shadow: 5px 10px 60px rgb(27 33 47 / 5%); border-radius: 10px;">
+                                            <div class="card border-0 position-relative">
+                                                <div class="position-absolute bg-primary hhp"><span
+                                                        class="text-white text-center my-2 mx-2">4.8(256)</span></div>
+                                                <div class="heart position-absolute bg-white py-1 px-2"><i
+                                                        class="fas fa-heart"></i></div>
+                                                <div style="overflow: hidden; border-radius: 10px;"><img height="250"
+                                                        class="card-img-top"
+                                                        src="https://html.creativegigs.net/zoomy/assets/img/course/03.png"
+                                                        alt="Card image"></div>
+                                                <div class="col-lg-12 clearfix">
+                                                    <button class="badge badge-pill www mt-4">Science</button>
+                                                    <button class="badge badge-pill wwt mt-4">Lab</button>
+                                                    <div class="float-right rounded-circle aaac mt-4"><img
+                                                            src="https://html.creativegigs.net/zoomy/assets/img/course/in2.png">
+                                                    </div>
+                                                </div>
+                                                <div class="card-body p-3">
+                                                    <h4 class="card-title orange">Your Career to build for the pro level
+                                                    </h4>
+                                                    <p class="card-text ">
+                                                        <span class="text-dark font-weight-bold mr-1">
+                                                            <img class="icon gray mr-1"
+                                                                src="https://html.creativegigs.net/zoomy/assets/img/icon/time.svg">
+                                                            12 class</span>
+                                                        <span class="text-dark font-weight-bold mr-1">
+                                                            <img class="icon gray mr-1"
+                                                                src="	https://html.creativegigs.net/zoomy/assets/img/icon/bar-chart.svg">
+                                                            Higher</span>
+                                                        <span class="text-dark font-weight-bold">
+                                                            <img class="icon gray mr-1"
+                                                                src=" 	https://html.creativegigs.net/zoomy/assets/img/icon/user.svg">
+                                                            6395+</span><span class="orn ml-2">$260</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+
+
+
+
+                                        <!-- tab row end  -->
+                                    </div>
+
+
+
+
+
+
+
+
+
+                                    <div class="col-lg-4  col-md-6 mt-3">
+                                        <div class="col-lg-12 p-3 "
+                                            style=" background: #ffffff; box-shadow: 5px 10px 60px rgb(27 33 47 / 5%); border-radius: 10px;">
+                                            <div class="card border-0 position-relative">
+                                                <div class="position-absolute bg-primary hhp"><span
+                                                        class="text-white text-center my-2 mx-2">4.8(256)</span>
+                                                </div>
+                                                <div class="heart position-absolute bg-white py-1 px-2"><i
+                                                        class="fas fa-heart"></i></div>
+                                                <div style="overflow: hidden; border-radius: 10px;"><img height="250"
+                                                        class="card-img-top"
+                                                        src="https://html.creativegigs.net/zoomy/assets/img/course/04.png"
+                                                        alt="Card image"></div>
+                                                <div class="col-lg-12 clearfix">
+                                                    <button class="badge badge-pill www mt-4">Science</button>
+                                                    <button class="badge badge-pill wwt mt-4">Lab</button>
+                                                    <div class="float-right rounded-circle aaac mt-4"><img
+                                                            src="https://html.creativegigs.net/zoomy/assets/img/course/in2.png">
+                                                    </div>
+                                                </div>
+                                                <div class="card-body p-3">
+                                                    <h4 class="card-title orange">Your Career to build for the pro level
+                                                    </h4>
+                                                    <p class="card-text ">
+                                                        <span class="text-dark font-weight-bold mr-1">
+                                                            <img class="icon gray mr-1"
+                                                                src="https://html.creativegigs.net/zoomy/assets/img/icon/time.svg">
+                                                            12 class</span>
+                                                        <span class="text-dark font-weight-bold mr-1">
+                                                            <img class="icon gray mr-1"
+                                                                src="	https://html.creativegigs.net/zoomy/assets/img/icon/bar-chart.svg">
+                                                            Higher</span>
+                                                        <span class="text-dark font-weight-bold">
+                                                            <img class="icon gray mr-1"
+                                                                src=" 	https://html.creativegigs.net/zoomy/assets/img/icon/user.svg">
+                                                            6395+</span><span class="orn ml-2">$260</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+
+
+
+
+                                        <!-- tab row end  -->
+                                    </div>
+
+
+                                    <div class="col-lg-4 mt-3 col-md-6 ">
+                                        <div class="col-lg-12 p-3 "
+                                            style=" background: #ffffff; box-shadow: 5px 10px 60px rgb(27 33 47 / 5%); border-radius: 10px;">
+                                            <div class="card border-0 position-relative">
+                                                <div class="position-absolute bg-primary hhp"><span
+                                                        class="text-white text-center my-2 mx-2">4.8(256)</span>
+                                                </div>
+                                                <div class="heart position-absolute bg-white py-1 px-2"><i
+                                                        class="fas fa-heart"></i></div>
+                                                <div style="overflow: hidden; border-radius: 10px;"><img height="250"
+                                                        class="card-img-top"
+                                                        src="https://html.creativegigs.net/zoomy/assets/img/course/05.png"
+                                                        alt="Card image"></div>
+                                                <div class="col-lg-12 clearfix">
+                                                    <button class="badge badge-pill www mt-4">Science</button>
+                                                    <button class="badge badge-pill wwt mt-4">Lab</button>
+                                                    <div class="float-right rounded-circle aaac mt-4"><img
+                                                            src="https://html.creativegigs.net/zoomy/assets/img/course/in2.png">
+                                                    </div>
+                                                </div>
+                                                <div class="card-body p-3">
+                                                    <h4 class="card-title orange">Your Career to build for the pro level
+                                                    </h4>
+                                                    <p class="card-text ">
+                                                        <span class="text-dark font-weight-bold mr-1">
+                                                            <img class="icon gray mr-1"
+                                                                src="https://html.creativegigs.net/zoomy/assets/img/icon/time.svg">
+                                                            12 class</span>
+                                                        <span class="text-dark font-weight-bold mr-1">
+                                                            <img class="icon gray mr-1"
+                                                                src="	https://html.creativegigs.net/zoomy/assets/img/icon/bar-chart.svg">
+                                                            Higher</span>
+                                                        <span class="text-dark font-weight-bold">
+                                                            <img class="icon gray mr-1"
+                                                                src=" 	https://html.creativegigs.net/zoomy/assets/img/icon/user.svg">
+                                                            6395+</span><span class="orn ml-2">$260</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+
+
+
+
+                                        <!-- tab row end  -->
+                                    </div>
+
+
+                                    <div class="col-lg-4 mt-3  col-md-6 ">
+                                        <div class="col-lg-12 p-3 "
+                                            style=" background: #ffffff; box-shadow: 5px 10px 60px rgb(27 33 47 / 5%); border-radius: 10px;">
+                                            <div class="card border-0 position-relative">
+                                                <div class="position-absolute bg-primary hhp"><span
+                                                        class="text-white text-center my-2 mx-2">4.8(256)</span>
+                                                </div>
+                                                <div class="heart position-absolute bg-white py-1 px-2"><i
+                                                        class="fas fa-heart"></i></div>
+                                                <div style="overflow: hidden; border-radius: 10px;"><img height="250"
+                                                        class="card-img-top"
+                                                        src="https://html.creativegigs.net/zoomy/assets/img/course/06.png"
+                                                        alt="Card image"></div>
+                                                <div class="col-lg-12 clearfix">
+                                                    <button class="badge badge-pill www mt-4">Science</button>
+                                                    <button class="badge badge-pill wwt mt-4">Lab</button>
+                                                    <div class="float-right rounded-circle aaac mt-4"><img
+                                                            src="https://html.creativegigs.net/zoomy/assets/img/course/in2.png">
+                                                    </div>
+                                                </div>
+                                                <div class="card-body p-3">
+                                                    <h4 class="card-title orange">Your Career to build for the pro level
+                                                    </h4>
+                                                    <p class="card-text ">
+                                                        <span class="text-dark font-weight-bold mr-1">
+                                                            <img class="icon gray mr-1"
+                                                                src="https://html.creativegigs.net/zoomy/assets/img/icon/time.svg">
+                                                            12 class</span>
+                                                        <span class="text-dark font-weight-bold mr-1">
+                                                            <img class="icon gray mr-1"
+                                                                src="	https://html.creativegigs.net/zoomy/assets/img/icon/bar-chart.svg">
+                                                            Higher</span>
+                                                        <span class="text-dark font-weight-bold">
+                                                            <img class="icon gray mr-1"
+                                                                src=" 	https://html.creativegigs.net/zoomy/assets/img/icon/user.svg">
+                                                            6395+</span><span class="orn ml-2">$260</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+
+
+
+
+                                        <!-- tab row end  -->
+                                    </div>
+
+                                </div>
+                                <!-- tab container end  -->
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <!-- ----------------------------------3rd start-----------------------		 -->
+
+
+
+
+
+                            <div class="tab-pane mt-4 fade show"
+                                style="background-color: none !important; color: black !important;" id="c">
+                                <div class="row my-5 bg-white">
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="col-lg-12 p-3 "
+                                            style=" background: #ffffff; box-shadow: 5px 10px 60px rgb(27 33 47 / 5%); border-radius: 10px;">
+                                            <div class="card border-0 position-relative">
+                                                <div class="position-absolute bg-primary hhp"><span
+                                                        class="text-white text-center my-2 mx-2">4.8(256)</span></div>
+                                                <div class="heart position-absolute bg-white py-1 px-2"><i
+                                                        class="fas fa-heart"></i></div>
+                                                <div style="overflow: hidden; border-radius: 10px;"><img height="250"
+                                                        class="card-img-top"
+                                                        src="https://html.creativegigs.net/zoomy/assets/img/course/01.png"
+                                                        alt="Card image"></div>
+                                                <div class="col-lg-12 clearfix">
+                                                    <button class="badge badge-pill www mt-4">Science</button>
+                                                    <button class="badge badge-pill wwt mt-4">Lab</button>
+                                                    <div class="float-right rounded-circle aaac mt-4"><img
+                                                            src="https://html.creativegigs.net/zoomy/assets/img/course/in2.png">
+                                                    </div>
+                                                </div>
+                                                <div class="card-body p-3">
+                                                    <h4 class="card-title orange">Your Career to build for the pro level
+                                                    </h4>
+                                                    <p class="card-text ">
+                                                        <span class="text-dark font-weight-bold mr-1">
+                                                            <img class="icon gray mr-1"
+                                                                src="https://html.creativegigs.net/zoomy/assets/img/icon/time.svg">
+                                                            12 class</span>
+                                                        <span class="text-dark font-weight-bold mr-1">
+                                                            <img class="icon gray mr-1"
+                                                                src="	https://html.creativegigs.net/zoomy/assets/img/icon/bar-chart.svg">
+                                                            Higher</span>
+                                                        <span class="text-dark font-weight-bold">
+                                                            <img class="icon gray mr-1"
+                                                                src=" 	https://html.creativegigs.net/zoomy/assets/img/icon/user.svg">
+                                                            6395+</span><span class="orn ml-2">$260</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-4 mt-3 col-md-6">
+                                        <div class="col-lg-12 p-3 "
+                                            style=" background: #ffffff; box-shadow: 5px 10px 60px rgb(27 33 47 / 5%); border-radius: 10px;">
+                                            <div class="card border-0 position-relative">
+                                                <div class="position-absolute bg-primary hhp"><span
+                                                        class="text-white text-center my-2 mx-2">4.8(256)</span></div>
+                                                <div class="heart position-absolute bg-white py-1 px-2"><i
+                                                        class="fas fa-heart"></i></div>
+                                                <div style="overflow: hidden; border-radius: 10px;"><img height="250"
+                                                        class="card-img-top"
+                                                        src="https://html.creativegigs.net/zoomy/assets/img/course/03.png"
+                                                        alt="Card image"></div>
+                                                <div class="col-lg-12 clearfix">
+                                                    <button class="badge badge-pill www mt-4">Science</button>
+                                                    <button class="badge badge-pill wwt mt-4">Lab</button>
+                                                    <div class="float-right rounded-circle aaac mt-4"><img
+                                                            src="https://html.creativegigs.net/zoomy/assets/img/course/in2.png">
+                                                    </div>
+                                                </div>
+                                                <div class="card-body p-3">
+                                                    <h4 class="card-title orange">Your Career to build for the pro level
+                                                    </h4>
+                                                    <p class="card-text ">
+                                                        <span class="text-dark font-weight-bold mr-1">
+                                                            <img class="icon gray mr-1"
+                                                                src="https://html.creativegigs.net/zoomy/assets/img/icon/time.svg">
+                                                            12 class</span>
+                                                        <span class="text-dark font-weight-bold mr-1">
+                                                            <img class="icon gray mr-1"
+                                                                src="	https://html.creativegigs.net/zoomy/assets/img/icon/bar-chart.svg">
+                                                            Higher</span>
+                                                        <span class="text-dark font-weight-bold">
+                                                            <img class="icon gray mr-1"
+                                                                src=" 	https://html.creativegigs.net/zoomy/assets/img/icon/user.svg">
+                                                            6395+</span><span class="orn ml-2">$260</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-4 mt-3 col-md-6">
+                                        <div class="col-lg-12 p-3 "
+                                            style=" background: #ffffff; box-shadow: 5px 10px 60px rgb(27 33 47 / 5%); border-radius: 10px;">
+                                            <div class="card border-0 position-relative">
+                                                <div class="position-absolute bg-primary hhp"><span
+                                                        class="text-white text-center my-2 mx-2">4.8(256)</span></div>
+                                                <div class="heart position-absolute bg-white py-1 px-2"><i
+                                                        class="fas fa-heart"></i></div>
+                                                <div style="overflow: hidden; border-radius: 10px;"><img height="250"
+                                                        class="card-img-top"
+                                                        src="https://html.creativegigs.net/zoomy/assets/img/course/04.png"
+                                                        alt="Card image"></div>
+                                                <div class="col-lg-12 clearfix">
+                                                    <button class="badge badge-pill www mt-4">Science</button>
+                                                    <button class="badge badge-pill wwt mt-4">Lab</button>
+                                                    <div class="float-right rounded-circle aaac mt-4"><img
+                                                            src="https://html.creativegigs.net/zoomy/assets/img/course/in2.png">
+                                                    </div>
+                                                </div>
+                                                <div class="card-body p-3">
+                                                    <h4 class="card-title orange">Your Career to build for the pro level
+                                                    </h4>
+                                                    <p class="card-text ">
+                                                        <span class="text-dark font-weight-bold mr-1">
+                                                            <img class="icon gray mr-1"
+                                                                src="https://html.creativegigs.net/zoomy/assets/img/icon/time.svg">
+                                                            12 class</span>
+                                                        <span class="text-dark font-weight-bold mr-1">
+                                                            <img class="icon gray mr-1"
+                                                                src="	https://html.creativegigs.net/zoomy/assets/img/icon/bar-chart.svg">
+                                                            Higher</span>
+                                                        <span class="text-dark font-weight-bold">
+                                                            <img class="icon gray mr-1"
+                                                                src=" 	https://html.creativegigs.net/zoomy/assets/img/icon/user.svg">
+                                                            6395+</span><span class="orn ml-2">$260</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+
+
+
+
+                                        <!-- tab row end  -->
+                                    </div>
+                                    <!-- tab pane end  -->
+                                </div>
+                                <!-- tab container end  -->
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <!-- =---------------------------------------4th start------------------------------- -->
+
+
+
+
+
+
+
+
+
+
+
+
+                            <div class="tab-pane mt-4 fade show"
+                                style="background-color: none !important; color: black !important;" id="d">
+                                <div class="row my-5 bg-white">
+                                    <div class="col-lg-4 mt-3 col-md-6">
+                                        <div class="col-lg-12 p-3 "
+                                            style=" background: #ffffff; box-shadow: 5px 10px 60px rgb(27 33 47 / 5%); border-radius: 10px;">
+                                            <div class="card border-0 position-relative">
+                                                <div class="position-absolute bg-primary hhp"><span
+                                                        class="text-white text-center my-2 mx-2">4.8(256)</span></div>
+                                                <div class="heart position-absolute bg-white py-1 px-2"><i
+                                                        class="fas fa-heart"></i></div>
+                                                <div style="overflow: hidden; border-radius: 10px;"><img height="250"
+                                                        class="card-img-top"
+                                                        src="https://html.creativegigs.net/zoomy/assets/img/course/01.png"
+                                                        alt="Card image"></div>
+                                                <div class="col-lg-12 clearfix">
+                                                    <button class="badge badge-pill www mt-4">Science</button>
+                                                    <button class="badge badge-pill wwt mt-4">Lab</button>
+                                                    <div class="float-right rounded-circle aaac mt-4"><img
+                                                            src="https://html.creativegigs.net/zoomy/assets/img/course/in2.png">
+                                                    </div>
+                                                </div>
+                                                <div class="card-body p-3">
+                                                    <h4 class="card-title orange">Your Career to build for the pro level
+                                                    </h4>
+                                                    <p class="card-text ">
+                                                        <span class="text-dark font-weight-bold mr-1">
+                                                            <img class="icon gray mr-1"
+                                                                src="https://html.creativegigs.net/zoomy/assets/img/icon/time.svg">
+                                                            12 class</span>
+                                                        <span class="text-dark font-weight-bold mr-1">
+                                                            <img class="icon gray mr-1"
+                                                                src="	https://html.creativegigs.net/zoomy/assets/img/icon/bar-chart.svg">
+                                                            Higher</span>
+                                                        <span class="text-dark font-weight-bold">
+                                                            <img class="icon gray mr-1"
+                                                                src=" 	https://html.creativegigs.net/zoomy/assets/img/icon/user.svg">
+                                                            6395+</span><span class="orn ml-2">$260</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-4 mt-3 col-md-6">
+                                        <div class="col-lg-12 p-3 "
+                                            style=" background: #ffffff; box-shadow: 5px 10px 60px rgb(27 33 47 / 5%); border-radius: 10px;">
+                                            <div class="card border-0 position-relative">
+                                                <div class="position-absolute bg-primary hhp"><span
+                                                        class="text-white text-center my-2 mx-2">4.8(256)</span></div>
+                                                <div class="heart position-absolute bg-white py-1 px-2"><i
+                                                        class="fas fa-heart"></i></div>
+                                                <div style="overflow: hidden; border-radius: 10px;"><img height="250"
+                                                        class="card-img-top"
+                                                        src="	https://html.creativegigs.net/zoomy/assets/img/course/02.png"
+                                                        alt="Card image"></div>
+                                                <div class="col-lg-12 clearfix">
+                                                    <button class="badge badge-pill www mt-4">Science</button>
+                                                    <button class="badge badge-pill wwt mt-4">Lab</button>
+                                                    <div class="float-right rounded-circle aaac mt-4"><img
+                                                            src="https://html.creativegigs.net/zoomy/assets/img/course/in2.png">
+                                                    </div>
+                                                </div>
+                                                <div class="card-body p-3">
+                                                    <h4 class="card-title orange">Your Career to build for the pro level
+                                                    </h4>
+                                                    <p class="card-text">
+                                                        <span class="text-dark font-weight-bold mr-1">
+                                                            <img class="icon gray mr-1"
+                                                                src="https://html.creativegigs.net/zoomy/assets/img/icon/time.svg">
+                                                            12 class</span>
+                                                        <span class="text-dark font-weight-bold mr-1">
+                                                            <img class="icon gray mr-1"
+                                                                src="	https://html.creativegigs.net/zoomy/assets/img/icon/bar-chart.svg">
+                                                            Higher</span>
+                                                        <span class="text-dark font-weight-bold">
+                                                            <img class="icon gray mr-1"
+                                                                src=" 	https://html.creativegigs.net/zoomy/assets/img/icon/user.svg">
+                                                            6395+</span><span class="orn ml-2">$260</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-4 mt-3 col-md-6">
+                                        <div class="col-lg-12 p-3 "
+                                            style=" background: #ffffff; box-shadow: 5px 10px 60px rgb(27 33 47 / 5%); border-radius: 10px;">
+                                            <div class="card border-0 position-relative">
+                                                <div class="position-absolute bg-primary hhp"><span
+                                                        class="text-white text-center my-2 mx-2">4.8(256)</span></div>
+                                                <div class="heart position-absolute bg-white py-1 px-2"><i
+                                                        class="fas fa-heart"></i></div>
+                                                <div style="overflow: hidden; border-radius: 10px;"><img height="250"
+                                                        class="card-img-top"
+                                                        src="https://html.creativegigs.net/zoomy/assets/img/course/04.png"
+                                                        alt="Card image"></div>
+                                                <div class="col-lg-12 clearfix">
+                                                    <button class="badge badge-pill www mt-4">Science</button>
+                                                    <button class="badge badge-pill wwt mt-4">Lab</button>
+                                                    <div class="float-right rounded-circle aaac mt-4"><img
+                                                            src="https://html.creativegigs.net/zoomy/assets/img/course/in2.png">
+                                                    </div>
+                                                </div>
+                                                <div class="card-body p-3">
+                                                    <h4 class="card-title orange">Your Career to build for the pro level
+                                                    </h4>
+                                                    <p class="card-text ">
+                                                        <span class="text-dark font-weight-bold mr-1">
+                                                            <img class="icon gray mr-1"
+                                                                src="https://html.creativegigs.net/zoomy/assets/img/icon/time.svg">
+                                                            12 class</span>
+                                                        <span class="text-dark font-weight-bold mr-1">
+                                                            <img class="icon gray mr-1"
+                                                                src="	https://html.creativegigs.net/zoomy/assets/img/icon/bar-chart.svg">
+                                                            Higher</span>
+                                                        <span class="text-dark font-weight-bold">
+                                                            <img class="icon gray mr-1"
+                                                                src=" 	https://html.creativegigs.net/zoomy/assets/img/icon/user.svg">
+                                                            6395+</span><span class="orn ml-2">$260</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+
+
+
+
+                                        <!-- tab row end  -->
+                                    </div>
+
+
+                                    <div class="col-lg-4 mt-3  col-md-6">
+                                        <div class="col-lg-12 p-3 "
+                                            style=" background: #ffffff; box-shadow: 5px 10px 60px rgb(27 33 47 / 5%); border-radius: 10px;">
+                                            <div class="card border-0 position-relative">
+                                                <div class="position-absolute bg-primary hhp"><span
+                                                        class="text-white text-center my-2 mx-2">4.8(256)</span>
+                                                </div>
+                                                <div class="heart position-absolute bg-white py-1 px-2"><i
+                                                        class="fas fa-heart"></i></div>
+                                                <div style="overflow: hidden; border-radius: 10px;"><img height="250"
+                                                        class="card-img-top"
+                                                        src="https://html.creativegigs.net/zoomy/assets/img/course/06.png"
+                                                        alt="Card image"></div>
+                                                <div class="col-lg-12 clearfix">
+                                                    <button class="badge badge-pill www mt-4">Science</button>
+                                                    <button class="badge badge-pill wwt mt-4">Lab</button>
+                                                    <div class="float-right rounded-circle aaac mt-4"><img
+                                                            src="https://html.creativegigs.net/zoomy/assets/img/course/in2.png">
+                                                    </div>
+                                                </div>
+                                                <div class="card-body p-3">
+                                                    <h4 class="card-title orange">Your Career to build for the pro level
+                                                    </h4>
+                                                    <p class="card-text ">
+                                                        <span class="text-dark font-weight-bold mr-1">
+                                                            <img class="icon gray mr-1"
+                                                                src="https://html.creativegigs.net/zoomy/assets/img/icon/time.svg">
+                                                            12 class</span>
+                                                        <span class="text-dark font-weight-bold mr-1">
+                                                            <img class="icon gray mr-1"
+                                                                src="	https://html.creativegigs.net/zoomy/assets/img/icon/bar-chart.svg">
+                                                            Higher</span>
+                                                        <span class="text-dark font-weight-bold">
+                                                            <img class="icon gray mr-1"
+                                                                src=" 	https://html.creativegigs.net/zoomy/assets/img/icon/user.svg">
+                                                            6395+</span><span class="orn ml-2">$260</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+
+
+
+
+                                        <!-- tab row end  -->
+                                    </div>
+
+
+
+
+
+
+                                    <div class="col-lg-4 mt-3 col-md-6">
+                                        <div class="col-lg-12 p-3 "
+                                            style=" background: #ffffff; box-shadow: 5px 10px 60px rgb(27 33 47 / 5%); border-radius: 10px;">
+                                            <div class="card border-0 position-relative">
+                                                <div class="position-absolute bg-primary hhp"><span
+                                                        class="text-white text-center my-2 mx-2">4.8(256)</span>
+                                                </div>
+                                                <div class="heart position-absolute bg-white py-1 px-2"><i
+                                                        class="fas fa-heart"></i></div>
+                                                <div style="overflow: hidden; border-radius: 10px;"><img height="250"
+                                                        class="card-img-top"
+                                                        src="https://html.creativegigs.net/zoomy/assets/img/course/06.png"
+                                                        alt="Card image"></div>
+                                                <div class="col-lg-12 clearfix">
+                                                    <button class="badge badge-pill www mt-4">Science</button>
+                                                    <button class="badge badge-pill wwt mt-4">Lab</button>
+                                                    <div class="float-right rounded-circle aaac mt-4"><img
+                                                            src="https://html.creativegigs.net/zoomy/assets/img/course/in2.png">
+                                                    </div>
+                                                </div>
+                                                <div class="card-body p-3">
+                                                    <h4 class="card-title orange">Your Career to build for the pro level
+                                                    </h4>
+                                                    <p class="card-text ">
+                                                        <span class="text-dark font-weight-bold mr-1">
+                                                            <img class="icon gray mr-1"
+                                                                src="https://html.creativegigs.net/zoomy/assets/img/icon/time.svg">
+                                                            12 class</span>
+                                                        <span class="text-dark font-weight-bold mr-1">
+                                                            <img class="icon gray mr-1"
+                                                                src="	https://html.creativegigs.net/zoomy/assets/img/icon/bar-chart.svg">
+                                                            Higher</span>
+                                                        <span class="text-dark font-weight-bold">
+                                                            <img class="icon gray mr-1"
+                                                                src=" 	https://html.creativegigs.net/zoomy/assets/img/icon/user.svg">
+                                                            6395+</span><span class="orn ml-2">$260</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+
+
+
+
+                                        <!-- tab row end  -->
+                                    </div>
+
+
+
+
+
+                                    <div class="col-lg-4 mt-3 col-md-6">
+                                        <div class="col-lg-12 p-3 "
+                                            style=" background: #ffffff; box-shadow: 5px 10px 60px rgb(27 33 47 / 5%); border-radius: 10px;">
+                                            <div class="card border-0 position-relative">
+                                                <div class="position-absolute bg-primary hhp"><span
+                                                        class="text-white text-center my-2 mx-2">4.8(256)</span>
+                                                </div>
+                                                <div class="heart position-absolute bg-white py-1 px-2"><i
+                                                        class="fas fa-heart"></i></div>
+                                                <div style="overflow: hidden; border-radius: 10px;"><img height="250"
+                                                        class="card-img-top"
+                                                        src="https://html.creativegigs.net/zoomy/assets/img/course/06.png"
+                                                        alt="Card image"></div>
+                                                <div class="col-lg-12 clearfix">
+                                                    <button class="badge badge-pill www mt-4">Science</button>
+                                                    <button class="badge badge-pill wwt mt-4">Lab</button>
+                                                    <div class="float-right rounded-circle aaac mt-4"><img
+                                                            src="https://html.creativegigs.net/zoomy/assets/img/course/in2.png">
+                                                    </div>
+                                                </div>
+                                                <div class="card-body p-3">
+                                                    <h4 class="card-title orange">Your Career to build for the pro level
+                                                    </h4>
+                                                    <p class="card-text ">
+                                                        <span class="text-dark font-weight-bold mr-1">
+                                                            <img class="icon gray mr-1"
+                                                                src="https://html.creativegigs.net/zoomy/assets/img/icon/time.svg">
+                                                            12 class</span>
+                                                        <span class="text-dark font-weight-bold mr-1">
+                                                            <img class="icon gray mr-1"
+                                                                src="	https://html.creativegigs.net/zoomy/assets/img/icon/bar-chart.svg">
+                                                            Higher</span>
+                                                        <span class="text-dark font-weight-bold">
+                                                            <img class="icon gray mr-1"
+                                                                src=" 	https://html.creativegigs.net/zoomy/assets/img/icon/user.svg">
+                                                            6395+</span><span class="orn ml-2">$260</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+
+
+
+
+                                        <!-- tab row end  -->
+                                    </div>
+
+                                    <!-- tab pane end  -->
+                                </div>
+                                <!-- tab container end  -->
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <!-- =---------------------------------------5th start------------------------------- -->
+
+
+
+
+
+
+
+
+
+
+
+
+                            <div class="tab-pane mt-4 fade show"
+                                style="background-color: none !important; color: black !important;" id="e">
+                                <div class="row my-5 bg-white">
+                                    <div class="col-lg-4 mt-3  col-md-6">
+                                        <div class="col-lg-12 p-3 "
+                                            style=" background: #ffffff; box-shadow: 5px 10px 60px rgb(27 33 47 / 5%); border-radius: 10px;">
+                                            <div class="card border-0 position-relative">
+                                                <div class="position-absolute bg-primary hhp"><span
+                                                        class="text-white text-center my-2 mx-2">4.8(256)</span></div>
+                                                <div class="heart position-absolute bg-white py-1 px-2"><i
+                                                        class="fas fa-heart"></i></div>
+                                                <div style="overflow: hidden; border-radius: 10px;"><img height="250"
+                                                        class="card-img-top"
+                                                        src="https://html.creativegigs.net/zoomy/assets/img/course/02.png"
+                                                        alt="Card image"></div>
+                                                <div class="col-lg-12 clearfix">
+                                                    <button class="badge badge-pill www mt-4">Science</button>
+                                                    <button class="badge badge-pill wwt mt-4">Lab</button>
+                                                    <div class="float-right rounded-circle aaac mt-4"><img
+                                                            src="https://html.creativegigs.net/zoomy/assets/img/course/in2.png">
+                                                    </div>
+                                                </div>
+                                                <div class="card-body p-3">
+                                                    <h4 class="card-title orange">Your Career to build for the pro level
+                                                    </h4>
+                                                    <p class="card-text ">
+                                                        <span class="text-dark font-weight-bold mr-1">
+                                                            <img class="icon gray mr-1"
+                                                                src="https://html.creativegigs.net/zoomy/assets/img/icon/time.svg">
+                                                            12 class</span>
+                                                        <span class="text-dark font-weight-bold mr-1">
+                                                            <img class="icon gray mr-1"
+                                                                src="	https://html.creativegigs.net/zoomy/assets/img/icon/bar-chart.svg">
+                                                            Higher</span>
+                                                        <span class="text-dark font-weight-bold">
+                                                            <img class="icon gray mr-1"
+                                                                src=" 	https://html.creativegigs.net/zoomy/assets/img/icon/user.svg">
+                                                            6395+</span><span class="orn ml-2">$260</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-4 mt-3  col-md-6">
+                                        <div class="col-lg-12 p-3 "
+                                            style=" background: #ffffff; box-shadow: 5px 10px 60px rgb(27 33 47 / 5%); border-radius: 10px;">
+                                            <div class="card border-0 position-relative">
+                                                <div class="position-absolute bg-primary hhp"><span
+                                                        class="text-white text-center my-2 mx-2">4.8(256)</span></div>
+                                                <div class="heart position-absolute bg-white py-1 px-2"><i
+                                                        class="fas fa-heart"></i></div>
+                                                <div style="overflow: hidden; border-radius: 10px;"><img height="250"
+                                                        class="card-img-top"
+                                                        src="https://html.creativegigs.net/zoomy/assets/img/course/05.png"
+                                                        alt="Card image"></div>
+                                                <div class="col-lg-12 clearfix">
+                                                    <button class="badge badge-pill www mt-4">Science</button>
+                                                    <button class="badge badge-pill wwt mt-4">Lab</button>
+                                                    <div class="float-right rounded-circle aaac mt-4"><img
+                                                            src="https://html.creativegigs.net/zoomy/assets/img/course/in2.png">
+                                                    </div>
+                                                </div>
+                                                <div class="card-body p-3">
+                                                    <h4 class="card-title orange">Your Career to build for the pro level
+                                                    </h4>
+                                                    <p class="card-text ">
+                                                        <span class="text-dark font-weight-bold mr-1">
+                                                            <img class="icon gray mr-1"
+                                                                src="https://html.creativegigs.net/zoomy/assets/img/icon/time.svg">
+                                                            12 class</span>
+                                                        <span class="text-dark font-weight-bold mr-1">
+                                                            <img class="icon gray mr-1"
+                                                                src="	https://html.creativegigs.net/zoomy/assets/img/icon/bar-chart.svg">
+                                                            Higher</span>
+                                                        <span class="text-dark font-weight-bold">
+                                                            <img class="icon gray mr-1"
+                                                                src=" 	https://html.creativegigs.net/zoomy/assets/img/icon/user.svg">
+                                                            6395+</span><span class="orn ml-2">$260</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-4 mt-3 col-md-6">
+                                        <!--	<div class="col-lg-12 p-3 "
+							style=" background: #ffffff; box-shadow: 5px 10px 60px rgb(27 33 47 / 5%); border-radius: 10px;">
+							<div class="card border-0 position-relative">
+								<div class="position-absolute bg-primary hhp"><span
+										class="text-white text-center my-2 mx-2">4.8(256)</span></div>
+								<div class="heart position-absolute bg-white py-1 px-2"><i class="fas fa-heart"></i></div>
+								<div style="overflow: hidden; border-radius: 10px;"><img height="200" class="card-img-top"
+										src="https://html.creativegigs.net/zoomy/assets/img/course/03.png" alt="Card image"></div>
+								<div class="col-lg-12 clearfix">
+									<button class="badge badge-pill www mt-4">Science</button>
+									<button class="badge badge-pill wwt mt-4">Lab</button>
+									<div class="float-right rounded-circle aaac mt-4"><img
+											src="https://html.creativegigs.net/zoomy/assets/img/course/in2.png"></div>
+								</div>
+								<div class="card-body p-3">
+									<h4 class="card-title orange">Your Career to build for the pro level</h4>
+									<p class="card-text ">
+										<span class="text-dark font-weight-bold ">
+											<img class="icon gray"
+												src="https://html.creativegigs.net/zoomy/assets/img/icon/time.svg">
+											12 class</span>
+										<span class="text-dark font-weight-bold">
+											<img class="icon gray"
+												src="	https://html.creativegigs.net/zoomy/assets/img/icon/bar-chart.svg">
+											Higher</span>
+										<span class="text-dark font-weight-bold">
+											<img class="icon gray"
+												src=" 	https://html.creativegigs.net/zoomy/assets/img/icon/user.svg">
+											6395+</span><span class="orn">$260</span>
+									</p>
+								</div>
+							</div>
+
+						</div>
+
+
+
+
+
+
+						<!--  tab row end  -->
+                                    </div>
+                                    <!-- tab pane end  -->
+                                </div>
+                                <!-- tab container end  -->
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <!-- =--------------------------------------- 6th start------------------------------- -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <div class="tab-pane mt-4 fade show"
+                                style="background-color: none !important; color: black !important;" id="f">
+                                <div class="row my-5 bg-white">
+                                    <div class="col-lg-4 mt-3 col-md-6">
+                                        <div class="col-lg-12 p-3"
+                                            style=" background: #ffffff; box-shadow: 5px 10px 60px rgb(27 33 47 / 5%); border-radius: 10px;">
+                                            <div class="card border-0 position-relative">
+                                                <div class="position-absolute bg-primary hhp">
+                                                    <span class="text-white text-center my-2 mx-2">4.8(256)</span>
+                                                </div>
+                                                <div class="heart position-absolute bg-white py-1 px-2"><i
+                                                        class="fas fa-heart"></i></div>
+                                                <div style="overflow: hidden; border-radius: 10px;"><img height="250"
+                                                        class="card-img-top"
+                                                        src="https://html.creativegigs.net/zoomy/assets/img/course/03.png"
+                                                        alt="Card image"></div>
+                                                <div class="col-lg-12 clearfix">
+                                                    <button class="badge badge-pill www mt-4">Science</button>
+                                                    <button class="badge badge-pill wwt mt-4">Lab</button>
+                                                    <div class="float-right rounded-circle aaac mt-4"><img
+                                                            src="https://html.creativegigs.net/zoomy/assets/img/course/in2.png">
+                                                    </div>
+                                                </div>
+                                                <div class="card-body p-3">
+                                                    <h4 class="card-title orange">Your Career to build for the pro level
+                                                    </h4>
+                                                    <p class="card-text ">
+                                                        <span class="text-dark font-weight-bold mr-1">
+                                                            <img class="icon gray mr-1"
+                                                                src="https://html.creativegigs.net/zoomy/assets/img/icon/time.svg">
+                                                            12 class</span>
+                                                        <span class="text-dark font-weight-bold mr-1">
+                                                            <img class="icon gray mr-1"
+                                                                src="	https://html.creativegigs.net/zoomy/assets/img/icon/bar-chart.svg">
+                                                            Higher</span>
+                                                        <span class="text-dark font-weight-bold">
+                                                            <img class="icon gray mr-1"
+                                                                src=" 	https://html.creativegigs.net/zoomy/assets/img/icon/user.svg">
+                                                            6395+</span><span class="orn ml-2">$260</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-4 mt-3 col-md-6">
+                                        <div class="col-lg-12 p-3 "
+                                            style=" background: #ffffff; box-shadow: 5px 10px 60px rgb(27 33 47 / 5%); border-radius: 10px;">
+                                            <div class="card border-0 position-relative">
+                                                <div class="position-absolute bg-primary hhp"><span
+                                                        class="text-white text-center my-2 mx-2">4.8(256)</span></div>
+                                                <div class="heart position-absolute bg-white py-1 px-2"><i
+                                                        class="fas fa-heart"></i></div>
+                                                <div style="overflow: hidden; border-radius: 10px;"><img height="250"
+                                                        class="card-img-top"
+                                                        src="https://html.creativegigs.net/zoomy/assets/img/course/05.png"
+                                                        alt="Card image"></div>
+                                                <div class="col-lg-12 clearfix">
+                                                    <button class="badge badge-pill www mt-4">Science</button>
+                                                    <button class="badge badge-pill wwt mt-4">Lab</button>
+                                                    <div class="float-right rounded-circle aaac mt-4"><img
+                                                            src="https://html.creativegigs.net/zoomy/assets/img/course/in2.png">
+                                                    </div>
+                                                </div>
+                                                <div class="card-body p-3">
+                                                    <h4 class="card-title orange">Your Career to build for the pro level
+                                                    </h4>
+                                                    <p class="card-text ">
+                                                        <span class="text-dark font-weight-bold mr-1">
+                                                            <img class="icon gray mr-1"
+                                                                src="https://html.creativegigs.net/zoomy/assets/img/icon/time.svg">
+                                                            12 class</span>
+                                                        <span class="text-dark font-weight-bold mr-1">
+                                                            <img class="icon gray mr-1"
+                                                                src="	https://html.creativegigs.net/zoomy/assets/img/icon/bar-chart.svg">
+                                                            Higher</span>
+                                                        <span class="text-dark font-weight-bold">
+                                                            <img class="icon gray mr-1"
+                                                                src=" 	https://html.creativegigs.net/zoomy/assets/img/icon/user.svg">
+                                                            6395+</span><span class="orn ml-2">$260</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-4 mt-3 col-md-6">
+                                        <!--	<div class="col-lg-12 p-3 "
+								style=" background: #ffffff; box-shadow: 5px 10px 60px rgb(27 33 47 / 5%); border-radius: 10px;">
+								<div class="card border-0 position-relative">
+									<div class="position-absolute bg-primary hhp"><span
+											class="text-white text-center my-2 mx-2">4.8(256)</span></div>
+									<div class="heart position-absolute bg-white py-1 px-2"><i class="fas fa-heart"></i></div>
+									<div style="overflow: hidden; border-radius: 10px;"><img height="200" class="card-img-top"
+											src="https://html.creativegigs.net/zoomy/assets/img/course/03.png" alt="Card image"></div>
+									<div class="col-lg-12 clearfix">
+										<button class="badge badge-pill www mt-4">Science</button>
+										<button class="badge badge-pill wwt mt-4">Lab</button>
+										<div class="float-right rounded-circle aaac mt-4"><img
+												src="https://html.creativegigs.net/zoomy/assets/img/course/in2.png"></div>
+									</div>
+									<div class="card-body p-3">
+										<h4 class="card-title orange">Your Career to build for the pro level</h4>
+										<p class="card-text ">
+											<span class="text-dark font-weight-bold ">
+												<img class="icon gray"
+													src="https://html.creativegigs.net/zoomy/assets/img/icon/time.svg">
+												12 class</span>
+											<span class="text-dark font-weight-bold">
+												<img class="icon gray"
+													src="	https://html.creativegigs.net/zoomy/assets/img/icon/bar-chart.svg">
+												Higher</span>
+											<span class="text-dark font-weight-bold">
+												<img class="icon gray"
+													src=" 	https://html.creativegigs.net/zoomy/assets/img/icon/user.svg">
+												6395+</span><span class="orn">$260</span>
+										</p>
+									</div>
+								</div>
+
+			</div>-->
+
+
+
+
+
+
+                                        <!-- tab row end  -->
+                                    </div>
+                                    <!-- tab pane end  -->
+                                </div>
+                                <!-- tab container end  -->
+                            </div>
+
+
+
+
+
+
+
+
+
+
+                            <!-- col-lg-12 end  -->
+                        </div>
+                        <!-- row end -->
+                    </div>
+
+                    <!-- container end -->
+                </div>
+            </div>
+            <div class="container">
+                <p class="text-center"><button type="menu" class="all">All Categories</button></p>
+            </div>
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+        <!-- =-----------------------------------MUSIBAT KHATAM  ------------------------------------------- -->
+
+        <section class="girl d-none d-md-block" style="overflow-x: hidden;">
+            <div class="conainer-fluid">
+                <div class="row">
+                    <div class="col-lg-7 col-md-12">
+                        <div class="col-lg-12 position-relative">
+                            <div class="lopo"></div>
+                            <img class="position-absolute girl-photo"
+                                src="https://html.creativegigs.net/zoomy/assets/img/chose/05.png" height="650"
+                                width="550">
+
+                            <div class="position-absolute safe">
+                                <div class="row">
+                                    <div class="col-lg-3  col-md-2">
+                                        <div class="cir rounded-circle px-3"><img
+                                                src="	https://html.creativegigs.net/zoomy/assets/img/icon/shield-check.svg">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-9  col-md-10 pt-2">
+                                        <h4>Safe & Secured</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="position-absolute catalog">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-2">
+                                        <div class="cir1 rounded-circle col-md-2 px-3"><img
+                                                src="	https://html.creativegigs.net/zoomy/assets/img/icon/catalog.svg">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-9 pt-2 col-md-10">
+                                        <h4 class="pl-1">120+ Catalog</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="position-absolute quality">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-2">
+                                        <div class="cir2 rounded-circle "><i class="fas fa-check"></i></div>
+                                    </div>
+                                    <div class="col-lg-9 pt-2 px-0 col-md-10 bole">
+                                        <h4 class="pl-1">Quality Education</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="youtube position-absolute">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="rain position-absolute">
+                                <img src="	https://html.creativegigs.net/zoomy/assets/img/shape/dot-box3.svg">
+                            </div>
+
+                            <div class="position-absolute total p-4">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h4 class="pl-1">Total Students</h4>
+                                    </div>
+                                    <div class="col-lg-12 position-relative">
+                                        <div class="s61 rounded-circle position-absolute  "><img
+                                                src="https://html.creativegigs.net/zoomy/assets/img/chose/01.png"></div>
+                                        <div class="s62 rounded-circle position-absolute"><img
+                                                src="https://html.creativegigs.net/zoomy/assets/img/chose/02.png"></div>
+                                        <div class="s63 rounded-circle position-absolute"><img
+                                                src="https://html.creativegigs.net/zoomy/assets/img/chose/03.png"></div>
+                                        <div class="s64 rounded-circle position-absolute"><img
+                                                src="https://html.creativegigs.net/zoomy/assets/img/chose/04.png"></div>
+
+                                        <div class="s25k rounded-circle position-absolute">
+                                            <p>25k+</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-12 pppa kkpc">
+                        <div class="pppa">
+                            <h4 class="orn">Explore Zoomy</h4>
+                            <h5>Why Choose Zoomy?</h5>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                                suffered alteration in some form.
+                                There are many variations of passages of Lorem Ipsum available.</p>
+                            <div class="boes ">
+
+                                <div class="clearfix">
+                                    <div
+                                        style="height: 30px; width: 30px; border-radius: 50%; background-color: #8E66FF; float: left; padding: 5px 7px;color: white; ">
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                    <span class="float-left ml-3">There are many variations of passages of Lorem
+                                        Ipsum.</span>
+                                </div>
+
+
+
+                                <div class="clearfix my-3">
+                                    <div
+                                        style="height: 30px; width: 30px; border-radius: 50%; background-color: #FF723A; float: left; padding: 5px 7px;color: white; ">
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                    <span class="float-left ml-3">The majority have suffered alteration in some
+                                        form.</span>
+                                </div>
+
+
+
+                                <div class="clearfix">
+                                    <div
+                                        style="height: 30px; width: 30px; border-radius: 50%; background-color:#F14D5D; float: left; padding: 5px 7px;color: white; ">
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                    <span class="float-left ml-3">There are many variations of passages of Lorem
+                                        Ipsum.</span>
+                                </div>
+
+
+
+
+                            </div>
+                            <div class="row">
+                                <button class="btn ml-0 my-5 mr-5 text-white"
+                                    style="height: 50px; width: 160px; background-color: #FF723A; border-radius: 50px; font-size: 18px;">More
+                                    Details</button>
+                            </div>
+
+
+                        </div>
+                        <!-- ======col-5 end-===== -->
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="container marboi">
+
+                <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                        <h4 class="orn gelly" style="text-decoration:underline">Our Instructor</h4>
+                        <div class="clearfix">
+                            <div class="float-right d-none d-lg-block">
+                                <button class="btn rounded-circle mr-2 gol">
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
+                                <button class="btn rounded-circle gol1">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </div>
+                            <div class="float-left kkpc p-0 gelly">
+                                <h5 class="mt-2 ml-0">Explore Experienced Instructor</h5>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="row mt-5">
+                            <div class="col-lg-3 col-md-6 col-sm-12 yip">
+                                <div class="iconbox">
+                                    <img class="img-fluid" width="100%"
+                                        src="https://html.creativegigs.net/zoomy/assets/img/instructor/04.jpg">
+                                    <div class="card-img-overlay iconbox1 pl-4 card-img-bottom">
+                                        <div class="face my-3 ml-2"><i class="fab fa-facebook-f"></i></div>
+                                        <div class="twit my-3 ml-2"><i class="fab fa-twitter"></i></div>
+                                        <div class="inst my-3 ml-2"><i class="fab fa-instagram"></i></div>
+                                        <div class="yout my-3 ml-2"><i class="fab fa-youtube"></i></div>
+                                    </div>
+                                </div>
+                                <h4 class="text-center mt-4 mb-3">Havana Lyon</h4>
+                                <p class="text-center" style="font-size:px; color:gray; ">Digital Marketing</p>
+
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 yip">
+                                <div class="iconbox">
+                                    <img class="img-fluid" width="100%"
+                                        src="https://html.creativegigs.net/zoomy/assets/img/instructor/01.jpg">
+                                    <div class="iconbox1 card-img-overlay pl-4">
+                                        <div class="face my-3 ml-2"><i class="fab fa-facebook-f"></i></div>
+                                        <div class="twit my-3 ml-2"><i class="fab fa-twitter"></i></div>
+                                        <div class="inst my-3 ml-2"><i class="fab fa-instagram"></i></div>
+                                        <div class="yout my-3 ml-2"><i class="fab fa-youtube"></i></div>
+                                    </div>
+                                </div>
+                                <h4 class="text-center mt-4 mb-3">John Zlathan</h4>
+                                <p class="text-center" style="font-size:px; color:gray; ">Software Development</p>
+
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 yip">
+                                <div class="iconbox">
+                                    <img class="img-fluid" width="100%"
+                                        src="https://html.creativegigs.net/zoomy/assets/img/instructor/02.jpg">
+                                    <div class="iconbox1 card-img-overlay pl-4">
+                                        <div class="face my-3 ml-2"><i class="fab fa-facebook-f"></i></div>
+                                        <div class="twit my-3 ml-2"><i class="fab fa-twitter"></i></div>
+                                        <div class="inst my-3 ml-2"><i class="fab fa-instagram"></i></div>
+                                        <div class="yout my-3 ml-2"><i class="fab fa-youtube"></i></div>
+                                    </div>
+                                </div>
+                                <h4 class="text-center mt-4 mb-3">Mally Yan</h4>
+                                <p class="text-center" style="font-size:px; color:gray; ">UI/UX Designer</p>
+
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 yip">
+                                <div class="iconbox">
+                                    <img class="img-fluid" width="100%"
+                                        src="https://html.creativegigs.net/zoomy/assets/img/instructor/03.jpg">
+                                    <div class="iconbox1 card-img-overlay pl-4">
+                                        <div class="face my-3 ml-2"><i class="fab fa-facebook-f"></i></div>
+                                        <div class="twit my-3 ml-2"><i class="fab fa-twitter"></i></div>
+                                        <div class="inst my-3 ml-2"><i class="fab fa-instagram"></i></div>
+                                        <div class="yout my-3 ml-2"><i class="fab fa-youtube"></i></div>
+                                    </div>
+                                </div>
+                                <h4 class="text-center mt-4 mb-3">Mesud Lamb</h4>
+                                <p class="text-center" style="font-size:px; color:gray; ">Programmer</p>
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+        <!-- =-----------------------------------4mens ------------------------------------------- -->
+
+
+
+        <section>
+            <div class="container kkpc  mt-5">
+                <h4 class="orn gelly" style="text-decoration:underline">Our Instructor</h4>
+                <div class="clearfix">
+                    <div class="float-left kkpc p-0 m-0">
+                        <h5 class="mt-2 ml-0">Explore Experienced Instructor</h5>
+                    </div>
+                    <div class="float-right ">
+                        <button class="gola">
+                            Read All Reviews
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+                        <div class="col-lg-12 border lar pt-3">
+                            <div class="row ">
+                                <div class="col-lg-4">
+                                    <div class="rounded-circle full">
+                                        <img src="https://html.creativegigs.net/zoomy/assets/img/testimonial/01.png">
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 pro">
+                                    <h4>Georgia Laila</h4>
+                                    <P class="orn">Full Stack Developer</P>
+                                </div>
+                            </div>
+                            <p class="text-muted mx-3 my-3">" Lorem ipsum dolor sit amet, consetetur sadip scing elitr,
+                                sed di nonumy eirmod tempor invidt utlabore et dolore magn
+                                aliq erat.</p>
+                            <img src="https://html.creativegigs.net/zoomy/assets/img/icon/quote.svg ">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+                        <div class="col-lg-12 border lar pt-3 ">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="rounded-circle full">
+                                        <img src="https://html.creativegigs.net/zoomy/assets/img/testimonial/02.png">
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 pro">
+                                    <h4>Georgia Laila</h4>
+                                    <P class="orn">Full Stack Developer</P>
+                                </div>
+                            </div>
+                            <p class="text-muted mx-3 my-3">" Lorem ipsum dolor sit amet, consetetur sadip scing elitr,
+                                sed di nonumy eirmod tempor invidt utlabore et dolore magn
+                                aliq erat.</p>
+                            <img src="https://html.creativegigs.net/zoomy/assets/img/icon/quote.svg ">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-5 d-none d-lg-block">
+                        <div class="col-lg-12 border lar pt-3 ">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="rounded-circle full">
+                                        <img src="https://html.creativegigs.net/zoomy/assets/img/testimonial/03.png">
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 pro">
+                                    <h4>Georgia Laila</h4>
+                                    <P class="orn">Full Stack Developer</P>
+                                </div>
+                            </div>
+                            <p class="text-muted mx-3 my-3">" Lorem ipsum dolor sit amet, consetetur sadip scing elitr,
+                                sed di nonumy eirmod tempor invidt utlabore et dolore
+                                magn
+                                aliq erat.</p>
+                            <img src="https://html.creativegigs.net/zoomy/assets/img/icon/quote.svg ">
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+
+
+
+
+
+            <div class="container mt-5">
+                <div class="ter ">
+                    <button type="submit" class="butttonn"></button>
+                    <button type="submit" class="butttonn"></button>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+        <section class="lots">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 kkpc">
+                        <h4 class="text-center">Latest News</h4>
+                        <h5 class="text-center">Lots of new Blogs & News</h5>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+                        <div class="col-lg-12 p-0 bg-white card">
+                            <div style="overflow: hidden; border-radius: 10px;"><img height="320" class="card-img-top"
+                                    src="https://html.creativegigs.net/zoomy/assets/img/blog/01.jpg" alt="Card image">
+                            </div>
+                            <h5 class="orn ml-4 my-4 font-weight-normal">ONLINE . SCHOOL . SKILL</h5>
+
+                            <h4 class="orange mx-4">5 Ways to Use Padlet in Higher -Ed Online Classroom</h4>
+                            <hr class="m-3">
+                            <div class="clearfix">
+                                <div class="float-left mx-3">
+                                    <p>Date : June 15 , 2021</p>
+                                </div>
+                                <div class="float-right mx-3">
+                                    <p>By Guest Admin</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+                        <div class="col-lg-12 p-0 bg-white card">
+                            <div style="overflow: hidden; border-radius: 10px;"><img height="320" class="card-img-top"
+                                    src="https://html.creativegigs.net/zoomy/assets/img/blog/02.jpg" alt="Card image">
+                            </div>
+                            <h5 class="orn ml-4 my-4 font-weight-normal">EDUCATION . EXPERT</h5>
+
+                            <h4 class="orange mx-4">4 New Zoom Features Enhance Virtual Teaching & Learning</h4>
+                            <hr class="m-3">
+                            <div class="clearfix">
+                                <div class="float-left mx-3">
+                                    <p>Date : June 15 , 2021</p>
+                                </div>
+                                <div class="float-right mx-3">
+                                    <p>By Guest Admin</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+                        <div class="col-lg-12 p-0 bg-white card">
+                            <div style="overflow: hidden; border-radius: 10px;"><img height="320" class="card-img-top"
+                                    src="https://html.creativegigs.net/zoomy/assets/img/blog/03.jpg" alt="Card image">
+                            </div>
+
+                            <h5 class="orn ml-4 my-4 font-weight-normal">CREATIVE . PROGRAMMER</h5>
+
+                            <h4 class="orange mx-4">Using Social Media to Support Online Teaching</h4>
+                            <hr class="m-3">
+                            <div class="clearfix">
+                                <div class="float-left mx-3">
+                                    <p>Date : June 15 , 2021</p>
+                                </div>
+                                <div class="float-right mx-3">
+                                    <p>By Guest Admin</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+
+
+            <div class="container mt-5 pt-3 bottttt">
+                <p class="text-center "><button class="load">Load more</button></p>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+        <section class=" d-none d-md-block">
+            <div class="container kkpc hew">
+                <h5 class="text-center"><b>Subscribe our Newsletter & Get<br> every updates.</b></h5>
+            </div>
+
+
+            <div class="jal position-relative ">
+                <input type="text" class="inhh" placeholder="write your email">
+                <button class="btnop text-uppercase position-absolute">Subscribe Now</button>
+            </div>
+        </section>
+
+        <hr class="mt-5">
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+    <!-- --------------------------------------------footer---------------------------------------------------- -->
+
+
+
+    <footer>
+        <section>
+            <div class="container mt-5 mb-5">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6 mt-4">
+                        <img src="https://html.creativegigs.net/zoomy/assets/img/logo/header_logo_one.svg">
+                        <p class="text-muted mt-4">Lorem ipsum dolor sit amet, consetetur sadip scing elitr, sed di
+                            nonumy eirmod temporinvi dunt ut labore lorem ipsum.</p>
+                        <div class="icohub">
+                            <div class="jail"><i class="fab fa-facebook-f"></i></div>
+                            <div class="jail"><i class="fab fa-twitter"></i></div>
+                            <div class="jail"><i class="fab fa-linkedin-in"></i></div>
+                            <div class="jail"><i class="fab fa-google-plus-g"></i></div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-lg-4 bopp col-md-6 col-sm-6 mt-4 mb-4">
+                        <h5 style="margin-left: 50px;">CONTACT US</h5>
+                        <a> sharmaguddu7510@gmail.com</a>
+                        <a>+91 9560190498</a>
+                        <a>Terms & Conditions</a>
+                        <a>Privacy Policy</a>
+                        <a>Contacts</a>
+                        <a>Our Careers</a>
+
+                    </div>
+
+
+                    <div class="col-lg-2 boppc col-md-7 col-sm-7 mt-4">
+                        <h5>QUICK LINKS</h5>
+                        <a>About US</a>
+                        <a class="yiop">Explore Pages</a>
+                        <a>Our Services</a>
+                        <a>Destinations</a>
+
+
+                    </div>
+                    <div class="col-lg-3 boct col-md-5 col-sm-5 mt-4">
+                        <h5>FEATURES</h5>
+                        <a>Home Page</a>
+                        <a>Testimonials</a>
+                        <a>Latest News</a>
+                        <a>Help Center</a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="hr">
+        <section>
+            <div class="container">
+                <p class="text-center rogp">Copyright@ 2021 <b>GUDDU KUMAR</b>. All Rights Reserved</p>
+            </div>
+        </section>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>-->
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+    crossorigin="anonymous"></script>
+
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>svg</title>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+    .spin{
+        animation-name: spin;
+        animation-timing-function: 5s ease-in-out;
+        animation-iteration-count: infinite;
+        animation-duration: 5s;
+    }
+    @keyframes spin {
+        0%{transform: translate(0deg);}
+        50%{transform: translate(360deg);}
+        100%{transform: translate(0deg);}
+
+    }
+</style>
+</head>
+<body>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="text-center text-primary mb-5 mt-3">drawing rectangle with svg</h1>
+
+                <svg height="200px" width="500px" style="margin-left:28%;margin-right:28%;">
+                   <rect height="200px" width="500px" style="fill:yellow;stroke-width:10;stroke:aqua"></rect>
+                    <circle cx="250" cy="100" r="80" stroke="blue" stroke-width="4" fill="lime" />
+                    <text x="205" y="110" fill="red" font-size="30" class="font-weight-bold">Guddu</text>
+                </svg>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- <h1 class="text-center text-primary mb-5 mt-3">drawing rectangle with svg</h1> -->
+
+                <svg height="250px" width="500px" style="margin-left:28%;margin-right:28%;" class="spin">
+                    <ellipse cx="250" cy="120" rx="200" ry="100" style="fill:rgb(224, 113, 113);stroke:#0560fc;stroke-width:5" />
+                <text x="190" y="130" fill="lime" font-size="30" class="font-weight-bold">Rakesh sir</text>
+                </svg>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- <h1 class="text-center text-primary mb-5 mt-3">drawing rectangle with svg</h1> -->
+
+                <svg height="610px" width="610px" style="margin-left:25%;margin-right:25%;" >
+                    <circle cx="304" cy="304" r="300" style="fill:none;stroke:red;stroke-width:7" />
+                    <circle cx="304" cy="304" r="285" style="fill:none;stroke:#0560fc;stroke-width:7" />
+                    <circle cx="304" cy="304" r="270" style="fill:none;stroke:rgb(11, 255, 11);stroke-width:7" />
+                    <circle cx="304" cy="304" r="255" style="fill:none;stroke:yellow;stroke-width:7" />
+                    <circle cx="304" cy="304" r="240" style="fill:none;stroke:brown;stroke-width:7" />
+                    <circle cx="304" cy="304" r="225" style="fill:none;stroke:aqua;stroke-width:7" />
+                    <circle cx="304" cy="304" r="210" style="fill:none;stroke:coral;stroke-width:7" />
+                    <circle cx="304" cy="304" r="195" style="fill:none;stroke:fuchsia;stroke-width:7" />
+                    <circle cx="304" cy="304" r="180" style="fill:none;stroke:gold;stroke-width:7" />
+                    <circle cx="304" cy="304" r="165" style="fill:none;stroke:greenyellow;stroke-width:7" />
+                    <circle cx="304" cy="304" r="150" style="fill:none;stroke:rgb(230, 75, 75);stroke-width:7" />
+                    <circle cx="304" cy="304" r="135" style="fill:none;stroke:#000000;stroke-width:7" />
+                    <circle cx="304" cy="304" r="120" style="fill:none;stroke:#00ffc8;stroke-width:7" />
+                    <circle cx="304" cy="304" r="105" style="fill:none;stroke:#edfc1f;stroke-width:7" />
+                    <circle cx="304" cy="304" r="90" style="fill:none;stroke:pink;stroke-width:7" />
+                    <circle cx="304" cy="304" r="75" style="fill:none;stroke:red;stroke-width:7" />
+                    <circle cx="304" cy="304" r="60" style="fill:none;stroke:royalblue;stroke-width:7" />
+                    <circle cx="304" cy="304" r="45" style="fill:none;stroke:violet;stroke-width:7" />
+                    <circle cx="304" cy="304" r="30" style="fill:none;stroke:tomato;stroke-width:7" />
+                    <circle cx="304" cy="304" r="15" style="fill:none;stroke:orchid;stroke-width:7" />
+                 <!-- <text x="235" y="308" fill="black" font-size="30" class="font-weight-bold">Rakesh sir</text> -->
+                </svg>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <svg height="100px" width="600px" style="margin-left:25%;margin-right:25%;" >
+                    <g fill="none" stroke="gray">
+                        <path stroke-width="2" d="M5 20 l600 0" />
+                        <path stroke-width="5" d="M5 40 l600 0" />
+                        <path stroke-width="10" d="M5 60 l600 0" />
+                    </g>
+                    </svg>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container   mb-5">
+        <div class="row">
+            <div class="col-lg-12">
+                <svg height="500px" width="600px" style="margin-left:25%;margin-right:25%;" >
+                    <path id="lineAB" d="M 100 350 l 150 -300" stroke="red" stroke-width="3" fill="none" />
+                    <path id="lineBC" d="M 250 50 l 150 300" stroke="red" stroke-width="3" fill="none" />
+                    <path d="M 175 200 l 150 0" stroke="green" stroke-width="3" fill="none" />
+                    <path d="M 100 350 q 150 -300 300 0" stroke="blue" stroke-width="5" fill="none" />
+                    <!-- Mark relevant points -->
+                    <g stroke="black" stroke-width="3" fill="black">
+                        <circle id="pointA" cx="100" cy="350" r="3" />
+                        <circle id="pointB" cx="250" cy="50" r="3" />
+                        <circle id="pointC" cx="400" cy="350" r="3" />
+                    </g>
+                    <!-- Label the points -->
+                    <g font-size="30" font-family="sans-serif" fill="black" stroke="none" text-anchor="middle">
+                        <text x="100" y="350" dx="-30">A</text>
+                        <text x="250" y="50" dy="-10">B</text>
+                        <text x="400" y="350" dx="30">C</text>
+                    </g>
+                    
+                    </svg>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <svg width="1000" height="600" style="margin-left: 10%;">
+                    <g transform="translate(100,100)">
+                        <text id="TextElement" x="0" y="0" style="font-family:Verdana;font-size:30;fill:blue; visibility:hidden"> It's Rakesh sir!
+                            <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="5s" fill="freeze" />
+                            <animateMotion path="M 100 0 L 100 100" begin="1s" dur="5s" fill="freeze" repeatCount="indefinite" />
+                            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" begin="1s" dur="5s" fill="freeze" repeatCount="indefinite" />
+
+                            <animateTransform attributeName="transform" attributeType="XML" type="scale" from="0" to="1" begin="1s" dur="5s" fill="freeze" repeatCount="indefinite" />
+
+                            <animateTransform attributeName="transform" attributeType="XML" type="scale" from="1" to="3" additive="sum"  begin="1s" dur="5s" fill="freeze" repeatCount="indefinite" />
+                        </text>
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+</body>
+</html>

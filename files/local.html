@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>local storage concept</title>
+
+
+    <style>
+        a{
+            font-size: 20px;
+        }
+    </style>
+
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-md bg-danger navbar-dark">
+  <!-- Brand -->
+  <a class="navbar-brand rounded-circle mr-5 pr-5" href="#"><img src="https://media.nojoto.com/content/media/612266/2019/07/feed/0fa652b8db01fc5a5f023e89fb23b9cd/0fa652b8db01fc5a5f023e89fb23b9cd_default.jpg" style="overflow: hidden;" alt="guddu" height="80px" width="250px" ></a>
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse ml-5 pl-5" id="collapsibleNavbar">
+    <ul class="navbar-nav ml-5 pl-5">
+      <li class="nav-item">
+        <a class="nav-link" href="#">home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">guddu</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Rohit</a>
+      </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">sunil</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">rajeev</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">ayan</a>
+    </li>
+    </ul>
+  </div>
+</nav>
+</header>
+
+
+
+
+
+<Section>
+    <div class="container">
+        <h2 class="text-center text-warning  text-uppercase mt-2">local storage api with : input</h2>
+        <h3 class="text-center text-warning  text-uppercase mt-2">to  see output reload the page or view in <a href="get.html" class="text-primary">GET SAVED DATA</a></h3>
+        <p class="text-center text-warning">The form below contains two input elements; one of type text and one of type password:</p>
+        <form action="/action_page.php">
+            <div class="form-group">
+                <label for="usr" class="text-primary">Name:</label>
+                <input type="text" class="form-control" id="name" name="username">
+            </div>
+            <div class="form-group">
+                <label for="pwd" class="text-primary">Email:</label>
+                <input type="email" class="form-control" id="email" name="password">
+            </div>
+            <div class="form-group">
+                <label for="" class="text-primary">Phone no:</label>
+                <input type="text" maxlength="10" class="form-control" id="phone" name="password">
+            </div>
+            <button type="button" class="btn btn-success btn-block mt-4" id="save" style="font-size: 30px;" >Save Text</button>
+        </form>
+    </div>
+</Section>
+<section>
+    <div class="container">
+        <h1 class="text-center text-success" id="sorry"></h1>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <h1 class="text-center text-danger" >stored element in local storage</h1>
+        <h1 class="text-center text-primary" id="guddu"></h1>
+        <h1 class="text-center text-primary" id="rohit"></h1>
+        <h1 class="text-center text-primary" id="rajeev"></h1>
+    </div>
+</section>
+
+
+<script>
+     
+
+
+    document.getElementById("save").addEventListener("click",buy);
+    
+    
+    
+    function buy(){
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var phone = document.getElementById("phone").value;
+     
+      if (typeof (Storage) !== "undefined") {
+
+            localStorage.setItem("good",name);
+            localStorage.setItem("bad", email);
+            localStorage.setItem("very", phone);
+            window.alert("your details are saved suceessfully");
+            document.getElementById("sorry").innerHTML="entered details are saved suceessfully";
+            //  document.getElementById("guddu").innerHTML = localStorage.getItem("good") ;
+            //   document.getElementById("rohit").innerHTML = localStorage.getItem("bad");
+            //    document.getElementById("rajeev").innerHTML = localStorage.getItem("very");
+
+        }
+        else{
+            document.getElementById("sorry").innerHTML="Sorry, your browser does not support local storage";
+        }
+        
+        }
+            document.getElementById("name").value = localStorage.getItem("good");
+            document.getElementById("email").value = localStorage.getItem("bad");
+            document.getElementById("phone").value = localStorage.getItem("very");
+            document.getElementById("guddu").innerHTML = localStorage.getItem("good") ;
+            document.getElementById("rohit").innerHTML = localStorage.getItem("bad");
+            document.getElementById("rajeev").innerHTML = localStorage.getItem("very");
+
+</script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>playback speed</title>
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .bar{
+            background-color: aliceblue;
+            height: 20px;
+            width: 100%;
+            border-radius: 20px;
+        }
+        .bar1{
+            background-color: rgb(252, 252, 252);
+            height: 25px;
+            width: 100%;
+            border-radius: 20px;
+        }
+        .barpro{
+            background-color: red;
+            height: 20px;
+            width: 1%;
+            border-radius: 20px;
+        }
+        .barpro1{
+            background-color: rgb(42, 42, 255);
+            height: 25px;
+            width: 1%;
+            border-radius: 20px;
+            text-align: center;
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(216, 216, 216);">
+    <section>
+        <h1 class="text-center text-primary">DESIGNED BY GUDDU</h1>
+        <div class="container" >
+            <h1 class="m-5 text-center text-uppercase text-success">playback and speed controls</h1>
+            <div class="bar">
+                <div class="barpro" id="bar"> </div>
+            </div>
+            <p class="text-center my-5"><button class="btn btn-success" id="start">start bar</button></p>
+        </div>
+    </section>
+    <section>
+        <div class="container" >
+            <!-- <h1 class="m-5 text-center text-uppercase text-success">playback and speed controls</h1> -->
+            <div class="bar1">
+                <div class="barpro1" id="bar1"> </div>
+            </div>
+            <p class="text-center my-5"><button class="btn btn-warning" id="start1">start bar</button></p>
+        </div>
+    </section>
+
+    <section>
+    <section>
+        <div class="container" >
+            <h3 class="m-5 text-center text-uppercase text-primary">speed controls</h3>
+            <div class="bar1">
+                <div class="barpro1" id="bar2"> </div>
+            </div>
+            <h2 class="text-center text-danger mt-2" id="show">ADJUST YOUR SPEED</h2>
+            <div class="row justify-content-center my-5">
+                <button class="btn btn-warning m-3" onclick="speed(4000)">speed 0.25X</button>
+                <button class="btn btn-warning m-3" onclick="speed(2000)">speed 0.5X</button>
+                <button class="btn btn-warning m-3" onclick="speed(1000)">normal</button>
+                <button class="btn btn-warning m-3" onclick="speed(666)">speed 1.5X</button>
+                <button class="btn btn-warning m-3" onclick="speed(500)">speed 2X</button>
+            </div>
+        </div>
+    </section>
+
+   
+<script>
+    //  var time=setInterval(start,100);
+
+    document.getElementById("start").addEventListener("click",start);
+    document.getElementById("start1").addEventListener("click",start1);
+    // document.getElementById("speed025").addEventListener("click",speed(0.25));
+    // document.getElementById("speed05").addEventListener("click",speed05);
+    // document.getElementById("speed").addEventListener("click",speed);
+    // document.getElementById("speed15").addEventListener("click",speed15);
+    // document.getElementById("speed2").addEventListener("click",speed2);
+   
+     ///red div
+    function start(){
+        var a=0;
+    var bar=document.getElementById("bar");
+     var time=setInterval(stop,100);  
+     function stop(){
+      if(a==101){
+          alert("your progress ar is full");
+          clearInterval(time,100);
+      }
+      else{
+            bar.style.width=(a+"%");
+           a++;
+      }
+    }
+        
+    }
+ ///// blue div 
+    function start1(){
+        var a=0;
+    var bar=document.getElementById("bar1");
+     var time=setInterval(stop,300);  
+     function stop(){
+      if(a==101){
+          alert("your progress ar is full");
+          clearInterval(time,100);
+      }
+      else{
+            bar.style.width=(a+"%");
+            bar.innerHTML=a+"%";
+           a++;
+      }
+    }  
+    }
+ /////  speed025 
+ function speed(spe){
+        var a=0;
+    var bar=document.getElementById("bar2");
+     var time=setInterval(stop,spe);  
+     function stop(){
+      if(a==101){
+          alert("your progress ar is full");
+          clearInterval(time,100);
+      }
+      else{
+           document.getElementById("show").innerHTML="you are playing custom speed";
+            bar.style.width=(a+"%");
+            bar.innerHTML=a+"%";
+           a++;
+      }
+    }  
+    }
+    
+ // ///// speed 05 
+ //    function speed05(){
+
+ //        var a=0;
+ //    var bar=document.getElementById("bar2");
+ //     var time=setInterval(stop,1666.66);  
+ //     function stop(){
+ //      if(a==101){
+ //          alert("your progress ar is full");
+ //          clearInterval(time,100);
+ //      }
+ //      else{
+ //           document.getElementById("show").innerHTML="you are playing speed 0.5X";
+ //            bar.style.width=(a+"%");
+ //            bar.innerHTML=a+"%";
+ //           a++;
+ //      }
+ //    }  
+ //    }
+ // /////speed 
+ //    function speed(){
+ //        var a=0;
+ //    var bar=document.getElementById("bar2");
+ //     var time=setInterval(stop,1000);  
+ //     function stop(){
+ //      if(a==101){
+ //          alert("your progress ar is full");
+ //          clearInterval(time,100);
+ //      }
+ //      else{
+ //           document.getElementById("show").innerHTML="you are playing normal";
+ //            bar.style.width=(a+"%");
+ //            bar.innerHTML=a+"%";
+ //           a++;
+ //      }
+ //    }  
+ //    }
+ // /////speed 1.5 
+ //    function speed15(){
+ //        var a=0;
+ //    var bar=document.getElementById("bar2");
+ //     var time=setInterval(stop,666.66);  
+ //     function stop(){
+ //      if(a==101){
+ //          alert("your progress ar is full");
+ //          clearInterval(time,100);
+ //      }
+ //      else{
+ //            document.getElementById("show").innerHTML="you are playing speed 1.5X";
+ //            bar.style.width=(a+"%");
+ //            bar.innerHTML=a+"%";
+ //           a++;
+ //      }
+ //    }  
+ //    }
+ // ///// speed 2 
+ //    function speed2(){
+ //     var bar=document.getElementById("bar2");
+ //     var time=setInterval(stop1,500);  
+ //     var a=0;
+ //     function stop1(){
+ //      if(a==101){
+ //          alert("your progress ar is full");
+ //          clearInterval(time,100);
+ //      }
+ //      else{
+ //           document.getElementById("show").innerHTML="you are playing speed 2X";
+ //            bar.style.width=(a+"%");
+ //            bar.innerHTML=a+"%";
+ //           a++;
+ //      }
+ //    }  
+ //    }
+    
+</script>
+
+
+
+</body>
+</html>

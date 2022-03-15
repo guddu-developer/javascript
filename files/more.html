@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta content="vieport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"  integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="  crossorigin="anonymous" referrerpolicy="no-referrer"  />
+
+		<title>if else loop</title>
+<style >
+	.atm{
+		background-image: url(https://cdn1.matadornetwork.com/blogs/1/2019/06/Row-of-ATMs-in-Thailand-1200x757.jpg);
+	}
+</style>
+
+
+
+
+
+	</head>
+	<body style="text-transform:uppercase;">
+<center>
+
+
+<h1 class="text-center text-danger bg-success mb-0 pb-3">if loop</h1>
+
+<section style="background-image:url(https://img.onmanorama.com/content/dam/mm/en/news/business/images/2021/9/12/driving-licence.jpg); background-size:100% 100%;height:300px" >
+
+
+
+<div class="container-fluid " style="background-color:rgba(0,0,0,.85);height:300px">
+
+	<div class="row">
+		<div class="col-lg-12">
+			<h2 class="text-warning">are you eligiible for driving license</h2><br />
+			<input type="number" id ="age" style="height:35px;font-size:20px;background-color:cyan;border:none" placeholder="enter your age"/><br />
+       <button class="btn bg-primary mt-3" onclick="eligiible()" >check eligibilty</button>
+		 <h2 id="eli" class="mt-4 text-info bg-">hello</h2>
+
+			</div>
+
+
+
+		</div>
+	</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+<section  class="atm" style="background-size:100% 100%;height:500px" >
+
+
+
+<div class="container-fluid pt-5 " style="background-color:rgba(0,0,0,.6);height:500px">
+
+	<div class="row">
+		<div class="col-lg-12">
+			<h2 class="text-warning">atm for cash widthdraw</h2><br />
+			<input type="number" id ="amount" style="height:35px;font-size:20px;background-color:cyan;border:none;width:300px" placeholder="enter amount for widthdraw"/><br />
+       <button class="btn bg-primary mt-3" onclick="cash()" >withdraw cash</button>
+		 <h2 id="with" class="mt-4 text-light bg-">hello sir</h2>
+		 <div class="" style="width:250px; height:200px">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3uNmuIWvOc9CahFrv0y771cESemy76KBvFg&usqp=CAU" alt="ATMs" id="change" height="100%" width="100%"/>
+		 </div>
+
+			</div>
+
+
+
+		</div>
+	</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<section style="background-image:url(https://i.ytimg.com/vi/sbpIIIbb4no/maxresdefault.jpg); background-size:100% 100%;height:550px" >
+
+
+
+<div class="container-fluid " style="background-color:rgba(0,0,0,.6);height:550px;padding-top:50px">
+
+	<div class="row">
+		<div class="col-lg-12">
+			<h2 class="text-warning">greatest number among three number</h2><br />
+			<h3  class="text-light">first no</h3>
+			<input type="number" id ="no1" style="height:35px;font-size:20px;background-color:cyan;border:none;margin-top:5px;margin-bottom:10px;" placeholder="enter no1" /><br />
+				<h3 class="text-light">second no</h3>
+					<input type="number" id ="no2" style="height:35px;font-size:20px;background-color:cyan;border:none;margin-top:5px;margin-bottom:10px;" placeholder="enter no2"/><br />
+						<h3  class="text-light">third no</h3>
+							<input type="number" id ="no3" style="height:35px;font-size:20px;background-color:cyan;border:none;margin-top:5px;margin-bottom:10px;" placeholder="enter no3"/><br />
+       <button class="btn bg-primary mt-3" onclick="great()" >check eligibilty</button>
+		 <h2 id="gre" class="mt-4 text-info bg-">hello</h2>
+
+			</div>
+
+
+
+		</div>
+	</div>
+
+</section>
+
+
+
+<section style="background-image:url(https://i.ytimg.com/vi/l0cwDen7YnQ/maxresdefault.jpg); background-size:100% 100%;height:300px" >
+
+
+
+<div class="container-fluid py-5 " style="background-color:rgba(0,0,0,.6);height:300px">
+
+	<div class="row">
+		<div class="col-lg-12">
+			<h2 class="text-warning">check the no is odd or even</h2><br />
+			<input type="number" id ="num" style="height:35px;font-size:20px;background-color:cyan;border:none" placeholder="enter your number"/><br />
+       <button class="btn bg-primary mt-3" onclick="odd()" >check eligibilty</button>
+		 <h2 id="clear" class="mt-4 text-info bg-">hello</h2>
+
+			</div>
+
+
+
+		</div>
+	</div>
+
+</section>
+
+
+<section style="background-image:url(https://www.kumon.com/resources/wp-content/uploads/2020/02/LeapYearMath-1.png); background-size:100% 100%;height:300px" >
+
+
+
+<div class="container-fluid py-5 " style="background-color:rgba(0,0,0,.6);height:300px">
+
+	<div class="row">
+		<div class="col-lg-12">
+			<h2 class="text-warning">check the year is leap year or not</h2><br />
+			<input type="number" id ="year" style="height:35px;font-size:20px;background-color:cyan;border:none" placeholder="enter your number"/><br />
+       <button class="btn bg-primary mt-3" onclick="leap()" >check eligibilty</button>
+		 <h2 id="ye" class="mt-4 text-info bg-">hello</h2>
+
+			</div>
+
+
+
+		</div>
+	</div>
+
+</section>
+
+
+
+
+	</center>
+<script type="text/javascript">
+function eligiible(){
+	<!-- alert("heloo"); -->
+
+var a=document.getElementById("age").value;
+if(a<18){
+ document.getElementById("eli").innerHTML="you are not eligiible for license try later.....";
+}
+else if(a>60){
+	document.getElementById("eli").innerHTML="you are not eligiible for license if age is over now";
+}
+else{
+	document.getElementById("eli").innerHTML="congratulation' you are eligible";
+}
+}
+
+
+
+
+
+
+
+function great(){
+	<!-- alert("heloo"); -->
+var a=parseInt(document.getElementById("no1").value);
+var b=parseInt(document.getElementById("no2").value);
+var c=parseInt(document.getElementById("no3").value);
+if(a>b&&a>c){
+ document.getElementById("gre").innerHTML="NO1 is Greater.....";
+}
+ else if(b>a&&b>c){
+   document.getElementById("gre").innerHTML="NO2 is Greater.....";
+ }
+ else if(c>b&&c>a){
+  document.getElementById("gre").innerHTML="NO3 is Greater.....";
+ }
+else{
+	document.getElementById("gre").innerHTML="you not enter a no or same no.....";
+}
+}
+
+
+
+function cash(){
+	<!-- alert("heloo"); -->
+
+var j=document.getElementById("amount").value;
+if(j==100){
+ document.getElementById("with").innerHTML="take your cash";
+ document.getElementById("change").src="https://english.cdn.zeenews.com/sites/default/files/styles/zm_700x400/public/2021/06/12/943173-untitled-design-68.png";
+}
+else if(j==500){
+	document.getElementById("with").innerHTML="take your cash ";
+	document.getElementById("change").src="https://nmgprod.s3.amazonaws.com/media/files/45/08/45088d4862f2aa7405bd4d5bc227bb21/cover_image_1591366688.jpg.760x400_q85_crop_upscale.jpg";
+}
+else if(j==2000){
+	document.getElementById("with").innerHTML="take your cash";
+	document.getElementById("change").src="https://s31898.pcdn.co/wp-content/uploads/2019/07/Avail-instant-cash-e1562665351818-800x430.jpg";
+}
+else{
+	document.getElementById("with").innerHTML="sorry''your account have insufficient balance";
+		document.getElementById("change").src="https://voicesofglass.files.wordpress.com/2012/01/atminsuff.png";
+}
+}
+
+
+
+
+function odd(){
+	var a=parseInt(document.getElementById("num").value);
+
+	if (a%2==0){
+		document.getElementById("clear").innerHTML="you entered even no";
+	}
+	else{
+		document.getElementById("clear").innerHTML="you entered odd no";
+	}
+}
+
+
+function leap(){
+	var a=parseInt(document.getElementById("year").value);
+
+	if (a%4==0){
+		document.getElementById("ye").innerHTML="you entered leap year";
+	}
+	else{
+		document.getElementById("ye").innerHTML="you entered non leap year";
+	}
+}
+
+</script>
+
+
+	</body>
+</html>

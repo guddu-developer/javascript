@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>guddu clock</title>
+
+    <style>
+        h1{
+            font-size: 50px;
+        }
+        .circle-big{
+            height: 100%;
+            width: 100%;
+            /* background-color: yellow; */
+            position: fixed;
+            top: 0;
+            left: 0;
+        }  
+        .small-circle{
+            margin-top: 40px;
+            height: 600px;
+            width: 600px;
+            background-color: black;
+            border-radius: 50%;
+            border: 15px ridge blue;
+        outline: 15px dashed yellow;
+            position: relative;
+            /*top: 0;
+            left: 0; */
+        }
+         /* .small-circle-under{
+            margin-top: 40px;
+            height: 568px;
+            width: 568px;
+            background-color: blue;
+            border-radius: 50%;
+             position: fixed;
+            top: 0;
+            left: 0; 
+        } */
+        .no12{
+            position: absolute;
+            top: 0;
+            left: 260px;
+        }
+        .no6{
+            position: absolute;
+            bottom: 0;
+            left: 280px;
+        }
+        .no7{
+            position: absolute;
+            bottom: 30px;
+            left: 150px;
+        }
+        .no5{
+            position: absolute;
+            bottom: 35px;
+            right: 130px;
+        }
+        .no11{
+            position: absolute;
+            top: 30px;
+            left: 150px;
+        }
+         .no1{
+            position: absolute;
+            top: 30px;
+            right: 150px;
+        }
+
+        .no8{
+            position: absolute;
+            bottom: 125px;
+            left: 50px;
+        }
+         .no4{
+            position: absolute;
+            bottom: 130px;
+            right: 50px;
+        }
+        .no10{
+            position: absolute;
+            top: 130px;
+            left: 50px;
+        }
+        .no2{
+            position: absolute;
+            top: 130px;
+            right: 45px;
+        }
+        .no6{
+            position: absolute;
+            bottom: 0;
+            left: 280px;
+        }
+         .no9{
+            position: absolute;
+            top: 265px;
+            left: 10px;
+        }
+         .no3{
+            position: absolute;
+            top: 260px;
+            right: 10px;
+        }
+        .color1,.color7{
+            color: aqua;
+        }
+        .color2,.color8{
+            color: yellow;
+        }
+        .color12,.color6{
+            color: red;
+        }
+        .color3,.color9{
+            color: rgb(0, 255, 0);
+        }
+        .color4,.color10{
+            color:blue;
+        }
+         .color5,.color11{
+            color: rgb(250, 0, 250);
+        }
+        .hour{
+            position: absolute;
+            top: 120px;
+            right: 210px;
+            /* right: 185px; */
+            /* bottom: 120px; */
+            /* transform: rotate(90deg); */
+        }
+        /*  bottom with 9 */
+        /* .hour1{
+            position: absolute;
+
+            top: 250px;
+            left: 200px;
+             transform: rotate(180deg); 
+        }  */
+
+           /* right with 9  
+        .hour1{
+            position: absolute;
+             top: 170px;
+            right: 120px;
+            transform: rotate(90deg);
+        }*/
+
+         /* left with 3 
+        .hour1{
+            position: absolute;
+            top: 170px;
+            left: 120px;
+            transform: rotate(270deg);
+        }*/
+
+         .min{
+            position: absolute;
+            top: 85px;
+            right: 235px;
+            /* bottom: 85px; */
+            /* transform: rotate(270deg); */
+            z-index: 1;
+        }
+         .sec{
+            position: absolute;
+            top:30px;
+            left: 136px;
+            transform: rotate(180deg);
+            z-index: 2;
+        }
+    </style>
+</head>
+<body style="background-color: greenyellow;">
+    <section>
+        <div class="container-fluid">
+            <div class="circle-big">
+                <h1 class="text-dark mb-0 text-center text-upppercase">designed by guddu</h1>
+                <center>
+                <div class="small-circle p-3" id="clo">
+                    
+                    <div class="no1">
+                        <h1 class="color1">1</h1>
+                    </div>
+                    <div class="no2">
+                        <h1 class="color2">2</h1>
+                    </div>
+                    <div class="no3">
+                        <h1 class="color3">3</h1>
+                    </div>
+                    <div class="no4">
+                        <h1 class="color4">4</h1>
+                    </div>
+                    <div class="no5">
+                        <h1 class="color5">5</h1>
+                    </div>
+                    <div class="no6">
+                        <h1 class="color6">6</h1>
+                    </div>
+                    <div class="no7">
+                        <h1 class="color7">7</h1>
+                    </div>
+                    <div class="no8">
+                        <h1 class="color8">8</h1>
+                    </div>
+                    <div class="no9">
+                        <h1 class="color9">9</h1>
+                    </div>
+                    <div class="no10">
+                        <h1 class="color10">10</h1>
+                    </div>
+                    <div class="no11">
+                        <h1 class="color11">11</h1>
+                    </div>
+                    <div class="no12">
+                        <h1 class="color12">12</h1>
+                    </div>
+
+                    <div class="hour" id="hour" >
+                        <div style="width: 150px;height:330px;">
+                        <img src="https://cdn.pixabay.com/photo/2015/01/13/12/11/clock-598124_960_720.png" alt="hour hand" width="100%" height="198px" >
+                        </div>
+                        <!-- <div style="width: 100%;height: 40%;"></div> -->
+                       
+                    </div>
+                    <div class="min " id="min">
+                        <div style="width: 100px;height:400px;">
+                            <img src="https://cdn.pixabay.com/photo/2015/01/13/12/11/clock-598124_960_720.png" alt="hour hand" width="100%"  height="238px">
+                        </div>
+                        <!-- <img src="https://cdn.pixabay.com/photo/2015/01/13/12/11/clock-598124_960_720.png" alt="min hand" height="270"
+                            width="140"> -->
+                    </div>
+                    <div class="sec" id="sec">
+                        <div style="width: 300px;height:510px; padding-top: 227px;padding-left: 20px;">
+                            <img src="http://www.clker.com/cliparts/G/U/A/9/c/0/clock-hand-red.svg" alt="hour hand" width="100%"  height="290px">
+                        </div>
+                        <!-- <img src="http://www.clker.com/cliparts/G/U/A/9/c/0/clock-hand-red.svg" alt="sec hand" height="310" width="400"> -->
+                    </div>
+
+
+                    <div  style="top: 270px; left: 270px;position: absolute;z-index: 5;"><img src="https://www.pikpng.com/pngl/m/296-2962441_pool-circle-sticker-by-aesthetic-transparent-blue-stickers.png" alt="" style="height: 30px; width: 30px; border-radius: 50%;"></div>
+                    
+                </div>
+            </center>
+            </div>
+        </div>
+    </section>
+
+<script>
+     setInterval(color, 300);
+// document.body.addEventListener("mouseover",color);
+    function color() {
+         var db = document.body;
+   db.style.backgroundColor = db.style.backgroundColor == "red" ? "blue" : "red";
+
+//  db.style.backgroundColor = bcd;
+ 
+//  if(db.style.backgroundColor="yellowgreen"){
+//      db.style.backgroundColor="blue";
+//  }
+//  if(db.style.backgroundColor = "blue"){
+//    db.style.backgroundColor = "red";
+//  }
+//  setInterval(color, 300);
+
+    }
+
+document.getElementById("clo").addEventListener("mouseover",clock);
+
+function clock(){
+    // var hour=document.getElementById("hour");
+    // var min=document.getElementById("min");
+    // var sec=document.getElementById("sec");
+    var date=new Date();
+    var hr=date.getHours();
+    var mi=date.getMinutes();
+    var se=date.getSeconds();
+    var secdiv=se/60;
+    var mindiv=(secdiv+mi)/60;
+    var hrdiv=(mindiv+hr)/12;
+    var secrot=secdiv*360;
+    var minrot=mindiv*360;
+    var hrrot=hrdiv*360;
+    document.getElementById("sec").style.transform="rotate("+secrot+"deg)";
+    document.getElementById("min").style.transform="rotate("+minrot+"deg)";
+    document.getElementById("hour").style.transform="rotate("+hrrot+"deg)";
+    setTimeout(clock,1000);
+}
+//   document.getElementById("sec").style.transform="rotate(50deg)" ;  
+</script>    
+</body>
+</html>

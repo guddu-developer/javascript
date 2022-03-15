@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-win8.css">
+    <title>drop with input</title>
+    <style>
+   body::-webkit-scrollbar {
+  width: 10px;
+	background-color:none ;  }
+
+body::-webkit-scrollbar-thumb {
+  background: #e674e2;
+}
+	body::-webkit-scrollbar-track {
+   box-shadow: inset 0 0 5px blue;
+}
+a{
+    font-size: 20px;
+    
+}
+ .good::-webkit-scrollbar {
+  width: 3px;
+	background-color: yellow;  }
+
+.good::-webkit-scrollbar-thumb {
+  background: red;
+}
+	.good::-webkit-scrollbar-track {
+   /* box-shadow: inset 0 0 3px blue; */
+}
+.good{
+    border: 3px dashed white;
+     overflow-y: scroll;
+     overflow-x: hidden;
+      height: 500px;
+          background-color: rgba(255,255,255,0.2);
+          transition: ease-in 2s;
+}
+li{
+    cursor: move;
+}
+.margin{
+    margin-bottom: 150px;
+}
+    </style>
+</head>
+<body style="background-image: url(	https://formbuilder.online/assets/img/demo-background.svg),linear-gradient(to bottom,#000,#92278F); background-repeat: no-repeat; background-size: 100% 100%;">
+
+
+
+
+
+    <header class="w3-yellow">
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-md  navbar-light">
+                       
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse  justify-content-center" id="collapsibleNavbar">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">about</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">guddu</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">rohit</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">rajeev</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="navbar-brand" href="#">
+                            <form class="form-inline" action="/action_page.php">
+                                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                                <button class="btn btn-primary" type="submit">Search</button>
+                            </form>
+                        </a>
+                    </nav>
+                   
+
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+<main class="margin">
+
+    <div class="container mt-5">
+   <h1 class="text-center font-weight-light text-white">Drag and Drop</h1>
+    <h1 class="text-center text-white pb-5"> Full-featured <span class=" font-weight-light">Form Editing</span>  </h1>
+               
+        
+        <div class="row">
+            <div class="col-lg-9">
+                 
+    <div class=" good" ondrop="drop(event)" ondragover="allowDrop(event)" id="box1" ondragenter="back()">
+                        <p class="text-white w3-display-middle" ondragover="going()" id="hop">Drag a field from the right to this area</p>
+
+                    </div>
+                
+            </div>
+            <div class="col-lg-3 px-0">
+
+                <ul class="w3-bar w3-light-gray pl-0 rounded-top rounded-bottom">
+
+                    <li class=" w3-border-red w3-border-bottom  py-2 pr-5 pl-5"   id="in1" draggable="true" ondragstart="drag(event)" data-input=" <div class='form-group w3-light-gray rounded-lg'>
+                <label for='usr' class='text-primary pl-4 pt-1'>Name:</label>
+                <input type='text' class='form-control w3-light-gray ' id='usr' name='username'>
+            </div>">NAME</li>
+                    
+                    <li class=" w3-border-red w3-border-bottom  py-2 pr-5 pl-5 "  id="in2" draggable="true" ondragstart="drag(event)" data-input=" <div class='form-group w3-light-gray rounded-lg'>
+                <label for='usr' class='text-primary pl-4 pt-1'>input text:</label>
+                <input type='text' class='form-control w3-light-gray ' id='usr' name='username'>
+            </div>">INPUT TEXT</li>
+                    <li class=" w3-border-red w3-border-bottom  py-2 pr-5 pl-5 "  id="in3" draggable="true" ondragstart="drag(event)" data-input=" <div class='form-group w3-light-gray rounded-lg'>
+                <label for='usr' class='text-primary pl-4 pt-1'>Name:</label>
+                <input type='color' class='form-control w3-light-gray ' id='usr' name='username'>
+            </div>">COLOR</li>
+                    <li class=" w3-border-red w3-border-bottom  py-2 pr-5 pl-5 "  id="in4" draggable="true" ondragstart="drag(event)" data-input=" <div class='form-group w3-light-gray rounded-lg'>
+                <label for='usr' class='text-primary pl-4 pt-1'>BUTTON:</label>
+                    <input type='button' class='btn btn-success form-control' value='ok Button' id='usr' name='username'>
+            </div>">OK BUTTON</li>
+                    <li class=" w3-border-red w3-border-bottom  py-2 pr-5 pl-5"  id="in5" draggable="true" ondragstart="drag(event)" data-input=" <div class='form-group w3-light-gray rounded-lg'>
+                <label for='usr' class='text-primary pl-4 pt-1'>CHECKBOOX:</label>
+                <div class='custom-control custom-checkbox mb-3 pl-4'>
+                    <input type='checkbox' class='custom-control-input' id='customCheck' name='example1'>
+                    <label class='custom-control-label' for='customCheck'>checkbox</label>
+                </div>
+            </div>">CHECKBOX</li>
+                    <li class=" w3-border-red w3-border-bottom  py-2 pr-5 pl-5 "  id="in6" draggable="true" ondragstart="drag(event)" data-input=" <div class='form-group w3-light-gray rounded-lg'>
+                <label for='usr' class='text-primary pl-4 pt-1'>ENTER DATE:</label>
+                <input type='date' class='form-control w3-light-gray ' id='usr' name='username'>
+            </div>">DATE FIELD</li>
+                    <li class=" w3-border-red w3-border-bottom  py-2 pr-5 pl-5 "  id="in7" draggable="true" ondragstart="drag(event)" data-input=" <div class='form-group w3-light-gray rounded-lg'>
+                <label for='usr' class='text-primary pl-4 pt-1'>UPLOAD YOUR FILE HERE:</label>
+                <div class='custom-file'>
+                    <input type='file' class='custom-file-input' id='customFile'>
+                    <label class='custom-file-label' for='customFile'>Choose file</label>
+                </div>
+            </div>">FILE UPLOAD</li>
+                    <li class=" w3-border-red w3-border-bottom  py-2 pr-5 pl-5 "  id="in8" draggable="true" ondragstart="drag(event)" data-input=" <div class='form-group w3-light-gray rounded-lg'>
+                <label for='usr' class='text-primary pl-4 pt-1'>NUMBER:</label>
+                <input type='number' class='form-control w3-light-gray ' id='usr' name='username'>
+            </div>">NUMBER</li>
+                    <li class=" w3-border-red w3-border-bottom  py-2 pr-5 pl-5 "  id="in9" draggable="true" ondragstart="drag(event)" data-input="<div class='form-group w3-light-gray rounded-lg'>
+                <label for='usr' class='text-primary pl-4 pt-1'>RADIO:</label><br>
+                <div class='custom-control custom-radio custom-control-inline'>
+                    <input type='radio' class='custom-control-input' id='customRadio' name='example' value='customEx'>
+                    <label class='custom-control-label' for='customRadio'>Custom radio 1</label>
+                </div>
+                <div class='custom-control custom-radio custom-control-inline'>
+                    <input type='radio' class='custom-control-input' id='customRadio2' name='example' value='customEx'>
+                    <label class='custom-control-label' for='customRadio2'>Custom radio 2</label>
+                </div>
+
+            </div>">RADIO</li>
+                    <li class=" w3-border-red w3-border-bottom  py-2 pr-5 pl-5 "  id="in10" draggable="true" ondragstart="drag(event)" data-input=" <div class='form-group w3-light-gray rounded-lg'>
+                <label for='usr' class='text-primary pl-4 pt-1'>SELECT ONE:</label>
+            <select name='cars' class='custom-select'>
+                <option selected>Select one</option>
+                <option >Guddu</option>
+                <option >Rohit</option>
+                <option >Rajeev</option>
+                <option >sunil</option>
+            </select>
+            </div>">SELECT</li>
+                 
+                    <li class=" w3-border-red w3-border-bottom  py-2 pr-5 pl-5 "  id="in12" draggable="true" ondragstart="drag(event)" data-input=" <div class='form-group w3-light-gray rounded-lg'>
+                <label for='usr' class='text-primary pl-4 pt-1'>ENTER URLS:</label>
+                <input type='url' class='form-control w3-light-gray ' id='usr' name='username'>
+            </div>">URL</li>
+                    <li class=" w3-border-red w3-border-bottom  py-2 pr-5 pl-5 " id="in15" draggable="true" ondragstart="drag(event)" data-input=" <div class='form-group w3-light-gray rounded-lg'>
+                <label for='usr' class='text-primary pl-4 pt-1'>SELECT DATE AND TIME:</label>
+                <input type='datetime-local' class='form-control w3-light-gray ' id='usr' name='username'>
+            </div>">DATE_TIME LOCAL</li>
+            <li class=" w3-border-red w3-border-bottom  py-2 pr-5 pl-5 " id="in11" draggable="true" ondragstart="drag(event)"
+                data-input=" 
+                            <textarea id='w' name='w' rows='5' cols='90%'>
+             as you know this is desinged by guddu
+              </textarea>">TEXTAREA</li>
+                  
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</main>
+
+    <!-- <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <br>
+     <p id="drag1" draggable="true" ondragstart="drag(event)" data-input="<input type='text'>"> text </p>
+    <p id="drag2" draggable="true" ondragstart="drag(event)" data-input="<input type='number'>"> number </p>
+
+ -->
+
+    <script>
+        function back() {
+            document.getElementById("box1").style.background="none";
+            document.getElementById("hop").style.display = "none";
+            document.getElementById("box1").style.border = "none";
+        }
+        // function going() {
+        //     document.getElementById("hop").style.display = "none";
+        // }
+        function allowDrop(g) {
+            g.preventDefault();
+        }
+
+        function drag(g) {
+            //alert(ev);
+            g.dataTransfer.setData("a", g.target.id);
+        }
+
+        function drop(g) {
+            g.preventDefault();
+            var data = g.dataTransfer.getData("a");
+
+            //alert(data);
+
+            var getinput = document.getElementById(data).getAttribute('data-input');
+
+            var maindiv = document.getElementById(g.target.id)
+
+            maindiv.innerHTML += getinput;
+
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>guddu clock</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Faster+One&family=Mochiy+Pop+One&family=Ubuntu:ital,wght@1,700&display=swap');
+        @font-face {
+           font-family: 'Faster One', cursive;
+           font-family: 'Mochiy Pop One', sans-serif;
+           font-family: 'Ubuntu', sans-serif;
+            src: url("https://fonts.googleapis.com/css2?family=Faster+One&family=Mochiy+Pop+One&family=Ubuntu:ital,wght@1,700&display=swap");
+        }
+
+      
+        h1{
+             font-family: 'Faster One', cursive;
+               /* font-weight: 700; */
+            font-size: 50px;
+        }
+        h2{
+            font-family: "Faster One",cursive;
+        }
+        .circle-big{
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }  
+        .small-circle{
+            margin-top: 40px;
+            height: 600px;
+            width: 600px;
+            background-color: yellow;
+            border-radius: 50%;
+            border: 15px solid rgb(0, 0, 167);
+            outline: 15px solid rgb(0, 0, 167);
+            position: relative;
+        }
+        .dash{
+            position: absolute;
+            top: -15px;
+            left: -15px;
+            height: 600px;
+            width: 600px;
+            background-color: blue;
+            border-radius: 50%;
+            /* border: 15px solid rgb(0, 0, 167); */
+            outline: 30px dashed rgb(0, 0, 167);
+            z-index: -555;
+           
+        }
+        .no12{
+            position: absolute;
+            top: 0;
+            left: 260px;
+        }
+        .no6{
+            position: absolute;
+            bottom: 0;
+            left: 280px;
+        }
+        .no7{
+            position: absolute;
+            bottom: 30px;
+            left: 150px;
+        }
+        .no5{
+            position: absolute;
+            bottom: 35px;
+            right: 130px;
+        }
+        .no11{
+            position: absolute;
+            top: 30px;
+            left: 150px;
+        }
+         .no1{
+            position: absolute;
+            top: 30px;
+            right: 150px;
+        }
+
+        .no8{
+            position: absolute;
+            bottom: 125px;
+            left: 50px;
+        }
+         .no4{
+            position: absolute;
+            bottom: 130px;
+            right: 50px;
+        }
+        .no10{
+            position: absolute;
+            top: 130px;
+            left: 50px;
+        }
+        .no2{
+            position: absolute;
+            top: 130px;
+            right: 45px;
+        }
+        .no6{
+            position: absolute;
+            bottom: 0;
+            left: 280px;
+        }
+         .no9{
+            position: absolute;
+            top: 265px;
+            left: 10px;
+        }
+         .no3{
+            position: absolute;
+            top: 260px;
+            right: 10px;
+        }
+       
+        .color12,.color6,.color1,.color2,.color3,.color4,.color5,.color7,.color8,.color9,.color10,.color11{
+            color: red;
+        }
+       
+        .hour{
+            position: absolute;
+            top: 120px;
+            right: 210px;
+           
+        }
+         .min{
+            position: absolute;
+            top: 85px;
+            right: 235px;
+            z-index: 1;
+        }
+         .sec{
+            position: absolute;
+            top:30px;
+            left: 136px;
+            transform: rotate(180deg);
+            z-index: 2;
+        }
+        .smcircle{
+            height: 350px;
+            width: 350px;
+            border-radius: 50%;
+            position: absolute;
+            top: 110px;
+            border:  10px solid rgb(0, 0, 167);
+            left:110px ;
+        }
+        .co1,.co2,.co3,.co4,.co5,.co6,.co7,.co8,.co9,.co10,.co11,.co12{
+            height: 30px;
+            width: 30px;
+            font-size: 20px;
+            background-color: yellow;
+            border-radius: 50%;
+        }
+        .co1{
+            position: absolute;
+            top: -30px;
+            left: 275px;
+            margin-top: 0;
+            padding: 0;
+        }
+         .co7{
+            position: absolute;
+            bottom: -30px;
+            left: 275px;
+            margin-top: 0;
+            padding: 0;
+        }
+         .co4{
+            position: absolute;
+            top: 270px;
+            right: -30px;
+            margin-top: 0;
+            padding: 0;
+        }
+         .co10{
+            position: absolute;
+            top: 275px;
+            left: -30px;
+            margin-top: 0;
+            padding: 0;
+        }
+        .co9{
+            position: absolute;
+            bottom: 125px;
+            left: 8px;
+            margin-top: 0;
+            padding: 0;
+        }
+        .co5{
+            position: absolute;
+            bottom: 125px;
+            right: 8px;
+            margin-top: 0;
+            padding: 0;
+        }
+        .co9{
+            position: absolute;
+            bottom: 125px;
+            right: 8px;
+            margin-top: 0;
+            padding: 0;
+        }
+        .co3{
+            position: absolute;
+            top: 125px;
+            right: 8px;
+            margin-top: 0;
+            padding: 0;
+        }
+        .co11{
+            position: absolute;
+            top: 125px;
+            left: 8px;
+            margin-top: 0;
+            padding: 0;
+        }
+        .co8{
+             position: absolute;
+            bottom: 20px;
+            left: 103px;
+            margin-top: 0;
+            padding: 0;
+        }
+        .co12{
+             position: absolute;
+            top: 20px;
+            left: 103px;
+            margin-top: 0;
+            padding: 0;
+        }
+        .co6{
+             position: absolute;
+            bottom: 20px;
+            right: 103px;
+            margin-top: 0;
+            padding: 0;
+        }
+        .co2{
+             position: absolute;
+            top: 20px;
+            right: 103px;
+            margin-top: 0;
+            padding: 0;
+        }
+        p{
+            margin: 0px !important;
+            padding: 0px !important;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body >
+    <section>
+        <div class="container-fluid">
+            <div class="circle-big">
+                
+                
+                <h2 class="text-primary mx-0 text-center text-upppercase" style=" position: fixed;left: 0; top: 40%;">designed by guddu</h2>
+                <h2 class="text-primary mx-0 text-center text-upppercase" style=" position: fixed;right: 0; top: 40%;">designed by guddu</h2>
+                <center>
+                   
+                <div class="small-circle p-3" id="clo">
+                    <div class="hook" style="position: absolute; bottom: 200px; transform: rotate(-30deg); left: 180px; background-color: yellow;"><img src="https://spng.subpng.com/20171220/doe/anchor-png-5a3a8c26061d73.8386048515137864060251.jpg" alt="hook" height="20px" width="20px"></div>
+                    <div style="position: absolute; top: 160px; left: 260px; background-color: yellow;"><img src="https://clipart.world/wp-content/uploads/2020/08/a-shine-diamond-png-transparent.png" alt="diamond" height="50px" width="50px"></div>
+                    <div class="hook1" style="position: absolute; bottom: 200px; transform: rotate(30deg); right: 180px; background-color: yellow;"><img src="https://spng.subpng.com/20171220/doe/anchor-png-5a3a8c26061d73.8386048515137864060251.jpg" alt="hook" height="20px" width="20px"></div>
+                    <p style="position: absolute; left: 265px; bottom: 170px; color: blue; font-weight: bold;">Guddu</p>
+                    <p style="position: absolute; left: 238px; bottom: 150px; color: blue; ">PART NO-1234</p>
+                    <div class="smcircle"></div>
+                    
+                    <div class="no1">
+                        <h1 class="color1">1</h1>
+                    </div>
+                    <div class="no2">
+                        <h1 class="color2">2</h1>
+                    </div>
+                    <div class="no3">
+                        <h1 class="color3">3</h1>
+                    </div>
+                    <div class="no4">
+                        <h1 class="color4">4</h1>
+                    </div>
+                    <div class="no5">
+                        <h1 class="color5">5</h1>
+                    </div>
+                    <div class="no6">
+                        <h1 class="color6">6</h1>
+                    </div>
+                    <div class="no7">
+                        <h1 class="color7">7</h1>
+                    </div>
+                    <div class="no8">
+                        <h1 class="color8">8</h1>
+                    </div>
+                    <div class="no9">
+                        <h1 class="color9">9</h1>
+                    </div>
+                    <div class="no10">
+                        <h1 class="color10">10</h1>
+                    </div>
+                    <div class="no11">
+                        <h1 class="color11">11</h1>
+                    </div>
+                    <div class="no12">
+                        <h1 class="color12">12</h1>
+                    </div>
+                    <div class="co1">
+                        <p class="color1">60</p>
+                    </div>
+                    <div class="co2">
+                        <p class="color2">5</p>
+                    </div>
+                    <div class="co3">
+                        <p class="color3">10</p>
+                    </div>
+                    <div class="co4">
+                        <p class="color4">15</p>
+                    </div>
+                    <div class="co5">
+                        <p class="color5">20</p>
+                    </div>
+                    <div class="co6">
+                        <p class="color6">25</p>
+                    </div>
+                    <div class="co7">
+                        <p class="color7">30</p>
+                    </div>
+                    <div class="co8">
+                        <p class="color8">35</p>
+                    </div>
+                    <div class="co9">
+                        <p class="color9">40</p>
+                    </div>
+                    <div class="co10">
+                        <p class="color10">45</p>
+                    </div>
+                    <div class="co11">
+                        <p class="color11">50</p>
+                    </div>
+                    <div class="co12">
+                        <p class="color12">55</p>
+                    </div>
+
+                    <div class="hour" id="hour" >
+                        <div style="width: 150px;height:330px;">
+                        <img src="https://cdn.pixabay.com/photo/2015/01/13/12/11/clock-598124_960_720.png" alt="hour hand" width="100%" height="198px" >
+                        </div>
+                        <!-- <div style="width: 100%;height: 40%;"></div> -->
+                       
+                    </div>
+                    <div class="min " id="min">
+                        <div style="width: 100px;height:400px;">
+                            <img src="https://cdn.pixabay.com/photo/2015/01/13/12/11/clock-598124_960_720.png" alt="hour hand" width="100%"  height="238px">
+                        </div>
+                        <!-- <img src="https://cdn.pixabay.com/photo/2015/01/13/12/11/clock-598124_960_720.png" alt="min hand" height="270"
+                            width="140"> -->
+                    </div>
+                    <div class="sec" id="sec">
+                        <div style="width: 300px;height:510px; padding-top: 227px;padding-left: 20px;">
+                            <img src="http://www.clker.com/cliparts/G/U/A/9/c/0/clock-hand-red.svg" alt="hour hand" width="100%"  height="290px">
+                        </div>
+                        <!-- <img src="http://www.clker.com/cliparts/G/U/A/9/c/0/clock-hand-red.svg" alt="sec hand" height="310" width="400"> -->
+                    </div>
+
+
+                    <div  style="top: 270px; left: 270px;position: absolute;z-index: 5;"><img src="https://www.pikpng.com/pngl/m/296-2962441_pool-circle-sticker-by-aesthetic-transparent-blue-stickers.png" alt="" style="height: 30px; width: 30px; border-radius: 50%;"></div>
+                    <div class="dash"></div>
+                </div>
+                
+            </center>
+            </div>
+        </div>
+    </section>
+
+    <section>
+      <div style="height: 710px;width: 700px; background-color: yellow; margin: auto;border-radius: 50% 50% 0 0; "> </div>
+    </section>
+
+<script>
+     setInterval(color, 300);
+    function color() {
+         var db = document.body;
+    }
+
+document.getElementById("clo").addEventListener("mouseover",clock);
+
+function clock(){
+    var date=new Date();
+    var hr=date.getHours();
+    var mi=date.getMinutes();
+    var se=date.getSeconds();
+    var secdiv=se/60;
+    var mindiv=(secdiv+mi)/60;
+    var hrdiv=(mindiv+hr)/12;
+    var secrot=secdiv*360;
+    var minrot=mindiv*360;
+    var hrrot=hrdiv*360;
+    document.getElementById("sec").style.transform="rotate("+secrot+"deg)";
+    document.getElementById("min").style.transform="rotate("+minrot+"deg)";
+    document.getElementById("hour").style.transform="rotate("+hrrot+"deg)";
+    setTimeout(clock,1000);
+}
+</script>    
+</body>
+</html>

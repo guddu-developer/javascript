@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+</head>
+<body>
+    <center>
+
+    <h1>ADD INPUT </h1>
+      <input type="text" id="add1"  placeholder="enter value"  style="height:30px;font-size: 30px;text-align: center;"><br><br>
+      <input type="text" id="add2"  placeholder="enter value"  style="height:30px;font-size: 30px;text-align: center;"><br><br>
+      <button type="button" onclick="add()"  style="height:50px; width:200px;font-size:35px;color: tomato;" ><b>OUTPUT</b></button><br><br>
+      <input type="text" id="sum" style="height:50px;color: tomato; font-size: 50px; text-align: center;">
+
+
+      <br><br><hr>
+
+
+
+      <h1>SUBTRACT INPUT </h1>
+      <input type="text" id="sub1"  placeholder="enter value"   style="height:30px;font-size: 30px;text-align: center;"><br><br>
+      <input type="text" id="sub2"  placeholder="enter value"   style="height:30px;font-size: 30px;text-align: center;"><br><br>
+      <button type="button" onclick="sub()"  style="height:50px; width:200px;font-size:35px;color: tomato;"  ><b>OUTPUT</b></button><br><br>
+      <input type="text" id="min" style="height:50px;color: tomato; font-size: 50px; text-align: center;">
+
+      <br><br><hr>
+
+
+      <h1>MULTIPLY INPUT </h1>
+
+      <input type="text" id="mul1"  placeholder="enter value"   style="height:30px;font-size: 30px;text-align: center;"><br><br>
+      <input type="text" id="mul2"  placeholder="enter value"  style="height:30px;font-size: 30px;text-align: center;"><br><br>
+      <button type="button" onclick="mul()"  style="height:50px; width:200px;font-size:35px;color: tomato;"  ><b>OUTPUT</b></button><br><br>
+      <input type="text" id="pro" style="height:50px;color: tomato; font-size: 50px; text-align: center;">
+
+      <br><br><hr>
+
+
+      <h1>DIVIDE INPUT </h1>
+
+      <input type="text" id="div1"  placeholder="enter value"  style="height:30px;font-size: 30px;text-align: center;"><br><br>
+      <input type="text" id="div2"  placeholder="enter value"   style="height:30px;font-size: 30px;text-align: center;"><br><br>
+      <button type="button" onclick="div()"  style="height:50px; width:200px;font-size:35px;color: tomato;"  ><b>OUTPUT</b></button><br><br>
+      <input type="text" id="rem" style="height:50px;color: tomato; font-size: 50px; text-align: center;">
+
+      <br><br><hr>
+
+
+    </center>
+
+
+
+
+      <script>
+
+           function add(){
+
+    //  alert("doc");
+
+          var a=parseInt(document.getElementById("add1").value);
+          var b=parseInt(document.getElementById("add2").value);
+          var sum;
+          sum=a+b;
+
+// alert(sum);
+
+          document.getElementById("sum").value=sum;
+
+           }
+
+
+           function sub(){
+      var a=parseInt(document.getElementById("sub1").value);
+      var b=parseInt(document.getElementById("sub2").value);
+      var min;
+      min=a-b;
+      document.getElementById("min").value=min;
+
+       }
+
+       function mul(){
+      var a=parseInt(document.getElementById("mul1").value);
+      var b=parseInt(document.getElementById("mul2").value);
+      var pro
+      pro=a*b;
+      document.getElementById("pro").value=pro;
+
+       }
+
+
+       function div(){
+      var a=parseInt(document.getElementById("div1").value);
+      var b=parseInt(document.getElementById("div2").value);
+      var rem;
+      rem=a/b;
+      document.getElementById("rem").value=rem;
+
+       }
+
+      </script>
+
+
+
+</body>
+</html>

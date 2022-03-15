@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validation </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+<body style="background-color:rgb(155, 155, 155)">
+
+    <div class="container ">
+        <h2 class="text-center my-3">
+            validation form
+        </h2>
+        <div class="row">
+            <div class="col-lg-7">
+              
+
+                
+                <form  class="needs-validation" novalidate>
+                    <div class="form-group">
+                        <label for="uname">Username:</label>
+                        <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Email:</label>
+                        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+
+                  
+
+
+                    <div class="form-group">
+                        <label for="uname">Phone no:</label>
+                        <input type="number" maxlength="10" class="form-control" id="uname" placeholder="Enter phone no" name="uname" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+
+
+
+                    <div class="form-group" >
+                        <label for="comment" >Comments:</label>
+                        <textarea class="form-control" rows="5" id="comment"   placeholder="optional::if you want" ></textarea>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+
+
+
+ 
+
+
+<div class="form-group form-check">
+    <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="remember" required> I agree on terms & condition
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Check this checkbox to continue.</div>
+    </label>
+</div>
+                    <button type="submit" class="btn-block btn btn-primary">Submit</button>
+                </form>
+
+                   
+
+            </div>
+            <div class="col-lg-5">
+                <img src="https://www.pngitem.com/pimgs/m/381-3819566_admin-icon-hd-png-download.png" alt="" class="img-fluid" style="border-radius: 50px;">
+            </div>
+        </div>
+    </div>
+    
+
+
+    <script>
+        // Disable form submissions if there are invalid fields
+        (function () {
+            window.addEventListener('load', function () {
+                // Get the forms we want to add validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+</body>
+</html>

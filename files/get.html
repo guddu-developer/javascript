@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Localstorage example</title>
+</head>
+<body>
+  
+<section>
+    <div class="container">
+        <h1 class="text-center text-danger">stored element in local storage</h1>
+        <h1 class="text-center text-primary" id="guddu"></h1>
+        <h1 class="text-center text-primary" id="rohit"></h1>
+        <h1 class="text-center text-primary" id="rajeev"></h1>
+    </div>
+</section>
+<script>
+    document.getElementById("guddu").innerHTML = localStorage.getItem("good");
+    document.getElementById("rohit").innerHTML = localStorage.getItem("bad");
+    document.getElementById("rajeev").innerHTML = localStorage.getItem("very");
+</script>
+</body>
+</html>

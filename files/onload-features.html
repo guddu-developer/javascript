@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .loader {
+            border: 16px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 16px solid #4285F4;
+            border-right: 16px solid #F4B400;
+            border-bottom: 16px solid #0F9D58;
+            border-left: 16px solid #DB4437;
+            width: 120px;
+            height: 120px;
+            -webkit-animation: spin 2s linear infinite;
+            animation: spin 2s linear infinite;
+            position: absolute;
+              left: 45%;
+            top: 45%; 
+             transform: translate(-50%, -50%);
+        }
+
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .nam {
+            font-size: 30px;
+            position: absolute;
+            /* top: 10px;
+            left: 20px; */
+            color: blue;
+             left: 50%;
+            top: 50%; 
+             transform: translate(-50%, -50%);
+        }
+
+        .babaji {
+            position: fixed;
+            /* left: 50%;
+            top: 50%; */
+            /* transform: translate(-50%, -50%); */
+            background-color: turquoise;
+            height: 100%;
+            width: 100%;
+        }
+
+        /* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#page{
+    text-align: center;
+    color: red;
+}
+    </style>
+
+</head>
+
+<body onload="guddugood()">
+
+
+    <div class="babaji" id="baba">
+        <h5 class="nam">GUDDU</h5>
+        <div class="loader"></div>
+    </div>
+
+
+
+    <h1 id="page" class="animate-bottom" style="display:none;">hellow Guddu</h1>
+    <script>
+
+     var myVar;
+
+        function guddugood() {
+            myVar = setTimeout(showPage, 3500);
+        }
+        function showPage() {
+                document.getElementById("baba").style.display = "none";
+                document.getElementById("page").style.display = "block";
+         }
+
+      
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>all in one</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ 
+    <style>
+        button{
+            height: 70px;
+            font-size: 30px !important;
+        }
+         .skiptranslate iframe{
+             display: none;
+         }
+        #google_translate_element select{
+               display: inline-block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 1.75rem 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    vertical-align: middle;
+    /* background: #fff url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e) no-repeat right 0.75rem center/8px 10px;
+    border: 1px solid #ced4da; */
+    border-radius: 0.25rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(219, 218, 218);">
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+            <h1 class="text-uppercase text-success text-center my-3">All in one</h1>
+            <h2 class="text-uppercase text-primary text-center my-3">DESIGNED BY GUDDU</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                  <h2 class="text-center text-danger text-uppercase">calculator</h2>
+                <div class="form-group">
+                    <label for="usr" class="text-primary" style="font-size: 30px;">DISPLAY</label>
+                    <input type="text" class="form-control" id="display" style="height:100px;font-size: 50px;text-align:right;outline:2px solid deepskyblue;" maxlength="1000" readonly >
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <button type="button" class="btn btn-danger w-100 my-3" id="ce" onclick="display.value=''">CE</button>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <button type="button" class="btn btn-dark my-3 w-100" id="zero" onclick="display.value += '0'">0</button>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <button type="button" class="btn btn-info my-3 w-100" id="min" onclick="display.value += '-'">-</button>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <button type="button" class="btn btn-info my-3 w-100" id="add" onclick="display.value += '+'">+</button>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <button type="button" class="btn btn-dark my-3 w-100" id="nine" onclick="display.value += '9'">9</button>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <button type="button" class="btn btn-dark my-3 w-100" id="eight" onclick="display.value += '8'">8</button>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <button type="button" class="btn btn-dark my-3 w-100" id="seven" onclick="display.value += '7'">7</button>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <button type="button" class="btn btn-info my-3 w-100" id="mul" onclick="display.value += '*'">*</button>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <button type="button" class="btn btn-dark my-3 w-100" id="six" onclick="display.value += '6'">6</button>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <button type="button" class="btn btn-dark my-3 w-100" id="five" onclick="display.value += '5'">5</button>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <button type="button" class="btn btn-dark my-3 w-100" id="four" onclick="display.value += '4'">4</button>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <button type="button" class="btn btn-info my-3 w-100" id="div" onclick="display.value += '/'">/</button>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <button type="button" class="btn btn-dark my-3 w-100 " id="three" onclick="display.value += '3'">3</button>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <button type="button" class="btn btn-dark my-3 w-100 " id="two" onclick="display.value += '2'">2</button>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <button type="button" class="btn btn-dark my-3 w-100 " id="one" onclick="display.value += '1'">1</button>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <button type="button" class="btn btn-primary my-3 w-100" id="equal">=</button>
+            </div>
+        </div>
+        <div class="row mb-5">
+        <div class="col-lg-3 col-md-3 col-sm-3">
+            <button type="button" class="btn btn-info my-3 w-100" onclick="display.value += '%'">%</button>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3">
+            <button type="button" class="btn btn-info my-3 w-100" onclick="display.value += '**'">power</button>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3">
+            <button type="button" class="btn btn-success my-3 w-100"  onclick="display.value += (display.value)++">digit double +</button>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3">
+            <button type="button" class="btn btn-success my-3 w-100"  onclick="display.value='GUDDU KUMAR'">NAME</button>
+        </div>
+    </div>
+       
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <h2 class="text-center text-danger text-uppercase"> string</h2>
+ 
+            <div class="form-group">
+                <label for="usr">Enter  input:</label>
+                <input type="text" class="form-control" id="str"  onkeyup="lenthh()">
+            </div>
+                
+            <h2 class="text-center  text-uppercase">this is length function</h2>
+            <!-- <p class="text-center  text-uppercase"> </p> -->
+            <p class="text-center  text-primary" id="abcd"></p>
+
+
+
+            <h2 class="text-center text-danger text-uppercase"> extract string from slice()</h2>
+            <p class="text-center " >"rohit,rajeev,guddu"</p>
+            <p class="text-center  text-primary" id="slice"> </p>
+
+            <h2 class="text-center text-danger text-uppercase"> extract string from substring()</h2>
+            <p class="text-center " >"rohit,rajeev,guddu"</p>
+            <p class="text-center  text-primary" id="sub"> </p>
+
+            <h2 class="text-center text-danger text-uppercase"> extract string from substr()</h2>
+            <p class="text-center " >"rohit,rajeev,guddu"</p>
+            <p class="text-center  text-primary" id="substr"> </p>
+
+            <h2 class="text-center text-danger text-uppercase"> extract string from replace()</h2>
+            <!-- <p class="text-center " >"rohit,rajeev,guddu"</p> -->
+            <p class="text-center  text-primary" id="replace" onmouseover="document.getElementById('replace').innerHTML=document.getElementById('replace').innerHTML.replace('css','javascript');"> how to add css in html </p>
+            <h2 class="text-center text-danger text-uppercase"> extract string from concat()</h2>
+            <p class="text-center " onclick="concat()"> we add two string 1 is "rakesh" and 2 is "sir" click on me </p>
+            <p class="text-center  text-primary" id="concat" >   </p>
+
+            <h2 class="text-center text-danger text-uppercase"> extract string from split()</h2>
+            <div class="form-group my-4">
+                <label for="usr">enter string :</label>
+                <input type="text" class="form-control" id="slin" placeholder="Ex-a|b|c|d">
+            </div>
+            <p class="text-center " onclick="spli()"> <button class="btn btn-success">split()</button></p>
+            <p class="text-center  text-primary" id="split" >   </p>
+
+
+
+           
+
+            <h2 class="text-center text-danger text-uppercase"> match string from match()</h2>
+            <p class="text-center " id="tex" >The match() method searches a string for a match against a regular expression, and returns the matches, as an Array
+            object.  </p>
+            <div class="form-group my-4">
+                <label for="usr">enter text to match:</label>
+                <input type="text" class="form-control" id="user" onkeyup="mat()">
+            </div>
+            <p class="text-center  text-primary" id="match" >   </p>
+
+
+            <div class="form-group my-4">
+                <label for="usr">enter number to see code:</label>
+                <input type="number" class="form-control" id="num" onkeyup="bina()">
+            </div>
+            <h3 class="text-center  text-primary" id="numout" > </h3>
+
+
+
+
+
+            <h2 class="text-center text-danger text-uppercase"> array pop() and push() and display array</h2>
+
+            <div class="form-group my-4">
+                <label for="usr">enter array :</label>
+                <input type="text" class="form-control" id="text1">
+            </div>
+            <h3 class="text-center  text-primary" id="air" >   </h3>
+              <div class="row">
+    <div class="col-lg-4"> <button type="button" class="btn btn-success my-3 w-100" onclick="push()">push()</button></div>
+    <div class="col-lg-4"> <button type="button" class="btn btn-danger my-3 w-100" onclick="pop()">pop()</button></div>
+    <div class="col-lg-4"> <button type="button" class="btn btn-primary my-3 w-100" onclick="dis()">Display()</button></div></div>
+           
+           
+        
+
+         
+
+
+
+<div class="row my-5">
+            <h2 class="text-center text-danger text-uppercase"> array sort() and reverse() and number sort() or compare() or max no on array() or min value on array() in array</h2>
+            
+            <div class="col-lg-12">
+<div class="form-group my-4">
+    <label for="usr">enter array :</label>
+    <input type="text" class="form-control" id="insort" style="height: 50px;font-size: 30px;" onkeyup="entered()" placeholder="enter array like - 1,2,3">
+</div>
+
+<h4 class="text-center">entered element</h4>
+<h6 class="text-center" id="en"></h6>
+<h4 class="text-center text-primary">sorted element</h4>
+<h3 class="text-center  text-primary" id="sorted"> </h3>
+            </div>
+         
+
+
+    <div class="col-lg-2 col-md-2 col-sm-4">
+        <button type="button" class="btn btn-success my-3 w-100" onclick="sot()">sort()</button>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-4">
+        <button type="button" class="btn btn-danger my-3 w-100" onclick="rev()">reverse()</button>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-4">
+        <button type="button" class="btn btn-primary my-3 w-100" onclick="rept()">repeat4()</button>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-4">
+        <button type="button" class="btn btn-secondary my-3 w-100" onclick="num()">number()</button>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-4">
+      <button type="button" class="btn btn-info my-3 w-100" onclick="max()">max no()</button>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-4">
+       <button type="button" class="btn btn-warning my-3 w-100" onclick="min()">min no()</button>
+    </div>
+</div> 
+            
+            
+            <!-- <button type="button" class="btn btn-success my-3 w-100" onclick="push()">push()</button>
+            <button type="button" class="btn btn-danger my-3 w-100" onclick="pop()">pop()</button>
+            <button type="button" class="btn btn-primary my-3 w-100" onclick="dis()">Display()</button> -->
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h2 class="text-center text-danger">Array forEach() Method</h2>
+            <!-- <div class="form-group my-4">
+                <label for="usr">enter array :</label>
+                <input type="text" class="form-control" id="" style="height: 50px;font-size: 30px;" onkeyup="ente()"
+                    placeholder="enter array like -'guddu','kumar','sharma'">
+            </div> -->
+            <p class="text-center  text-primary" id="doc"> </p>
+             <button type="button" class="btn btn-primary my-3 w-100" onclick="each()">Display()</button>
+        </div>
+    
+            <div class="col-lg-12">
+                <h2 class="text-center text-danger">Array reduce() and every() and some()Method</h2>
+                <div class="form-group my-4">
+                <label for="usr">enter array :</label>
+                <input type="text" class="form-control" id="reduc" style="height: 50px;font-size: 30px;" onkeyup="entered()" placeholder="">
+                </div>
+                
+                <h4 class="text-center">entered element</h4>
+                <h6 class="text-center" id="en">var a=[1,2,3,4,5,6,7,8,9];</h6>
+                <h4 class="text-center text-primary">reduce or other method()element</h4>
+                <h3 class="text-center  text-danger" id="redu"> </h3>
+                </div>
+                   
+        </div>
+        </div>
+</div>
+</section>
+
+
+
+ <section>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="row">
+                <div class="col">
+                    <button type="button" class="btn btn-warning my-3 w-100" onclick="map()">map()</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-danger my-3 w-100" onclick="fil()">filter()</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-success my-3 w-100" onclick="red()">reduce()</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-info my-3 w-100" onclick="ever()">every()</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-primary my-3 w-100" onclick="som()">some()</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-info my-3 w-100" onclick="incl()">include()</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-light my-3 w-100" onclick="fro()">from()</button>
+                </div>
+                <div class="col pb-5">
+                    <button type="button" class="btn btn-success my-3 w-100 mb-5" onclick="key()">keys()</button>
+                </div>
+            
+            </div>
+
+        </div>
+    </div>
+</div>
+ </section>
+
+
+
+
+ <section>
+     <div class="container">
+         <div class="row">
+             <div class="col-lg-12 px-5">
+                <h2 class="text-center text-danger">create random no with math.random Method</h2>
+                  <h3 class="text-center  text-primary" id="ran"> </h3>
+                <button type="button" class="btn btn-primary my-3 w-100 " onclick="rand()">random()</button>
+                <!-- onclick="rand(0,1000)" -->
+             </div>
+         </div>
+
+
+         <div class="row">
+             <div class="col-lg-12">
+                <h5 id="sent" class="text-center my-5">Our Institute is an ISO 9001:2015 Certified which offers more than 60 courses, 10 industry expert trainers
+                    and advanced course curriculum make Next-G Education one-stop destination to expand knowledge by learning new skills
+                    and software. You can join our courses in both online and classroom mode. Let us help you choose from
+                    career-oriented courses in web design & development, software development courses, graphic design courses, post
+                    production, architect and video editing courses</h5>
+                    <div class="row">
+                          <div class="form-group col-lg-6 my-5">
+                        <label for="usr">find:</label>
+                        <input type="text" class="form-control" id="fi" style="height: 50px;font-size: 30px;" >
+                    </div>
+                    <div class="form-group col-lg-6 my-5">
+                        <label for="usr">replace:</label>
+                        <input type="text" class="form-control" id="re" style="height: 50px;font-size: 30px;">
+                    </div>
+                    </div>
+                <button class="btn btn-dark my-5 w-100" onclick="repl()">replace()</button>
+             </div>
+         </div>
+     </div>
+ </section>
+
+
+ <section>
+     <div class="container">
+         <div class="row">
+             <div class="col-lg-6">
+             <h2 class="text-center text-danger">using for in printing array value</h2>
+             <h3 class="text-center text-primary" id="for"> </h3>
+                <button class="btn btn-success my-5 w-100" onclick="forin()">for in()</button>
+
+             </div>
+        
+             <div class="col-lg-6">
+             <h2 class="text-center text-danger">using for of printing array value</h2>
+             <h3 class="text-center text-primary" id="fof"> </h3>
+                <button class="btn btn-warning my-5 w-100" onclick="forof()">for of()</button>
+
+             </div>
+         </div>
+     </div>
+ </section>
+
+
+ <section>
+     <div class="container">
+         <div class="row">
+             <div class="col-lg-12">
+            <h2 class="text-center text-uppercase text-danger">HTML DOM Collections</h2>
+
+            <p class="text-center">I am first PARAGRAP</p>
+            <p class="text-center">I am second PARAGRAP</p>
+            <p class="text-center">I am Third PARAGRAP</p>
+<P class="text-center">
+       <button type="button" class="btn btn-danger my-3 " onclick="tag()">color text()</button></P>
+             </div>
+         </div>
+     </div>
+ </section>
+ <section>
+     <div class="container">
+         <div class="row">
+             <div class="col-lg-12">
+            <h2 class="text-center text-uppercase text-danger">HTML BOM window Open()</h2>
+
+            <!-- <p class="text-center">I am first PARAGRAP</p>
+            <p class="text-center">I am second PARAGRAP</p>
+            <p class="text-center">I am Third PARAGRAP</p> -->
+<div class="row my-5">
+       <button type="button" class="btn btn-danger my-3 mx-4" onclick="ope()">open window()</button>
+       <button type="button" class="btn btn-primary my-3 mx-4" onclick="clo()">close window()</button>
+       <button type="button" class="btn btn-warning my-3 mx-4" onclick="res()">resize window()</button>
+       <button type="button" class="btn btn-success my-3 mx-4" onclick="mov()">moveto window()</button>
+    
+    </div>
+             </div>
+         </div>
+     </div>
+ </section>
+
+
+
+ <section>
+     <div class="container">
+         <div class="row my-5">
+             <div class="col-lg-12" >
+                <!-- <div id="google_translate_element">
+                    <div class="skiptranslate goog-te-gadget" dir="ltr">
+                        <div id=":0.targetLanguage">
+                <select  class="custom-select goog-te-combo"  aria-label="Language Translate Widget" >
+                    <option selected>select language</option>
+                    <option value="en" >English</option>
+                    <option value="hi">Hindi</option>
+                    <option value="pa" onclick="pun()">Punjabi</option>
+                </select>
+                </div>
+                </div>
+                </div> -->
+                
+                <div style="height:45px;width:100%; background-color:transparent;overflow-y: hidden;">
+                    <div id="google_translate_element"></div>
+                </div>
+        
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+            }
+            // var b = document.getElementById("google_translate_element");
+            // b.classList.add("custom-select");
+        </script>
+        
+        <script type="text/javascript"
+            src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+             </div>
+         </div>
+     </div>
+ </section>
+
+
+ <section>
+     <div class="container">
+         <div class="row my-5">
+             <div class="col-lg-12">
+                <h2 class="text-center text-danger my-3">fetch file  </h2>
+                 <h5 id="file" class="text-center text-success">hello</h5>
+        <p class="text-center" > 
+            <button type="button" class="btn btn-success my-3 mx-4" onclick="fet()">fetch file()</button>
+        </p>
+
+                 
+             </div>
+         </div>
+     </div>
+ </section>
+
+ 
+
+    <script src="script.js"></script>
+</body>
+</html>

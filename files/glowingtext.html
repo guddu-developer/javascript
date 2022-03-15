@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+        @import url('http://fonts.cdnfonts.com/css/the-monster');
+
+           h1{
+               font-family: 'Allerta Stencil', sans-serif;
+               /* font-family: 'The Monster', sans-serif; */
+
+           }
+        body {
+            background-color: black;
+            font-family: cursive;
+        }
+
+        .glow {
+            font-size: 80px;
+            color: #fff;
+            text-align: center;
+            margin-top: 25%;
+            /* transform: translate(-50%,-50%); */
+            animation: glow 1s ease-in-out infinite alternate;
+        }
+
+        @-webkit-keyframes glow {
+            from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #1cbfff, 0 0 40px#12b8fa, 0 0 50px #00acf0, 0 0 60px #daff08, 0 0 70px #ff3a9d;
+            }
+
+            to {
+                text-shadow: 0 0 10px #fff, 0 0 20px #4dff65, 0 0 30px #17ff36, 0 0 40px #00ff22, 0 0 50px #00bd19, 0 0 40px red, 0 0 50px rgb(211, 1, 1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="glow">Guddu Kumar</h1>
+
+</body>
+
+</html>

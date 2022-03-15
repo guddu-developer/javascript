@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>digital clock</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .overlay{
+            position: fixed;
+            top: 48px;
+            left: auto;
+            right: auto;
+            background-image: url("https://homezonline.in/wp-content/uploads/2020/09/Beautiful-simplex-house-design.jpg");
+            height: 600px;
+            width: 1140px;
+        }
+        h1{
+            font-size: 70px;
+            /* padding-top: 200px;  */
+        }
+        .op{
+            background-color: rgba(0, 0, 0, 0.6);
+            height: 600px;
+        }
+        
+    </style>
+</head>
+<body style="background:black;">
+
+    <div class="container-fluid" style="position: fixed; top:0;left:0; background-color: springgreen;">
+        <h3 class="text-white text-uppercase text-center "> designed by guddu kumar</h3>
+    </div>
+
+
+    <div class="container px-0 mt-5" style="height: 600px; background-color: yellow;padding-top:230px;" id="mouse" >
+        <div class="overlay" id="show">
+            <div class="op"  >
+        <h1 class="text-center text-white font-weight-bold" style="padding-top: 200px;"  >you want to see time click on builduing</h1>
+        </div>
+        </div>
+        <h1 id="time" onmouseover="change()"  class="text-center  " style="font-size: 100px; color: #007bff;"></h1>
+    </div>
+
+<script>
+    function change(){
+        var change=document.getElementById("time");
+        if(change.style.color!=="#007bff"){
+          change.style.color="red";
+        }
+    }
+    document.getElementById("show").addEventListener("click", function(){
+        document.getElementById("show").style.display="none";
+    });
+
+
+
+
+   document.getElementById("mouse").addEventListener("mouseover",clock);
+    // setInterval(clock, 1000);
+   function clock(){
+       
+    var date=new Date();
+    var h=date.getHours();
+    var m=date.getMinutes();
+    var s=date.getSeconds();
+    var a="AM";
+    if(h==0){
+        h="12";
+    }
+    if(h>12){
+        h=h-12;
+        a = "PM"
+    }
+    if(s<10){
+       
+    //    h="0" +h;
+        // alert("hero");
+    //    m="0"  +m;
+       s="0"  +s;
+    }
+    if(m<10){
+         m = "0" + m;
+    }
+    if (h < 10) {
+            h = "0" + h;
+        }
+
+    document.getElementById("time").innerHTML=h +":"+ m +":" +s+ " " +a;
+    setTimeout(clock, 1000);
+    //  setInterval(clock, 1000);
+
+
+    // document.getElementById("hr").innerHTML = h
+    // document.getElementById("min").innerHTML = m;
+    // document.getElementById("sec").innerHTML = s;
+    // document.getElementById("ampm").innerHTML = a;
+
+
+    };
+
+</script>
+    
+</body>
+</html>

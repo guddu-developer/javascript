@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>123</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<h1 class="text-center text-uppercase text-warning">NO PRINTING USING DOCUMENT.WRITE USING JAVASCRIPT</h1>
+<!-- <button onclick="band()">stop</button> -->
+<h1 class="text-center text-uppercase text-danger" id="no"></h1>
+
+<script>
+    // document.addEventListener("click",no);
+    
+       
+    var gol=setInterval(no,1500);
+           var a=0;
+       function no(){
+       
+            //   for odd no printing
+            // document.getElementById("no").innerHTML += a+"<br>";
+            document.write(a+"<br>");
+            a++;
+           
+              if(a==21){
+                
+                clearInterval(gol,100);
+           }
+
+           
+        //    while(a<10){
+        //        document.write(a+"<br>");
+        //        a++;
+        //         setTimeout(no,2000);
+        //    }
+        //    while (i < 10) {
+        //      document.write("<br>The number is " + i);
+        //     i++;
+        //     }
+   
+        //   for(i=0;i<=20;i++)
+        //   {
+        //      document.getElementById("no").innerHTML += i + "<br>";
+        //   }
+      }
+ 
+//  function band() {
+//             clearInterval(gol);
+//         }
+  
+ 
+    
+</script>
+</body>
+</html>

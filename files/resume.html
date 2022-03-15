@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+		<title>resume</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	</head>
+	<body>
+
+		<section>
+			<div class="container-fluid mt-5">
+				<div class="row">
+
+					<div class="col-lg-6 pt-5">
+
+						<h2 class="text-primary font-weight-light">What’s the best way for employers to contact you?</h2>
+						<h5 class="font-weight-light">We suggest including an email and phone number.</h5>
+						<br /><br />
+						<div class="col-lg-12 clearfix">
+							<div class="float-left">
+								<lable style="line-height:30px">first name</lable>
+								<input type="text" class="form-control" id="fname" placeholder="e.g.guddu" onkeyup="guddu()" style="width:300px" />
+								</div>
+								<div class="float-right ">
+									<lable style="line-height:30px">last name</lable>
+									<input type="text" class="form-control" id="lname" placeholder="e.g.kumar" onkeyup="guddu()" style="width:300px"/>
+									</div>
+							</div>
+
+
+							<div class="col-lg-12 clearfix" >
+								<div class="float-left ">
+									<lable style="line-height:30px">city</lable>
+									<input type="text" class="form-control" id="city" placeholder="e.g.new delhi" onkeyup="guddu()" style="width:300px" />
+									</div>
+									<div class="float-right ">
+										<lable style="line-height:30px">phone no</lable>
+										<input type="number" maxlength="10" class="form-control" id="phone" onkeyup="guddu()" placeholder="e.g.123456789" style="width:300px"/>
+										</div>
+								</div>
+
+
+
+
+
+								<div class="col-lg-12 clearfix" >
+
+									<div class="float-left " style="width:330px;">
+
+										<div class="float-left" style="width:150px;">
+												<lable style="line-height:30px;">Country</lable>
+											<form>
+	                       <select  class="custom-select" id="country" onkeyup="guddu()" >
+                           <option >select country</option>
+	                         <option >india</option>
+	                         <option >nepal</option>
+	                         <option >Russia</option>
+	                       </select>
+	                     </form>
+
+											</div>
+											<div class="float-right" style="width:150px;">
+													<lable style="line-height:30px">pin code</lable>
+													<input type="number" maxlength="6" class="form-control ml-1" onkeyup="guddu()" id="pin" placeholder="e.g.110086" />
+													</div>
+
+
+											</div>
+
+										<div class="float-right ">
+											<lable style="line-height:30px">email id</lable>
+											<input type="email"  class="form-control mr-0" onkeyup="guddu()" id="email" placeholder="e.g.123456789" style="width:300px" validate/>
+											</div>
+
+
+									</div>
+
+
+
+								<div class="col-lg-12">
+									<div class="float-left">
+											<button type="reset" style=" box-shadow: 0 0 5px rgb(0 0 0 / 19%); margin:100px 0 0 20px;height:50px;color:black; width:150px;font-size:20px;background-color:#007bff;">back</button>
+									</div>
+
+								</div>
+
+
+
+
+<!--
+								<div class="col-lg-12">
+									<div class="col-lg-12">
+											<lable class="control-label " style="line-height:30px">email id</lable>
+									</div>
+									<div class="col-lg-12">
+											<input type="email" class="form-control" id="" placeholder="e.g.123456789"  />
+
+									</div>
+
+
+									</div> -->
+
+
+																</div>
+
+
+
+
+
+
+
+						<div class="col-lg-6">
+
+
+							<div class="col-lg-12 py-4" style="background:#3c5769; " >
+								<div class="pl-2" style="height:50px;width:70px;border:1px solid white; margin:auto">
+									<h1 class="text-white" style="font-weight:normal;" id="">YN</h1>
+
+									</div>
+									 <h1 class="text-center" style="color:gray"><span id="fnholder">your</span> <span id="lnholder">name</span> </h1>
+
+								</div>
+
+
+								<div class="row" >
+
+								<div class="col-lg-7 px-4">
+
+                    <h4 class="my-4">Professional Summary</h4>
+
+
+									<p class="text-muted">
+										Motivated Sales Associate with 5 years of experience boosting sales and customer loyalty through individualized service. Resourceful expert at learning customer needs, directing to desirable merchandise and upselling to meet sales quotas. Committed to strengthening customer experiences with positivity and professionalism when answering requests and processing sales.
+									</p>
+
+
+									<hr class="my-4"  />
+
+                    <h4>Work History</h4>
+
+										<ul class="text-muted"><li>Effectively upsold products by introducing accessories and other add-ons, adding ₹3000 to average monthly sales.</li><li>Generated brand awareness and positive product impressions to increase sales 22%.</li><li>Used consultative sales approach to understand customer needs and recommend relevant offerings.</li></ul>
+
+
+
+
+
+
+
+
+								</div>
+
+								<div class="col-lg-5 pt-4" style="background-color:#f5f5f5">
+
+						<a style="font-size:16px; line-height:30px;"  class="text-muted float-left"><span class="mr-2"><i class="fas fa-envelope"></i></span><span id="emholder">Guddukumar19548@gmail.com</span></a>
+             		<a style="font-size:16px; line-height:30px;"  class="text-muted float-left"><span class="mr-2"><i class="fas fa-phone-alt"></i></span><span id="phholder">9560190498</span></a>
+									<a style="font-size:16px; line-height:30px;"  class="text-muted float-left"><span class="mr-2"><i class="fas fa-map-marker-alt"></i></span><span id="ciholder">New Delhi </span>
+										<span id="piholder">110086</span>,<span id="coholder">India</span></a>
+             <hr  style="margin:120px 0 30px 0">
+
+
+
+						 <h4>skills</h4>
+
+						 <ul class="text-muted">
+
+								 <li>Store opening and closing</li>
+								 <li>Sales expertise</li>
+								 <li>Accurate Money Handling</li>
+								 <li>Store Merchandising</li>
+								 <li>Loss prevention</li>
+								 <li>Product promotions</li>
+								 <li>Guest Services</li>
+								 <li>Point of Sale Systems</li>
+
+
+						 </ul>
+
+
+
+
+
+								</div>
+
+
+
+
+
+
+
+
+								</div>
+
+
+
+							</div>
+
+
+
+
+
+       </div>
+       </div>
+
+		</section>
+
+
+
+
+<script>
+function guddu(){
+var fn=document.getElementById('fname').value;
+var ln=document.getElementById('lname').value;
+var ci=document.getElementById('city').value;
+var ph=document.getElementById('phone').value;
+var co=document.getElementById('country').value;
+var pi=document.getElementById('pin').value;
+var em=document.getElementById('email').value;
+
+
+
+document.getElementById('fnholder').innerHTML=fn;
+document.getElementById('lnholder').innerHTML=ln;
+document.getElementById('ciholder').innerHTML=ci;
+document.getElementById('phholder').innerHTML=ph;
+document.getElementById('coholder').innerHTML=co;
+document.getElementById('piholder').innerHTML=pi;
+document.getElementById('emholder').innerHTML=em;
+
+
+
+}
+
+
+</script>
+
+
+	</body>
+</html>

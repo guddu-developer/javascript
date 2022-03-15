@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>hacked</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   
+</head>
+
+<body>
+
+    <div class="container">
+     
+
+        <!-- The Modal -->
+        <div class="modal" id="myModal" style="background-color:rgb(134, 129, 129)">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title text-uppercase text-danger text-center" id="bli" >Hacked</h4>
+                        <button type="button" class="close" id="blin" onclick="clo()" >&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body" >
+                        <video height="100%" width="100%" autoplay muted loop> 
+                            <source src="guddu.webm">
+                        </video>
+                    </div>
+
+                    <!-- Modal footer -->
+            <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal" id="blink" onclick="clo()">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+          var blink = document.getElementById('blink');
+            var blink1 = document.getElementById('bli');
+            var blink2 = document.getElementById('blin');
+    setInterval(function () {
+              blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+              blink1.style.opacity = (blink1.style.opacity == 0 ? 1 : 0);
+              blink2.style.opacity = (blink2.style.opacity == 0 ? 1 : 0);
+             }, 800);
+             
+
+
+         var a = document.getElementById("myModal");
+
+       setInterval(guddu,3000);
+       function guddu(){
+           a.style.display="block";
+       }
+
+       function clo(){
+         a.style.display = "none";
+       }
+  
+    </script>
+</body>
+</html>

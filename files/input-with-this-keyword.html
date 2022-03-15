@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input</title>
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+       <!-- <style>
+           body {
+     background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='50px' width='260px'><text x='0' y='15' fill='black' font-size='20'>DESIGNED BY GUDDU</text></svg>"); 
+     
+           }
+       </style> -->
+</head>
+<body>
+     
+     <section >
+<div class="container" style="background-color: rgb(212, 255, 226);">
+      <h1 class="text-center text-success text-uppercase mb-5">DESIGNED BY GUDDU</h1>
+     <h1 class="text-center text-primary text-uppercase mb-5">add ,delete and delete all element</h1>
+
+          <div class="row">
+             <div class="col-lg-12" id="guddu">  </div>
+          </div>
+
+     <div class="row">
+         <div class="col-lg-12">
+
+             <div class="row justify-content-center">
+
+             <button class="btn btn-primary m-5 text-uppercase" id="add">add element</button>
+             <button class="btn btn-warning m-5 text-uppercase" id="del">delete element</button>
+             <button class="btn btn-danger m-5 text-uppercase" id="all">delete all</button>
+
+             </div>
+         </div>
+     </div>
+</div>
+</section>
+ <script>
+     document.getElementById("add").addEventListener("click",add);
+     document.getElementById("del").addEventListener("click",del);
+     document.getElementById("all").addEventListener("click",all);
+  
+
+        // https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_close_list_items
+      //  function clo( ){
+      //       var c=document.getElementById("big");
+      //       // c.remove(big)=guddu;       
+      //          this.parentElement.style.display = 'none';
+      //    }
+      //  function clo1(close){
+      //       var c=document.getElementById("big1");
+      //       c.remove(big1)=guddu;       
+      //    }
+      //  function clo2(close){
+      //       var c=document.getElementById("big2");
+      //       c.remove(big2)=guddu;       
+      //    }
+            
+     function add() {
+     var bigger=document.createElement("div");
+      var biggerid=document.createAttribute("id");
+       biggerid.value="bigger";
+     bigger.setAttributeNode(biggerid);
+  var big=document.createElement("div");
+       big.classList.add("form-group");
+        var bigid=document.createAttribute("id");
+       bigid.value="big";
+       big.setAttributeNode(bigid);
+  var big2=document.createElement("div");
+     big2.classList.add("form-group");
+  var big1=document.createElement("div");
+     big1.classList.add("form-group");
+     
+   ////close button
+ var close=document.createElement("button");
+  var ct=document.createAttribute("type");
+  var id=document.createAttribute("id");
+  var click=document.createAttribute("onclick");
+   click.value="this.parentElement.style.display = 'none'";
+   close.setAttributeNode(click);
+   ct.value="button";    
+   close.innerHTML="&times;";
+   close.classList.add("close");
+
+  var label=document.createElement("label");
+   label.innerHTML="Email address:";
+  var input=document.createElement("input");    ///input type text
+  var type=document.createAttribute("type");
+  var place=document.createAttribute("placeholder");
+       type.value="text";
+      place.value="Enter email";     
+      input.setAttributeNode(type);  
+      input.setAttributeNode(place);
+      input.classList.add("form-control"); 
+      input.classList.add("mb-4"); 
+       big.appendChild(label);   
+       big.appendChild(close);
+      big.appendChild(input);
+      bigger.appendChild(big);
+     
+
+
+
+
+      //  input type no  
+ var big1 = document.createElement("div");
+ big1.classList.add("form-group");
+var bigid1 = document.createAttribute("id");
+ bigid1.value = "big1";
+ big1.setAttributeNode(bigid1);     
+  var close1=document.createElement("button");
+  var ct=document.createAttribute("type");
+  var id1=document.createAttribute("id");
+  var click1=document.createAttribute("onclick");
+   id1.value="cl2";
+   click1.value="this.parentElement.style.display = 'none'";
+   close1.setAttributeNode(click1);
+   close1.setAttributeNode(id1);
+   ct.value="button";    
+   close1.innerHTML="&times;";
+   close1.classList.add("close");
+   
+ //close button 2nd
+  var label1=document.createElement("label");
+   label1.innerHTML="Phone number:";
+    var la2=document.createAttribute("id");
+      la2.value="good11";
+      label1.setAttributeNode(la2);
+  var input1=document.createElement("input");
+  var type1=document.createAttribute("type");
+      type1.value="number";
+  var inid1=document.createAttribute("id");
+      inid1.value="good10";
+      input1.setAttributeNode(type1); 
+      input1.setAttributeNode(inid1);
+      input1.classList.add("form-control");
+      input1.classList.add("mb-4");
+        big1.appendChild(close1);
+       big1.appendChild(label1);   
+      big1.appendChild(input1);
+       bigger.appendChild(big1);
+
+
+
+
+
+
+    //  input type file.
+    var big2 = document.createElement("div");
+       big2.classList.add("form-group");
+       var bigid2 = document.createAttribute("id");
+       bigid2.value = "big2";
+       big2.setAttributeNode(bigid2);
+ var close2=document.createElement("button");
+  var ct=document.createAttribute("type");
+  var id2=document.createAttribute("id");
+  var click2=document.createAttribute("onclick");
+   id2.value="cl3";
+   click2.value="this.parentElement.style.display = 'none'";
+   close2.setAttributeNode(click2);
+   close2.setAttributeNode(id2);
+   ct.value="button";    
+   close2.innerHTML="&times;";
+   close2.classList.add("close");
+   // close button 3
+     var cus=document.createElement("div");
+     cus.classList.add("custom-file");
+    var inid2=document.createAttribute("id");
+       inid2.value="good30";
+      cus.setAttributeNode(inid2);
+  var label3=document.createElement("label");
+      label3.innerHTML="Upload file";
+  var la3=document.createAttribute("id");
+     la3.value="good31";
+     label3.setAttributeNode(la3);
+  var label2=document.createElement("label");
+     label2.classList.add("custom-file-label");
+   label2.innerHTML="Upload File:";
+  var input2=document.createElement("input");
+  var type2=document.createAttribute("type");
+  // var inid2=document.createAttribute("id");
+      // inid2.value="good30";
+      type2.value="file";
+      input2.setAttributeNode(type2); 
+      // input2.setAttributeNode(inid2);
+      input2.classList.add("custom-file-input");
+      input2.classList.add("mb-4");
+      big2.appendChild(close2);
+      big2.appendChild(label3);   
+      cus.appendChild(input2);
+      cus.appendChild(label2);
+      big2.appendChild(cus);
+      bigger.appendChild(big2);
+
+      //main to show
+    
+       var co=document.getElementById("guddu");
+       co.appendChild(bigger);
+
+  
+
+     }
+
+
+
+//    delete function
+
+
+  function del() {
+      var co=document.getElementById("guddu");
+      co.removeChild(co.childNodes[1]);
+  }
+
+//   remove all function
+
+function all()
+{
+   var co=document.getElementById('guddu');
+   co.innerHTML="";
+}
+
+
+    
+      
+
+ </script>
+
+
+ 
+
+ 
+
+</body>
+</html>

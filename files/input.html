@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input</title>
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+       <style>
+           body {
+     background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='50px' width='260px'><text x='0' y='15' fill='black' font-size='20'>DESIGNED BY GUDDU</text></svg>"); 
+     
+           }
+       </style>
+</head>
+<body>
+     
+     <section >
+<div class="container" style="background-color: rgb(212, 255, 226);">
+     <h1 class="text-center text-primary text-uppercase">add ,delete and delete all element</h1>
+
+          <div class="row">
+             <div class="col-lg-12" id="guddu"> </div>
+          </div>
+
+     <div class="row">
+         <div class="col-lg-12">
+
+             <div class="row justify-content-center">
+
+             <button class="btn btn-primary m-5 text-uppercase" id="add">add element</button>
+             <button class="btn btn-warning m-5 text-uppercase" id="del">delete element</button>
+             <button class="btn btn-danger m-5 text-uppercase" id="all">delete all</button>
+
+             </div>
+         </div>
+     </div>
+</div>
+</section>
+ <script>
+     document.getElementById("add").addEventListener("click",add);
+     document.getElementById("del").addEventListener("click",del);
+     document.getElementById("all").addEventListener("click",all);
+
+     function add() {
+
+  var big=document.createElement("div");
+     big.classList.add("form-group");
+      // input type 
+  var label=document.createElement("label");
+   label.innerHTML="Email address:";
+   label.classList.add("mt-4")
+  var input=document.createElement("input");    ///input type text
+  var type=document.createAttribute("type");
+  var place=document.createAttribute("placeholder");
+       type.value="text";
+      place.value="Enter email";     
+      input.setAttributeNode(type);  
+      input.setAttributeNode(place);
+      input.classList.add("form-control"); 
+      input.classList.add("mb-4"); 
+       big.appendChild(label);   
+      big.appendChild(input);
+     
+
+
+      //  input type no  
+
+  var label1=document.createElement("label");
+   label1.innerHTML="Phone number:";
+  var input1=document.createElement("input");
+  var type1=document.createAttribute("type");
+      type1.value="number";
+      input1.setAttributeNode(type1); 
+      input1.classList.add("form-control");
+      input1.classList.add("mb-4");
+       big.appendChild(label1);   
+      big.appendChild(input1);
+
+    //  input type file.
+     var cus=document.createElement("div");
+     cus.classList.add("custom-file");
+  var label3=document.createElement("label");
+      label3.innerHTML="Upload file"
+  var label2=document.createElement("label");
+     label2.classList.add("custom-file-label");
+   label2.innerHTML="Upload File:";
+  var input2=document.createElement("input");
+  var type2=document.createAttribute("type");
+      type2.value="file";
+      input2.setAttributeNode(type2); 
+      input2.classList.add("custom-file-input");
+      input2.classList.add("mb-4");
+      big.appendChild(label3);   
+      cus.appendChild(input2);
+      cus.appendChild(label2);
+      big.appendChild(cus);
+
+      //main to show
+    
+       var co=document.getElementById("guddu");
+       co.appendChild(big);
+
+  
+
+     }
+
+
+
+//    delete function
+
+
+  function del() {
+      var co=document.getElementById("guddu");
+      co.removeChild(co.childNodes[1]);
+  }
+
+//   remove all function
+
+function all()
+{
+   var co=document.getElementById('guddu');
+   co.innerHTML="";
+}
+
+
+
+    
+      
+
+ </script>
+
+
+ 
+
+ 
+
+</body>
+</html>

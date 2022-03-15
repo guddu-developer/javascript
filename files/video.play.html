@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video control by guddu</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head >
+<body class="bg-dark">
+    <section>
+        <div class="container ">
+            <h1 class="text-center text-danger text-uppercase my-5">video controls by javascript</h1>
+            <h2 class="text-center text-primary">DESIGNED BY GUDDU</h2>
+             <!--  <div class="row">
+                  <div class="col-lg-12">
+                      <div class="mx-auto">
+                    <p class="text-center">  
+                        <video width="600" height="400" poster="ferrari.jpg" controls>
+                            <source src="ferrari.mp4" type="video/mp4">
+                            </video></p>
+                    <p class="text-center text-primary">default</p>
+                     </div>
+                  </div>
+              </div> -->
+        </div>
+    </section>
+
+         
+
+     
+     
+     
+     
+        <section>
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-12">
+                        <p class="text-center">
+                        <video height="400px" width="600px" poster="ferrari.jpg" id="video" >
+                            <source  src="ferrari.mp4" type="video/mp4">
+                        </video>
+                       </p>
+
+
+                       <div class="row justify-content-center">
+                       <button  class="btn btn-success m-4" onclick="play_pause()" id="playpause">play/pause</button> 
+                       <button type="button"  class="btn btn-warning m-4" onclick="stop()">stop</button> 
+
+             <div class="dropdown m-4">
+              <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown"> speed</button>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" onclick="speed025()" id="speed025">0.25</a>
+                        <a class="dropdown-item" onclick="speed05()" id="speed05">0.50</a>
+                        <a class="dropdown-item"onclick="speed075()" id="speed075">0.75</a>
+                        <a class="dropdown-item bg-primary" onclick="speed()" id="speed">normal</a>
+                        <a class="dropdown-item" onclick="speed125()" id="speed125">1.25</a>
+                        <a class="dropdown-item"onclick="speed15()" id="speed15">1.50</a>
+                        <a class="dropdown-item" onclick="speed175()" id="speed175">1.75</a>
+                        <a class="dropdown-item" onclick="speed2()" id="speed2">2</a>
+                            </div>
+                        </div>                       
+                       <button type="button" class="btn btn-primary m-4" onclick="backward()">backward</button>
+                        <button type="button" class="btn btn-primary m-4" onclick="forward()" >forward</button> 
+                                              
+                     </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4 mb-5 pb-5">
+                        <img src="download.png" height="40px"width="40px" alt="" class="float-right">
+                    </div>
+                    <div class="col-lg-5">
+                    <label for="customRange" class="text-warning">volume</label>
+                    <input type="range" class="custom-range" id="volume"  min="0" max="1" step="0.001" value="100" onchange="volumebut()"  name="points1">
+                    </div>
+                </div>
+            </div>
+        </section>
+ 
+
+
+           <script>
+                var video = document.getElementById("video");
+                var speednor=document.getElementById("speed");
+                var speedmin=document.getElementById("speed025");
+                var speedmid=document.getElementById("speed05");
+                var speedmax=document.getElementById("speed075");
+                var speedmin1=document.getElementById("speed125");
+                var speedmid1=document.getElementById("speed15");
+                var speedmax1=document.getElementById("speed175");
+                var speeddub=document.getElementById("speed2");
+                var volumerange=document.getElementById("volume");
+                  function play_pause(){
+            
+                    // video.play();
+                    // if(type=="playpause")
+                    // if(video.pause=="true"){
+                    //     video.play();
+                    // }
+                    // else{
+                    //     video.pause();
+                    // }
+                      if (video.paused || video.ended) {
+                       video.play();
+                        } 
+                   else {
+                       video.pause();
+                        }                     
+                    //    if (video.paused || video.ended) {
+                    //        video.play();
+                    //    }
+                    //    else {
+                    //       video.paused();
+                    //    }
+               }
+               function stop(){
+                   video.pause();
+                   video.currentTime=0;                               
+               }
+               function speed075(){
+                  video.playbackRate = .75;
+                  speedmax.classList.add("bg-primary");
+                  speedmin.classList.remove("bg-primary");
+                  speednor.classList.remove("bg-primary");
+                  speedmax1.classList.remove("bg-primary");
+                  speedmin1.classList.remove("bg-primary");
+                  speedmid.classList.remove("bg-primary");
+                  speedmid1.classList.remove("bg-primary");
+                  speeddub.classList.remove("bg-primary");
+
+               }
+               function speed05(){
+                 video.playbackRate = .5;
+                  speedmax.classList.remove("bg-primary");
+                   speedmin.classList.remove("bg-primary");
+                   speednor.classList.remove("bg-primary");
+                   speedmax1.classList.remove("bg-primary");
+                   speedmin1.classList.remove("bg-primary");
+                   speedmid.classList.add("bg-primary");
+                   speedmid1.classList.remove("bg-primary");
+                   speeddub.classList.remove("bg-primary");
+               }
+               function speed025(){
+                video.playbackRate = .25;
+                 speedmax.classList.remove("bg-primary");
+                   speedmin.classList.add("bg-primary");
+                   speednor.classList.remove("bg-primary");
+                   speedmax1.classList.remove("bg-primary");
+                   speedmin1.classList.remove("bg-primary");
+                   speedmid.classList.remove("bg-primary");
+                   speedmid1.classList.remove("bg-primary");
+                   speeddub.classList.remove("bg-primary");
+               }
+               function speed(){
+                video.playbackRate =1;
+                 speedmax.classList.remove("bg-primary");
+                   speedmin.classList.remove("bg-primary");
+                   speednor.classList.add("bg-primary");
+                   speedmax1.classList.remove("bg-primary");
+                   speedmin1.classList.remove("bg-primary");
+                   speedmid.classList.remove("bg-primary");
+                   speedmid1.classList.remove("bg-primary");
+                   speeddub.classList.remove("bg-primary");
+               }
+               function speed125(){
+                video.playbackRate = 1.25;
+                 speedmax.classList.remove("bg-primary");
+                   speedmin.classList.remove("bg-primary");
+                   speednor.classList.remove("bg-primary");
+                   speedmax1.classList.remove("bg-primary");
+                   speedmin1.classList.add("bg-primary");
+                   speedmid.classList.remove("bg-primary");
+                   speedmid1.classList.remove("bg-primary");
+                   speeddub.classList.remove("bg-primary");
+               }
+               function speed15(){
+                video.playbackRate = 1.5;
+                 speedmax.classList.remove("bg-primary");
+                   speedmin.classList.remove("bg-primary");
+                   speednor.classList.remove("bg-primary");
+                   speedmax1.classList.remove("bg-primary");
+                   speedmin1.classList.remove("bg-primary");
+                   speedmid.classList.remove("bg-primary");
+                   speedmid1.classList.add("bg-primary");
+                   speeddub.classList.remove("bg-primary");
+               }
+               function speed175(){
+                  video.playbackRate = 1.75;
+                   speedmax.classList.remove("bg-primary");
+                   speedmin.classList.remove("bg-primary");
+                   speednor.classList.remove("bg-primary");
+                   speedmax1.classList.add("bg-primary");
+                   speedmin1.classList.remove("bg-primary");
+                   speedmid.classList.remove("bg-primary");
+                   speedmid1.classList.remove("bg-primary");
+                   speeddub.classList.remove("bg-primary");
+               }
+               function speed2(){
+               video.playbackRate = 2;
+                speedmax.classList.remove("bg-primary");
+                   speedmin.classList.remove("bg-primary");
+                   speednor.classList.remove("bg-primary");
+                   speedmax1.classList.remove("bg-primary");
+                   speedmin1.classList.remove("bg-primary");
+                   speedmid.classList.remove("bg-primary");
+                   speedmid1.classList.remove("bg-primary");
+                   speeddub.classList.add("bg-primary");
+               }
+            //   function check(){
+            //             alert(video.playbackRate);
+            //         }
+               function backward(){
+                  if (video.currentTime <= 3) {
+                       video.pause();
+                   } 
+                   else {
+                       video.currentTime -= 3;
+                   }
+               }
+               function forward(){
+                 if (video.currentTime >= video.duration - 4) {
+                      video.pause();
+                   } else {
+                       video.currentTime += 3;
+                   }
+               }
+               function volumebut(){
+                   video.volume=volumerange.value;
+               }
+               
+
+
+
+           </script>
+
+     
+</body>
+</html>
