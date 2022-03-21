@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+}
+.ab{
+      display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.keyboard {
+    margin-top: 20px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(30, 1fr);
+  width: 1200px;
+}
+
+.key {
+  display: flex;
+  flex-direction: column;
+  grid-column: span 2;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+
+  font: 18px/1.5 "Space Mono", monospace;
+
+  background-color: #f4f5f6;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.key:hover {
+  background-color: #fff;
+}
+
+.span-3 {
+  grid-column: span 3;
+}
+
+.span-4 {
+  grid-column: span 4;
+}
+
+.span-5 {
+  grid-column: span 5;
+}
+
+.span-14 {
+  grid-column: span 14;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.border-none {
+  border: none;
+}
+
+
+
+
+/* ////////////////tv */
+/* 
+body {
+  height: 700px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+.tv {
+  height: 280px;
+  width: 500px;
+  background-color: #333;
+  border: 15px solid #000;
+  border-radius: 10px;
+}
+.tv .power-on-display {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  width: 300px;
+  background-color: #666;
+  position: relative;
+  top: 70px;
+  left: 100px;
+}
+.tv .power-on-display .text {
+  text-align: center;
+}
+.tv .power-on-display .text h3,
+.tv .power-on-display .text p {
+  -webkit-animation: disappear infinite 2s linear;
+          animation: disappear infinite 2s linear;
+  color: #f00;
+  font-family: Josefin Sans;
+  letter-spacing: 1px;
+}
+.tv .power-on-button {
+  width: 20px;
+  height: 5px;
+  background-color: #00f;
+  position: relative;
+  top: 1.5px;
+  right: -460px;
+  -webkit-animation: power-button infinite 1s;
+          animation: power-button infinite 1s;
+}
+/* .tv .stand {
+  position: relative;
+  height: 70px;
+  width: 15px;
+  background-color: #000;
+  top: 310px;
+  left: 50%;
+  transform: translateX(-15px);
+}
+.tv .stand .horizontal-stand {
+  width: 200px;
+  height: 50px;
+  background-color: #000;
+  position: relative;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-100px);
+  border-radius: 50%;
+  box-shadow: 0px 5px 20px 0px #000;
+} */
+.tv.opened .power-on-display {
+  display: flex;
+}
+.tv.opened .power-on-button {
+  top: 155px;
+  -webkit-animation: none;
+          animation: none;
+}
+.tv.opened .stand {
+  top: 160px;
+}
+@-webkit-keyframes power-button {
+  0% {
+    background-color: #00f;
+  }
+  50% {
+    background-color: #000;
+  }
+  100% {
+    background-color: #00f;
+  }
+}
+@keyframes power-button {
+  0% {
+    background-color: #00f;
+  }
+  50% {
+    background-color: #000;
+  }
+  100% {
+    background-color: #00f;
+  }
+}
+@-webkit-keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+

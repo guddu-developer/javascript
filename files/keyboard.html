@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEYBOARD-WITH-SOUND</title>
+    <link rel="stylesheet" href="keyboard.css">
+</head>
+<body>
+
+
+    <h1 style="position: fixed;top:10%;left:2%;color:red;">MADE BY GUDDU</h1>
+    <h1 style="position: fixed;top:10%;right:2%;color:blue;">MADE BY GUDDU</h1>
+<div class="ab">
+    <div class="tv">
+       <textarea onkeyup="myKeyPress(event)" name="" id="didplay" cols="30" style="width: 490px; height: 275px;font-size: 18px;color:red;resize: none;" ></textarea>
+        <div class="power-on-button"></div>
+        <!-- <div class="stand">
+            <div class="horizontal-stand"></div>
+        </div> -->
+    </div>
+</div>
+
+<div class="ab">
+
+
+    <section class="keyboard">
+    <button class="key" onclick="didplay.value+='~'"><span>~</span><span>`</span></button>
+    <button class="key" onclick="didplay.value+=1" id="sounds/1.mp3" onfocus="audio(this.id)"><span>!</span><span>1</span></button>
+    <button class="key" onclick="didplay.value+=2" id="sounds/2.mp3" onfocus="audio(this.id)"><span>@</span><span>2</span></button>
+    <button class="key" onclick="didplay.value+=3" id="sounds/3.mp3" onfocus="audio(this.id)"><span>#</span><span>3</span></button>
+    <button class="key" onclick="didplay.value+=4" id="sounds/4.mp3" onfocus="audio(this.id)"><span>$</span><span>4</span></button>
+    <button class="key" onclick="didplay.value+=5" id="sounds/5.mp3" onfocus="audio(this.id)"><span>%</span><span>5</span></button>
+    <button class="key" onclick="didplay.value+=6" id="sounds/6.mp3" onfocus="audio(this.id)"><span>^</span><span>6</span></button>
+    <button class="key" onclick="didplay.value+=7" id="sounds/7.mp3" onfocus="audio(this.id)"><span>&</span><span>7</span></button>
+    <button class="key" onclick="didplay.value+=8" id="sounds/8.mp3" onfocus="audio(this.id)"><span>*</span><span>8</span></button>
+    <button class="key" onclick="didplay.value+=9" id="sounds/9.mp3" onfocus="audio(this.id)"><span>(</span><span>9</span></button>
+    <button class="key" onclick="didplay.value+=0" id="sounds/0.mp3" onfocus="audio(this.id)"><span>)</span><span>0</span></button>
+    <button class="key" onfocus="didplay.value+='-'"><span>_</span><span>-</span></button>
+    <button class="key" onfocus="didplay.value+='='"><span>+</span><span>=</span></button>
+    <button class="key span-4" onclick="didplay.value=''">Backspace</button>
+    <button class="key span-3" >Tab</button>
+    <button class="key" onfocus="didplay.value+='Q'" value="sounds/q.mp3"  onclick="audio(this.value)">Q</button>
+    <button class="key" onclick="didplay.value+='W'" id="sounds/w.mp3" onfocus="audio(this.id)">W</button>
+    <button class="key" onclick="didplay.value+='E'" id="sounds/e.mp3" onfocus="audio(this.id)">E</button>
+    <button class="key" onclick="didplay.value+='R'" id="sounds/r.mp3" onfocus="audio(this.id);">R</button>
+    <button class="key" onclick="didplay.value+='T'" id="sounds/t.mp3" onfocus="audio(this.id);">T</button>
+    <button class="key" onclick="didplay.value+='Y'" id="sounds/y.mp3" onfocus="audio(this.id);">Y</button>
+    <button class="key" onclick="didplay.value+='U'" id="sounds/u.mp3" onfocus="audio(this.id);">U</button>
+    <button class="key" onclick="didplay.value+='I'" id="sounds/i.mp3" onfocus="audio(this.id);">I</button>
+    <button class="key" onclick="didplay.value+='O'" id="sounds/o.mp3" onfocus="audio(this.id);">O</button>
+    <button class="key" onclick="didplay.value+='P'" id="sounds/p.mp3" onfocus="audio(this.id);">P</button>
+    <button class="key" onfocus="didplay.value+='['"><span>{</span><span>[</span></button>
+    <button class="key" onfocus="didplay.value+=']'"><span>}</span><span>]</span></button>
+    <button class="key span-3" onfocus="didplay.value+='|'"><span>|</span><span>\</span></button>
+
+    <button class="key span-4">Caps lock</button>
+    <button class="key"onclick="didplay.value+='A'" id="sounds/a.mp3" onfocus="audio(this.id);">A</button>
+    <button class="key"onclick="didplay.value+='S'" id="sounds/s.mp3" onfocus="audio(this.id);">S</button>
+    <button class="key"onclick="didplay.value+='D'" id="sounds/d.mp3" onfocus="audio(this.id);">D</button>
+    <button class="key"onclick="didplay.value+='F'" id="sounds/f.mp3" onfocus="audio(this.id);">F</button>
+    <button class="key"onclick="didplay.value+='G'" id="sounds/g.mp3" onfocus="audio(this.id);">G</button>
+    <button class="key"onclick="didplay.value+='H'" id="sounds/h.mp3" onfocus="audio(this.id);">H</button>
+    <button class="key"onclick="didplay.value+='J'" id="sounds/j.mp3" onfocus="audio(this.id);">J</button>
+    <button class="key"onclick="didplay.value+='K'" id="sounds/k.mp3" onfocus="audio(this.id);">K</button>
+    <button class="key"onclick="didplay.value+='L'" id="sounds/l.mp3" onfocus="audio(this.id);">L</button>
+    <button class="key" onfocus="didplay.value+=';'"><span>:</span><span>;</span></button>
+    <button class="key" onfocus="didplay.value+=','"><span>"</span><span>'</span></button>
+    <button class="key span-4">Enter</button>
+
+    <button class="key span-5">Shift</button>
+    <button class="key" onclick="didplay.value+='Z'" id="sounds/z.mp3" onfocus="audio(this.id);">Z</button>
+    <button class="key" onclick="didplay.value+='X'" id="sounds/x.mp3" onfocus="audio(this.id);">X</button>
+    <button class="key" onclick="didplay.value+='C'" id="sounds/c.mp3" onfocus="audio(this.id);">C</button>
+    <button class="key" onclick="didplay.value+='V'" id="sounds/v.mp3" onfocus="audio(this.id);">V</button>
+    <button class="key" onclick="didplay.value+='B'" id="sounds/b.mp3" onfocus="audio(this.id);">B</button>
+    <button class="key" onclick="didplay.value+='N'" id="sounds/n.mp3" onfocus="audio(this.id);">N</button>
+    <button class="key" onclick="didplay.value+='M'" id="sounds/m.mp3" onfocus="audio(this.id);">M</button>
+    <button class="key" onfocus="didplay.value+=','"><span>&lt;</span><span>,</span></button>
+    <button class="key" onfocus="didplay.value+='.'"><span>&gt;</span><span>.</span></button>
+    <button class="key" onfocus="didplay.value+='/'"><span>?</span><span>/</span></button>
+    <button class="key span-5">Shift</button>
+
+    <button class="key">Ctrl</button>
+    <button class="key">Win</button>
+    <button class="key">Alt</button>
+    <button class="key span-14">Space</button>
+    <button class="key">Alt</button>
+    <button class="key">Ctrl</button>
+    <button class="key">&#5130;</button>
+    <div class="key p-0 border-none">
+        <button class="key w-100">&#5123;</button>
+        <button class="key w-100">&#5121;</button>
+    </div>
+    <button class="key">&#5125;</button>
+</section>  
+</div>  
+
+<div style="display:none;">
+<audio id="audi" controls>
+  <!-- <source src="horse.ogg" type="audio/ogg"> -->
+  <source src="" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</div>
+<script>
+   function audio(s){
+   let a=document.getElementById("audi");
+     a.src=s;
+     a.play();
+     console.log(s);
+    }
+</script>
+
+<!-- //////////keyboard key handeler///////////////////// -->
+<script>
+    function myKeyPress(e){
+  var keynum;
+  if(window.event) { // IE                  
+    keynum = e.keyCode;
+  } else if(e.which){ // Netscape/Firefox/Opera                 
+    keynum = e.which;
+  }
+  
+  inpt=String.fromCharCode(keynum);
+//   alert(String.fromCharCode(keynum));
+if(inpt=="0"){ audio("sounds/0.mp3"); }
+if(inpt==1){ audio("sounds/1.mp3"); }
+if(inpt==2){ audio("sounds/2.mp3"); }
+if(inpt==3){ audio("sounds/3.mp3"); }
+if(inpt==4){ audio("sounds/4.mp3"); }
+if(inpt==5){ audio("sounds/5.mp3"); }
+if(inpt==6){ audio("sounds/6.mp3"); }
+if(inpt==7){ audio("sounds/7.mp3"); }
+if(inpt==8){ audio("sounds/8.mp3"); }
+if(inpt==9){ audio("sounds/9.mp3"); }
+if(inpt=="A"){ audio("sounds/a.mp3"); }
+if(inpt=="B"){ audio("sounds/b.mp3"); }
+if(inpt=="C"){ audio("sounds/c.mp3"); }
+if(inpt=="D"){ audio("sounds/d.mp3"); }
+if(inpt=="E"){ audio("sounds/e.mp3"); }
+if(inpt=="F"){ audio("sounds/f.mp3"); }
+if(inpt=="G"){ audio("sounds/g.mp3"); }
+if(inpt=="H"){ audio("sounds/h.mp3"); }
+if(inpt=="I"){ audio("sounds/i.mp3"); }
+if(inpt=="J"){ audio("sounds/j.mp3"); }
+if(inpt=="K"){ audio("sounds/k.mp3"); }
+if(inpt=="L"){ audio("sounds/l.mp3"); }
+if(inpt=="M"){ audio("sounds/m.mp3"); }
+if(inpt=="N"){ audio("sounds/n.mp3"); }
+if(inpt=="O"){ audio("sounds/o.mp3"); }
+if(inpt=="P"){ audio("sounds/p.mp3"); }
+if(inpt=="Q"){ audio("sounds/q.mp3"); }
+if(inpt=="R"){ audio("sounds/r.mp3"); }
+if(inpt=="S"){ audio("sounds/s.mp3"); }
+if(inpt=="T"){ audio("sounds/t.mp3"); }
+if(inpt=="U"){ audio("sounds/u.mp3"); }
+if(inpt=="V"){ audio("sounds/v.mp3"); }
+if(inpt=="W"){ audio("sounds/w.mp3"); }
+if(inpt=="X"){ audio("sounds/x.mp3"); }
+if(inpt=="Y"){ audio("sounds/y.mp3"); }
+if(inpt=="Z"){ audio("sounds/z.mp3"); }
+if(inpt==""){ document.getElementById("didplay").value=""; }
+
+}
+</script>
+</body>
+</html>
