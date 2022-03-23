@@ -1,0 +1,11 @@
+Video::internal-media-controls-download-button {
+    Display: none;
+}
+
+Video::-webkit-media-controls-enclosesure {
+    Overflow: hidden;
+}
+
+Video::-webkit-media-controls-panel {
+    Width: calc(100%+30px);
+}
