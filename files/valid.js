@@ -37,7 +37,7 @@ function rightclick(){
         window.preventDefault();
     }
 
-
+//
 
 // ============================custum controls js
 let video=document.getElementById("video");

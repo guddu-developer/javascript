@@ -31,7 +31,7 @@ function rightclick(){
         return false;
     }    
     }
-
+//
    //////// forward and backward block
     if(  window.history.back()){
         // alert("back");
