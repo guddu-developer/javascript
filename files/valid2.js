@@ -34,10 +34,11 @@ function rightclick(){
 
    //////// forward and backward block
     if(window.history.back()){
-        // alert("back");
+        alert("backward");
         window.preventDefault();
     }
     if( window.history.forward()){
+      alert("forward");
         window.preventDefault();
     }
 
