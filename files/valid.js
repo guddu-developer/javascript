@@ -4,7 +4,7 @@ document.addEventListener('mousedown', event => event.preventDefault());
 document.addEventListener("keydown", disablef12);
     
 function get_video(){
-  document.getElementById("vid").src="ferrari.mp4";
+  document.getElementById("video").setAttribute("src","ferrari.mp4");
 }
 
 

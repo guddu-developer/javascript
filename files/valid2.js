@@ -36,11 +36,9 @@ function rightclick(){
     if(  window.history.back()){
         // alert("back");
         window.preventDefault();
-           window.location.reload();
     }
     if( window.history.forward()){
         window.preventDefault();
-           window.location.reload();
     }
 
 
