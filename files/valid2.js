@@ -33,8 +33,8 @@ function rightclick(){
     }
 
    //////// forward and backward block
-    if(window.history.back()){
-        alert("backward");
+    if(  window.history.back()){
+        alert("back");
         window.preventDefault();
     }
     if( window.history.forward()){
