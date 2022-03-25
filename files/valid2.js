@@ -4,6 +4,12 @@ document.addEventListener('mousedown', event => event.preventDefault());
 document.addEventListener("keydown", disablef12);
 let video=document.getElementById("video");
 let volume=document.getElementById("volume");
+window.onbeforeunload = function() { return "Your work will be lost."; };
+window.unload=function(){ null; }
+
+function block(){
+   window.history.forward();
+}
 
 function get_video(){
   video.setAttribute("src","ferrari.mp4");
@@ -36,13 +42,15 @@ function rightclick(){
     if(  window.history.back()){
 //         alert("back");
 //         window.preventDefault();
-      window.location.href="https://guddu-developer.github.io/javascript";
+//       window.location.href="https://guddu-developer.github.io/javascript";
+      window.history.forward();
       
     }
     if( window.history.forward()){
 //       alert("forward");
 //         window.preventDefault();
-      window.location.href="https://guddu-developer.github.io/javascript";
+//       window.location.href="https://guddu-developer.github.io/javascript";
+      window.history.back();
       
     }
 
