@@ -34,12 +34,16 @@ function rightclick(){
 
    //////// forward and backward block
     if(  window.history.back()){
-        alert("back");
-        window.preventDefault();
+//         alert("back");
+//         window.preventDefault();
+      window.location.href="https://guddu-developer.github.io/javascript";
+      
     }
     if( window.history.forward()){
-      alert("forward");
-        window.preventDefault();
+//       alert("forward");
+//         window.preventDefault();
+      window.location.href="https://guddu-developer.github.io/javascript";
+      
     }
 
 
