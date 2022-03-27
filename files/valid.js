@@ -33,7 +33,6 @@ function rightclick(){
         window.preventDefault();
     }
     if( window.history.forward()){
-      alert("forward");
         window.preventDefault();
     }
 
