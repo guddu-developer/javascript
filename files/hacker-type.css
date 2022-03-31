@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    overflow: hidden;
+}
+.backcover{
+    background-color: rgb(20, 20, 20);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 999999;
+}
+
+.backcover img{
+    margin-top: 100px;
+    height: 150px;
+    width: 200px;
+}
+p{
+    text-align: center;
+}
+.backcover h2{
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: red;
+    text-align: center;
+    font-size: 50px;
+}
+.red{
+    color: red;
+    font-size: 18px;
+}
+.gray{
+    margin-top: 10px;
+    color: gray;
+}
+.white{
+    color: white;
+    font-size: 12px;
+    margin-top: 5px;
+}
+.con{
+    margin-top: 30px;
+    background-color: red;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 18px;
+    box-shadow: 2px 2px 2px rgb(68, 68, 68);
+    cursor: pointer;
+}
+header img{
+    width: 100%;
+    height: auto;
+}
+main{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("images/bg.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.fixed{
+    position: fixed;
+    left: 50px;
+    top: 70px;
+    height: auto;
+    width: 50px;
+}
+.fixed .icon{
+  /* height: 50px; */
+  margin: 20px 0;
+  cursor: pointer;
+}
+.icon img{
+    height: auto;
+    width: 100%;
+}
+.bio{
+    position: absolute;
+     left: 50%;
+     top: 50;
+     transform: translate(-50%, 60%);
+}
+.bio img{
+height: 300px;
+width: 300px;
+}
+
+.frame{
+    border-top: 25px solid red;
+    border-bottom: 5px solid red;
+    border-left: 5px solid red;
+    border-right: 5px solid red;
+    background-color: black;
+    /* padding: 20px; */
+    /* height: 400px; */
+    /* width: 600px; */
+    position: absolute;
+    border-radius: 2px;
+    max-width: 600px;
+    overflow: hidden;
+}
+
+.frame .close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 3px;
+    cursor: pointer;
+}
+ 
+.frame h2{
+color: red;
+margin:30px 10px 10px 10px;
+text-align: center;
+font-size: 40px;
+}
+
+.mb-20{
+    margin-bottom: 20px;
+}
+.mt-20{
+    margin-top: 20px;
+}
+
+.frame .icon{
+    height: auto;
+    width: 100px;
+    padding: 10px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.number{
+    height: 95%;
+    width: 400px;
+    max-width: 400px;
+    background-color: transparent;
+    position: absolute;
+    right: 100px;
+    top: 5%;
+    overflow-y: hidden;
+    background-image: url(images/number.gif);
+    background-repeat: no-repeat;
+   background-size: cover;
+
+}
+
+.access_denied{
+    background-color: black;
+    height: 100px;
+    width: 350px;
+    font-size: 32px;
+    border: 3px solid red;
+    position: absolute;
+    z-index: 5;
+    text-align: center;
+    color: red;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: 600;
+    padding: 30px 10px;
+    animation-name: blinkred;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    text-shadow: 2px 2px 2px rgb(214, 64, 64);
+    box-shadow: 2px 2px 5px gray;
+}
+
+@keyframes blinkred{
+    from{ background-color: red;}
+    to{ background-color: black;}
+}
+
+
+
+.access_grant{
+    background-color: black;
+    height: 100px;
+    width: 350px;
+    font-size: 32px;
+    border: 3px solid rgb(0, 218, 0);
+    position: absolute;
+    z-index: 5;
+    text-align: center;
+    color: rgb(0, 218, 0);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: 600;
+    padding: 30px 10px;
+    animation-name: blinkgreen;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    text-shadow: 2px 2px 2px rgb(0, 170, 0);
+    box-shadow: 2px 2px 5px gray;
+}
+
+@keyframes blinkgreen{
+    from {
+        background-color: rgb(0, 218, 0);
+    }
+    to{ background-color: black;}
+}

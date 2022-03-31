@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HACKERS</title>
+    <link rel="stylesheet" href="hacker-type.css">
+    <link rel="icon" type="icon-x/image" href="images/favicon.png">
+</head>
+<body onload="countframe()" onkeydown="myKeyPress()">
+<section>
+<div class="backcover" id="cover">
+    <div class="container">
+        <p><img src="images/warning.png" alt="warning" ></p>
+        <h2 >PRANK WARANING</h2>
+        <p class="red">This is a designed for "hacking" prank done in TV Shows and Movies.  <br>
+There is no real hacking going on. Please be careful where and how you use this.</p>
+
+<p class="gray">Scammers may try to use this page to make you think you were hacked, don't believe them!</p>
+
+       <p><button class="con" type="button" onclick="document.getElementById('cover').remove()">CONTINUE</button></p>
+    </div>
+</div>
+</section>
+
+
+    <header style="margin: 0;position: fixed;">
+        <img src="images/header.png" alt="header" style="margin:0 ;">
+    </header>
+   
+     <div class="bio"><img src="images/bio.png" alt=""></div>
+  
+    <div class="fixed">
+        <div class="icon" onclick="covid()"><img src="images/psa.png"  alt=""><p class="white">COV-19 PSA</p></div>
+        <div class="icon" onclick="dl_data()"><img src="images/arrow.png"  alt=""><p class="white">DL Data</p></div>
+        <div class="icon" onclick="microscope()"><img src="images/microscope.png"  alt=""><p class="white">Microscope</p></div>
+        <div class="icon" onclick="decryptor()"><img src="images/decryptor.png"  alt=""><p class="white">Decryptor</p></div>
+        <div class="icon" onclick="help()"><img src="images/help.png"  alt=""><p class="white">Help</p></div>
+        <div class="icon" onclick="allscript()"><img src="images/allscripts.png"  alt=""><p class="white">All Script</p></div>
+    </div>
+
+
+    <div class="number">
+
+    </div>
+
+<main id="frame">
+
+
+
+
+    <!-- covid  -->
+    <!-- <div class="frame" onclick="this.style.zIndex='1'"   style="top: 5%;left: 10%;"> <img src="images/covid.png" width="100%" alt=""> <div class="close" onclick="this.parentElement.remove()"><img src="images/close.png" alt=""></div> </div> -->
+    <!-- microscope  -->
+    <!-- <div class="frame" onclick="this.style.zIndex='1'"   style="top: 5%;left: 10%;"> <img src="images/micro.gif" width="400" height="400" alt=""> <div class="close" onclick="this.parentElement.remove()"><img src="images/close.png" alt=""></div> </div> -->
+
+      <!-- downloading -->
+    <div class="frame" onclick="this.style.zIndex='1'"  style="top: 40%;left: 35%;"> <h2  >Downloading...</h2><p class="red">Critical Data</p> <img src="images/downloading.gif" width="100%" alt=""> <div class="close" onclick="this.parentElement.remove()"><img src="images/close.png" alt=""></div> </div>
+      <!-- encryptor -->
+    <!-- <div class="frame" onclick="this.style.zIndex='1'"  style="top: 15%;left: 30%;"> <h2  >Encrypting...</h2> <img src="images/encryptor.gif" width="100%" alt=""> <div class="close" onclick="this.parentElement.remove()"><img src="images/close.png" alt=""></div> </div> -->
+
+      <!-- map -->
+    <!-- <div class="frame" onclick="this.style.zIndex='1'"  style="top: 15%;left: 25%;"> <h2 class="mb-20" >Tracing Contact</h2> <img src="images/map.gif" width="100%" alt=""> <div class="close" onclick="this.parentElement.remove()"><img src="images/close.png" alt=""></div> </div> -->
+
+      <!-- terminal -->
+    <!-- <div class="frame" onclick="this.style.zIndex='1'"  style="top: 15%;left: 25%;padding: 20px 30px;"> <p class="mt-20 mb-20 red" >Compiling Nodes</p> <img src="images/textrun.gif" width="100%" alt=""> <div class="close" onclick="this.parentElement.remove()"><img src="images/close.png" alt=""></div> </div> -->
+
+      
+
+     <!-- decryptor  -->
+    <!-- <div class="frame" onclick="this.style.zIndex='1'" style="padding: 20px 50px;top: 30%;left: 35%;" ><h2>Password Decryptor</h2><p class="red mb-20">Calculate Hashes</p> <img src="images/hash.gif" width="100%" alt=""> <div class="close" onclick="this.parentElement.remove()"><img src="images/close.png" alt=""></div> </div> -->
+
+     <!-- Scan  -->
+    <div class="frame" onclick="this.style.zIndex='1'" style="padding: 20px 50px;top: 30%;left: 60%;" ><h2>satellite Uplink</h2><p class="red mb-20">Interfacing via stattgard</p> <img src="images/scan.gif" width="100%" alt=""> <div class="close" onclick="this.parentElement.remove()"><img src="images/close.png" alt=""></div> </div>
+
+
+     <!-- Deploy  -->
+    <!-- <div class="frame" onclick="this.style.zIndex='1'" style="padding: 20px 50px;top: 10%;left: 20%;" ><h2>Activating POT</h2><p class="red mb-20">Engage all foreign cells</p> <img src="images/pot.gif" width="100%" alt=""> <div class="close" onclick="this.parentElement.remove()"><img src="images/close.png" alt=""></div> </div> -->
+
+     <!-- Neuro  -->
+    <!-- <div class="frame" onclick="this.style.zIndex='1'" style="padding: 20px 50px;top: 15%;left: 25%;" ><h2>Flooding Facility</h2><p class="red mb-20">Preparing Neurotoxin Emitters</p> <img src="images/neurotox.gif" width="100%" alt=""> <div class="close" onclick="this.parentElement.remove()"><img src="images/close.png" alt=""></div> </div> -->
+
+     <!-- SIOP  -->
+    <!-- <div class="frame" onclick="this.style.zIndex='1'" style="padding: 10px;top: 10%;left: 5%;" ><h2>CDC PANDAMIC SCENARIO</h2><p class="red mb-20">Word Wide Spread</p> <img src="images/siop.gif" width="100%" alt=""> <div class="close" onclick="this.parentElement.remove()"><img src="images/close.png" alt=""></div> </div> -->
+
+     <!-- chat  -->
+    <!-- <div class="frame" onclick="this.style.zIndex='1'" style="padding: 20px;top: 20%;left: 25%;" > <p class="red">CHATS</p> <img src="images/icr.gif" width="100%" alt=""> <div class="close" onclick="this.parentElement.remove()"><img src="images/close.png" alt=""></div> </div> -->
+    
+     <!-- rna  -->
+    <!-- <div class="frame" onclick="this.style.zIndex='1'" style="padding: 20px;top: 20%;left: 25%;" >   <img src="images/rna1.gif" width="100%" alt=""> <div class="close" onclick="this.parentElement.remove()"><img src="images/close.png" alt=""></div> </div> -->
+
+     <!-- infect  -->
+    <div class="frame" onclick="this.style.zIndex='1'" style="padding: 20px;top: 10%;left: 9%;" >  <img src="images/rat.gif" width="100%" alt=""> <div class="close" onclick="this.parentElement.remove()"><img src="images/close.png" alt=""></div> </div>
+
+     <!-- sequence  -->
+    <!-- <div class="frame" onclick="this.style.zIndex='1'" style="padding: 20px;top: 20%;left: 50%;" >  <img src="images/sequence.gif" width="100%" alt=""> <div class="close" onclick="this.parentElement.remove()"><img src="images/close.png" alt=""></div> </div> -->
+
+     <!-- stability  -->
+    <!-- <div class="frame" onclick="this.style.zIndex='1'" style="padding: 20px;top: 20%;left: 10%;" >  <img src="images/stability.gif" width="100%" alt=""> <div class="close" onclick="this.parentElement.remove()"><img src="images/close.png" alt=""></div> </div> -->
+
+     <!-- radars  -->
+    <div class="frame" onclick="this.style.zIndex='1'" style="padding: 20px;top: 60%;left: 10%;" >  <img src="images/radar.gif" width="100%" alt=""> <div class="close" onclick="this.parentElement.remove()"><img src="images/close.png" alt=""></div> </div>
+
+     <!-- dna  -->
+    <div class="frame" onclick="this.style.zIndex='1'" style="padding: 20px;top: 65%;left: 35%;" > <p class="red">DNA</p> <img src="images/dna.gif" width="100%" alt=""> <div class="close" onclick="this.parentElement.remove()"><img src="images/close.png" alt=""></div> </div>
+
+
+     <!-- hints and keyboard  -->
+    <!-- <div class="frame" onclick="this.style.zIndex='1'"  style="padding: 20px 30px;top: 25%;left: 25%;"> <img src="images/keyboard.png" width="100%" alt=""> <div class="close" onclick="this.parentElement.remove()"><img src="images/close.png" alt=""></div><p class="red mb-20 mt-20">Status And Achivements</p> </div> -->
+
+     <!-- all Scripts  -->
+    <!-- <div class="frame"  onclick="this.style.zIndex='1'" style="padding: 20px 30px;top: 10%;left: 55%;">  <div class="close" onclick="this.parentElement.remove()"><img src="images/close.png" alt=""></div>
+    <div style="display: flex;">
+    <div class="icon"  onclick="dl_data()"><img src="images/arrow.png" alt=""> <p class="white">DL Data</p></div>
+    <div class="icon" onclick="decryptor()"><img src="images/hash.png" alt=""> <p class="white">Hash</p></div>
+    <div class="icon" onclick="terminal()"><img src="images/terminal.png" alt=""> <p class="white">Terminak</p></div>
+    <div class="icon" onclick="encryptor()"><img src="images/decryptor.png" alt=""> <p class="white">Encryptor</p></div>
+    <div class="icon" onclick="map()"><img src="images/world.png" alt=""> <p class="white">map</p></div>
+    </div>
+    <div style="display: flex;">
+ <div class="icon" onclick="scan()"><img src="images/satellite.png" alt=""> <p class="white">Scan 6</p></div>
+    <div class="icon" onclick="virus()"><img src="images/folder.png" alt=""> <p class="white">COV-19 virus</p></div>
+    <div class="icon" onclick="deploy()"><img src="images/folder.png" alt=""> <p class="white">Deploy</p></div>
+    <div class="icon" onclick="chat()"><img src="images/chat.png" alt=""> <p class="white">Chat</p></div>
+    <div class="icon" onclick="rna()"><img src="images/rna.png" alt=""> <p class="white">RNA</p></div>
+</div>
+    <div style="display: flex;">
+ <div class="icon" onclick="neuro()"><img src="images/neuro.png" alt=""> <p class="white">Neuro</p></div>
+    <div class="icon" onclick="infect()"><img src="images/rat.png" alt=""> <p class="white">Infect</p></div>
+    <div class="icon" onclick="root()"><img src="images/folder.png" alt=""> <p class="white">Root</p></div>
+    <div class="icon" onclick="siop()"><img src="images/world.png" alt=""> <p class="white">SIOP</p></div>
+    <div class="icon" onclick="sequence()"><img src="images/scan.png" alt=""> <p class="white">Sequence</p></div>
+</div>
+    <div style="display: flex;">
+ <div class="icon" onclick="microscope()"><img src="images/microscope.png" alt=""> <p class="white">Electron Microscope</p></div>
+    <div class="icon" onclick="stability()"><img src="images/folder.png" alt=""> <p class="white">Stability</p></div>
+    <div class="icon" onclick="fullscreen()"><img src="images/scan.png" alt=""> <p class="white">Fullscreen</p></div>
+    <div class="icon" onclick="dna()"><img src="images/rna.png" alt=""> <p class="white">DNA</p></div>
+    <div class="icon" onclick="radar()"><img src="images/satellite.png" alt=""> <p class="white">Radar</p></div>
+</div></div> -->
+
+
+<div class="" id="denied" onclick="this.classList.remove('access_denied')">ACCESS DENIED</div>
+<div class="" id="grant" onclick="this.classList.remove('access_grant')">ACCESS GRANTED</div>
+
+
+
+</main>
+
+    <script src="hacker-type.js"></script>
+</body>
+</html>
