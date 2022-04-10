@@ -117,7 +117,7 @@
 
 							<div class="col-lg-12 py-4" style="background:#3c5769; " >
 								<div class="pl-2" style="height:50px;width:70px;border:1px solid white; margin:auto">
-									<h1 class="text-white" style="font-weight:normal;" id="">YN</h1>
+									<h1 class="text-white" style="font-weight:normal;" id="sortname">YN</h1>
 
 									</div>
 									 <h1 class="text-center" style="color:gray"><span id="fnholder">your</span> <span id="lnholder">name</span> </h1>
@@ -154,9 +154,9 @@
 
 								<div class="col-lg-5 pt-4" style="background-color:#f5f5f5">
 
-						<a style="font-size:16px; line-height:30px;"  class="text-muted float-left"><span class="mr-2"><i class="fas fa-envelope"></i></span><span id="emholder">Guddukumar19548@gmail.com</span></a>
-             		<a style="font-size:16px; line-height:30px;"  class="text-muted float-left"><span class="mr-2"><i class="fas fa-phone-alt"></i></span><span id="phholder">9560190498</span></a>
-									<a style="font-size:16px; line-height:30px;"  class="text-muted float-left"><span class="mr-2"><i class="fas fa-map-marker-alt"></i></span><span id="ciholder">New Delhi </span>
+						<a style="font-size:16px; line-height:30px;"  class="text-muted  d-block"><span class="mr-2"><i class="fas fa-envelope"></i></span><span id="emholder">Guddukumar19548@gmail.com</span></a>
+             		<a style="font-size:16px; line-height:30px;"  class="text-muted  d-block"><span class="mr-2"><i class="fas fa-phone-alt"></i></span><span id="phholder">9560190498</span></a>
+									<a style="font-size:16px; line-height:30px;"  class="text-muted  d-block"><span class="mr-2"><i class="fas fa-map-marker-alt"></i></span><span id="ciholder">New Delhi </span>
 										<span id="piholder">110086</span>,<span id="coholder">India</span></a>
              <hr  style="margin:120px 0 30px 0">
 
@@ -213,6 +213,7 @@
 function guddu(){
 var fn=document.getElementById('fname').value;
 var ln=document.getElementById('lname').value;
+document.getElementById('sortname').innerHTML=fn.substr(0,1)+ln.substr(0,1);
 var ci=document.getElementById('city').value;
 var ph=document.getElementById('phone').value;
 var co=document.getElementById('country').value;
