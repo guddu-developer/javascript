@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSIC PLAYER</title>
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" defer></script>
+        <script src="js/songs.js" defer></script>
+</head>
+<body onload="readallfiles()">
+
+
+    
+    <div class="music_player">
+        <div class="artist_img">
+            <img src="images/song.gif" style="height: 190px" alt="">
+        </div>
+        <div class="time_slider">
+            <span class="runing_time">0:00</span>
+            <input type="range" value="0" onchange="drag(this.value)"  id="slider" min="0" step=".01">
+            <span class="song_long">0:00</span>
+        </div>
+        <div class="now_playing">
+            <i class="fa fa-refresh"  aria-hidden="true"></i>
+    
+            <p> now playing </p>
+            <i class="fa fa-heart" aria-hidden="true"></i>
+        </div>
+        <div class="music_info">
+            <h2 id="name">guddu kumar</h2>
+            <p class="date">2018 - 2022</p>
+            <p class="song_title">Made with <i class="fa fa-heart" aria-hidden="true" style="position:static;padding:5px"></i>by GUDDU</p>
+            <fieldset class="rating">
+                <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5"
+                    title="Awesome - 5 stars"></label>
+                <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half"
+                    title="Pretty good - 4.5 stars"></label>
+                <input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4"
+                    title="Pretty good - 4 stars"></label>
+                <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half"
+                    title="Meh - 3.5 stars"></label>
+                <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3"
+                    title="Meh - 3 stars"></label>
+                <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half"
+                    title="Kinda bad - 2.5 stars"></label>
+                <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2"
+                    title="Kinda bad - 2 stars"></label>
+                <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half"
+                    title="Meh - 1.5 stars"></label>
+                <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1"
+                    title="Sucks big time - 1 star"></label>
+                <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf"
+                    title="Sucks big time - 0.5 stars"></label>
+            </fieldset>
+        </div>
+        <div class="controllers">
+            <i class="fa fa-music" aria-hidden="true"></i>
+            <i class="fa fa-fast-backward" aria-hidden="true"></i>
+            <i class="fa fa-play" id="play" aria-hidden="true"></i>
+            <i class="fa fa-fast-forward" aria-hidden="true"></i>
+            <i class="fa fa-retweet" aria-hidden="true"></i>
+        </div>
+    </div>
+    <div class="song_list">
+
+        <div class="title dark">SONG NAMES</div>
+
+
+        <!-- running localhost uncomment this  id=files div on 74 -->
+      <!-- <div id="files"> </div> -->
+
+
+      <!-- comment this when you are in localhost or xampp server -->
+<div class='title ' onclick='setname(this.innerText);setaudio(this.innerText)'> Illegal_Weapon_2.0Street_Dancer_3D_Varun_D,Shraddha_K,NoraTanishk_B,Jasmine_S,Garry_S(128k).mp3</div>
+
+<div class='title dark' onclick='setname(this.innerText);setaudio(this.innerText)'>Moto_(Official_Video)_Ajay_Hooda__Diler_Kharkiya__Anjali_Raghav__Latest_Haryanvi_Song_2020(128k).mp3 </div>
+
+<div class='title ' onclick='setname(this.innerText);setaudio(this.innerText)'> Muqabla_-_Street_Dancer_3D_A.R._Rahman,_Prabhudeva,_Varun_D,_Shraddha_K,_Tanishk_B,_Yash_,Parampara(128k).mp3</div>
+
+<div class='title dark' onclick='setname(this.innerText);setaudio(this.innerText)'> Sumit_Goswami_-_Feelings__KHATRI__Deepesh_Goyal__Haryanvi_Song_2020(1080p).mp4</div>
+            <!-- comment this when you are in localhost or xampp server -->
+        
+    </div>
+    
+</body>
+</html>
