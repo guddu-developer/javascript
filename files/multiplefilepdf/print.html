@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRINT</title>
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+    <script>
+        if(sessionStorage.length==0){
+            window.location.href="index.html";
+        }
+        else{
+            if(sessionStorage.length<=20){
+             var doc = new jsPDF({ orientation: "portrait", unit: "mm", format: 'A4', compress: true });
+            var width = Math.round(doc.internal.pageSize.width);
+            var height = Math.round(doc.internal.pageSize.height);
+            doc.text(70, 10, 'Guddu IMAGE TO PDF SITE!');
+            for(let j=0;j<sessionStorage.length;j++){
+            doc.addImage(sessionStorage.getItem(`page${j}`), 'JPEG', 10, 10, width-20, height-20, undefined, 'FAST');
+            doc.addPage();            
+            // sessionStorage.removeItem(`page${j}`);
+            }
+            doc.save('multiple.pdf');
+            sessionStorage.clear();  
+            window.location.href="index.html";
+        }
+            else{
+                alert("20 PAGE PDF ALLOWED");
+                sessionStorage.clear();
+              window.location.href="index.html";
+            }
+        }
+    </script>
+</body>
+</html>
