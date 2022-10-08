@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>GUDDU GUESS NO 1 to 100</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-dark">
+
+    <div class="container mt-3">
+        <h1 class="text-primary text-center">Guess No Between 1 to 100 </h1>
+
+        <div class="row justify-content-center">
+            <div class="col-sm-6">
+            <div class="mb-3 mt-3 input-group-lg">
+                <p  class="text-secondary text-center mb-0" >ENTER A NUMBER:</p>
+                <input type="number" class="form-control" id="number" placeholder="Enter number" >
+            </div>
+        </div>
+    </div>
+           <p class="text-center mt-4" ><button type="button" onclick="checkGuessedNo()" class="btn btn-success px-5 py-2 font-weight-bold"  >Check</button></p> 
+    </div>
+
+
+
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-sm-2">
+                    <h2 class="text-center" style="color:greenyellow">Right</h2>
+                    <h3 class="text-center" style="color:greenyellow"><i class="fa-regular fa-circle-check me-3"></i><span id="correct">0</span></h3>
+                </div>
+                <div class="col-sm-2">
+                    <h2 class="text-center" style="color:red">Wrong</h2>
+                    <h3 class="text-center" style="color:red"><i class="fa-regular fa-circle-xmark me-3"></i><span id="wrong">0</span></h3>
+                </div>
+                <div class="col-sm-2">
+                    <h2 class="text-center" style="color:rgb(140, 140, 255);">Answered</h2>
+                    <h3 class="text-center" style="color:rgb(140, 140, 255);">
+                    <i class="fa-solid fa-check-double me-3"></i><span id="answered">0</span></h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h5 class="text-center" style="color: red ;"  id="wrongnotify"></h5>
+
+                    <h5 class="text-center" style="color: greenyellow ;" id="correctnotify"  ></h5>
+                        
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+<script>
+     let answered=0;
+     let correct=0;
+     let wrong=0;
+    function checkGuessedNo(){
+        let correctnotification=document.getElementById("correctnotify");
+        let wrongnotification=document.getElementById("wrongnotify");
+        let num=document.getElementById("number").value;
+        let random=Math.floor(Math.random()*101);
+      
+       
+       if(num!==""){
+        num=parseInt(num);
+        if(num==random){
+            wrongnotification.innerText="";
+            correctnotification.innerText="Conratulations, You Guess Correct Number";
+            correct++;
+            document.getElementById("correct").innerText=correct;
+        }
+        else{
+            wrongnotification.innerText="";
+            correctnotification.innerText="";
+            console.log(random);
+           if(random>num){
+            wrongnotification.innerText="Opps, You Guess Smaller Number";
+           }
+           if(random<num){
+            wrongnotification.innerText="Opps, You Guess Greater Number";
+           }
+           wrong++;
+           document.getElementById("wrong").innerText = wrong;
+        }
+        answered++;
+        document.getElementById("answered").innerText = answered;
+        if(answered>100){
+            alert("You Answerd 100 Times\nWe Restart All Things");
+            window.location.reload();
+        }
+       }
+       else{
+        alert("Please Enter a Number");
+       }
+       num="";
+    }
+
+</script>
+
+    
+</body>
+
+</html>
